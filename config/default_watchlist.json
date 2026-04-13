@@ -1,0 +1,109 @@
+{
+  "journals": [
+    {
+      "name": "Science Robotics",
+      "issn": "2470-9476",
+      "homepage": "https://www.science.org/journal/scirobotics"
+    },
+    {
+      "name": "IEEE Transactions on Robotics",
+      "issn": "1552-3098",
+      "homepage": "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=8860"
+    },
+    {
+      "name": "The International Journal of Robotics Research",
+      "issn": "0278-3649",
+      "homepage": "https://journals.sagepub.com/home/ijr"
+    },
+    {
+      "name": "IEEE Robotics and Automation Letters",
+      "issn": "2377-3766",
+      "homepage": "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=7083369"
+    },
+    {
+      "name": "Autonomous Robots",
+      "issn": "1573-7527",
+      "homepage": "https://link.springer.com/journal/10514"
+    }
+  ],
+  "paper_keywords": {
+    "embodied": 3,
+    "manipulation": 3,
+    "locomotion": 2,
+    "tactile": 2,
+    "sim2real": 2,
+    "diffusion": 2,
+    "transformer": 2,
+    "world model": 2,
+    "humanoid": 2,
+    "grasp": 2,
+    "navigation": 1,
+    "planning": 1,
+    "control": 1,
+    "policy": 1,
+    "constraint": 1,
+    "robot": 1
+  },
+  "github_trending": {
+    "since": "daily",
+    "languages": [
+      "python",
+      "jupyter-notebook",
+      "c++",
+      "rust"
+    ]
+  },
+  "github_candidate_pool_size": 40,
+  "github_min_relevance_score": 4,
+  "github_allowed_relevance_labels": [
+    "直接相关",
+    "中度相关"
+  ],
+  "github_required_keywords_any": [
+    "robot",
+    "robotics",
+    "embodied",
+    "grasp",
+    "locomotion",
+    "humanoid",
+    "sim2real",
+    "tactile",
+    "ros",
+    "ros2",
+    "gazebo",
+    "moveit",
+    "isaac",
+    "mujoco",
+    "pinocchio"
+  ],
+  "github_keywords": {
+    "robot": 4,
+    "robotics": 4,
+    "embodied": 4,
+    "grasp": 3,
+    "locomotion": 3,
+    "humanoid": 3,
+    "simulation": 3,
+    "sim2real": 4,
+    "ros": 3,
+    "ros2": 4,
+    "gazebo": 3,
+    "moveit": 4,
+    "isaac": 3,
+    "mujoco": 2,
+    "pinocchio": 2,
+    "manipulation": 3,
+    "navigation": 2,
+    "planning": 2,
+    "control": 2,
+    "reinforcement": 2,
+    "rl": 2,
+    "dataset": 1,
+    "benchmark": 1,
+    "vision": 1,
+    "multimodal": 1,
+    "agent": 1,
+    "policy": 2
+  },
+  "conference_sources": []
+}

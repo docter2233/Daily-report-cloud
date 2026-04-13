@@ -1,0 +1,176 @@
+name: Daily Robotics Report
+
+on:
+  schedule:
+    - cron: "30 0 * * *"
+  workflow_dispatch:
+    inputs:
+      days:
+        description: "How many recent days to scan"
+        required: false
+        default: "1"
+      max_papers:
+        description: "Maximum papers to keep"
+        required: false
+        default: "10"
+      max_repos:
+        description: "Maximum repos to keep"
+        required: false
+        default: "8"
+      push_provider:
+        description: "pushplus or wecom_bot"
+        required: false
+        default: "pushplus"
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    outputs:
+      public_base_url: ${{ steps.base.outputs.public_base_url }}
+      push_provider: ${{ steps.vars.outputs.push_provider }}
+      reference_date: ${{ steps.date.outputs.reference_date }}
+    env:
+      TZ: Asia/Shanghai
+      PUSHPLUS_TOKEN: ${{ secrets.PUSHPLUS_TOKEN }}
+      WECOM_BOT_WEBHOOK: ${{ secrets.WECOM_BOT_WEBHOOK }}
+      CROSSREF_MAILTO: ${{ secrets.CROSSREF_MAILTO }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Resolve parameters
+        id: vars
+        shell: bash
+        run: |
+          DAYS="${{ github.event.inputs.days }}"
+          MAX_PAPERS="${{ github.event.inputs.max_papers }}"
+          MAX_REPOS="${{ github.event.inputs.max_repos }}"
+          PUSH_PROVIDER="${{ github.event.inputs.push_provider }}"
+          [ -n "$DAYS" ] || DAYS=1
+          [ -n "$MAX_PAPERS" ] || MAX_PAPERS=10
+          [ -n "$MAX_REPOS" ] || MAX_REPOS=8
+          [ -n "$PUSH_PROVIDER" ] || PUSH_PROVIDER=pushplus
+          echo "days=$DAYS" >> "$GITHUB_OUTPUT"
+          echo "max_papers=$MAX_PAPERS" >> "$GITHUB_OUTPUT"
+          echo "max_repos=$MAX_REPOS" >> "$GITHUB_OUTPUT"
+          echo "push_provider=$PUSH_PROVIDER" >> "$GITHUB_OUTPUT"
+
+      - name: Resolve public base URL
+        id: base
+        shell: bash
+        run: |
+          BASE_URL="${{ vars.PUBLIC_BASE_URL }}"
+          if [ -z "$BASE_URL" ]; then
+            BASE_URL="https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/"
+          fi
+          echo "public_base_url=$BASE_URL" >> "$GITHUB_OUTPUT"
+
+      - name: Validate secrets
+        shell: bash
+        run: |
+          if [ "${{ steps.vars.outputs.push_provider }}" = "pushplus" ] && [ -z "$PUSHPLUS_TOKEN" ]; then
+            echo "Missing GitHub secret: PUSHPLUS_TOKEN" >&2
+            exit 1
+          fi
+          if [ "${{ steps.vars.outputs.push_provider }}" = "wecom_bot" ] && [ -z "$WECOM_BOT_WEBHOOK" ]; then
+            echo "Missing GitHub secret: WECOM_BOT_WEBHOOK" >&2
+            exit 1
+          fi
+
+      - name: Generate digests and static site
+        run: |
+          python scripts/research_briefing.py collect \
+            --days "${{ steps.vars.outputs.days }}" \
+            --max-papers "${{ steps.vars.outputs.max_papers }}" \
+            --max-repos "${{ steps.vars.outputs.max_repos }}" \
+            --outdir artifacts \
+            --site-dir site \
+            --public-base-url "${{ steps.base.outputs.public_base_url }}"
+
+      - name: Capture reference date
+        id: date
+        shell: bash
+        run: |
+          FILE="$(ls artifacts/*-mobile.md | head -n1)"
+          DATE="$(basename "$FILE" | cut -d- -f1-3)"
+          echo "reference_date=$DATE" >> "$GITHUB_OUTPUT"
+
+      - name: Commit updated site content
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add site
+          if ! git diff --cached --quiet; then
+            git commit -m "Update mobile digest site for ${{ steps.date.outputs.reference_date }}"
+            git push
+          fi
+
+      - name: Upload workflow artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: daily-robotics-report-${{ github.run_number }}
+          path: artifacts/
+          if-no-files-found: error
+
+      - name: Upload pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+  deploy:
+    needs: generate
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+
+  push:
+    needs: [generate, deploy]
+    runs-on: ubuntu-latest
+    env:
+      TZ: Asia/Shanghai
+      PUSHPLUS_TOKEN: ${{ secrets.PUSHPLUS_TOKEN }}
+      WECOM_BOT_WEBHOOK: ${{ secrets.WECOM_BOT_WEBHOOK }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Download workflow artifacts
+        uses: actions/download-artifact@v4
+        with:
+          name: daily-robotics-report-${{ github.run_number }}
+          path: artifacts
+
+      - name: Push mobile digest
+        run: |
+          FILE="$(ls artifacts/*-mobile.md | head -n1)"
+          python scripts/research_briefing.py push \
+            --provider "${{ needs.generate.outputs.push_provider }}" \
+            --title "今日机器人快报 ${{ needs.generate.outputs.reference_date }}" \
+            --content-file "$FILE"
