@@ -1,9 +1,100 @@
 {
-  "generated_at": "2026-04-14T11:46:53+08:00",
+  "generated_at": "2026-04-14T13:27:56+08:00",
   "reference_date": "2026-04-14",
-  "window_start": "2026-04-14",
+  "window_start": "2026-04-05",
   "timezone": "Asia/Shanghai",
   "papers": [
+    {
+      "type": "paper",
+      "title": "AffordSim: A Scalable Data Generator and Benchmark for Affordance-Aware Robotic Manipulation",
+      "venue": "arXiv cs.RO",
+      "published": "2026-04-13",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2604.11674v1",
+      "abstract": "Simulation-based data generation has become a dominant paradigm for training robotic manipulation policies, yet existing platforms do not incorporate object affordance information into trajectory generation. As a result, tasks requiring precise interaction with specific functional regions--grasping a mug by its handle, pouring from a cup's rim, or hanging a mug on a hook--cannot be automatically generated with semantically correct trajectories. We introduce AffordSim, the first simulation framework that integrates open-vocabulary 3D affordance prediction into the manipulation data generation pipeline. AffordSim uses our VoxAfford model, an open-vocabulary 3D affordance detector that enhances MLLM output tokens with multi-scale geometric features, to predict affordance maps on object point clouds, guiding grasp pose estimation toward task-relevant functional regions. Built on NVIDIA Isaac Sim with cross-embodiment support (Franka FR3, Panda, UR5e, Kinova), VLM-powered task generation, and novel domain randomization using DA3-based 3D Gaussian reconstruction from real photographs, AffordSim enables automated, scalable generation of affordance-aware manipulation data. We establish a benchmark of 50 tasks across 7 categories (grasping, placing, stacking, pushing/pulling, pouring, mug hanging, long-horizon composite) and evaluate 4 imitation learning baselines (BC, Diffusion Policy, ACT, Pi 0.5). Our results reveal that while grasping is largely solved (53-93% success), affordance-demanding tasks such as pouring into narrow containers (1-43%) and mug hanging (0-47%) remain significantly more challenging for current imitation learning methods, highlighting the need for affordance-aware data generation. Zero-shot sim-to-real experiments on a real Franka FR3 validate the transferability of the generated data.",
+      "pdf_url": "https://arxiv.org/pdf/2604.11674v1",
+      "oa_url": "https://arxiv.org/pdf/2604.11674v1",
+      "source_homepage": "https://arxiv.org/list/cs.RO/recent",
+      "keyword_hits": [
+        "manipulation",
+        "diffusion",
+        "grasp",
+        "policy"
+      ],
+      "relevance_score": 9,
+      "cited_by_count": null,
+      "primary_topic": "",
+      "concepts": [],
+      "oa_status": "",
+      "direction": "机械臂操控",
+      "focus": "机械臂操控",
+      "method_tags": [
+        "扩散模型",
+        "Sim2Real",
+        "语言模型"
+      ],
+      "overview_sentence": "Simulation-based data generation has become a dominant paradigm for training robotic manipulation policies, yet existing platforms do not incorporate object affordance information into trajectory generation.",
+      "note": {
+        "summary_cn": "这篇论文关注机械臂操控，方法路线偏向扩散模型、Sim2Real、语言模型。",
+        "overview": "主旨上，这篇论文主要落在“机械臂操控”方向，更具体地说是在处理机械臂操控。",
+        "method": "方法上，这篇工作更接近扩散模型、Sim2Real、语言模型路线，但公开摘要没有把实现细节展开到可直接复现的程度。",
+        "theory": "公开摘要没有展开完整公式，但可以确认作者的理论抓手主要围绕策略或控制律、生成式序列建模。",
+        "experiment": "含仿真实验；在公开基准或数据集上评估。",
+        "result": "结果层面，公开摘要没有给出足够细节，适合先把它当作值得复查的候选。",
+        "application": "更偏向抓取、装配、接触丰富操作和机械臂精细执行。",
+        "reading": "建议先看小文中的主旨、方法和实验，再决定是否进入原文或 PDF。",
+        "access": "已找到合法开放 PDF，可直接从详情页跳转。"
+      },
+      "slug": "paper-01-affordsim-a-scalable-data-generator-and-benchmark-for-affordance-aware-r",
+      "detail_relpath": "daily/2026-04-14/papers/paper-01-affordsim-a-scalable-data-generator-and-benchmark-for-affordance-aware-r.html"
+    },
+    {
+      "type": "paper",
+      "title": "Multi-robot navigation in social mini-games: definitions, taxonomy, and algorithms",
+      "venue": "Autonomous Robots",
+      "published": "2026-06",
+      "doi": "10.1007/s10514-026-10251-w",
+      "url": "https://doi.org/10.1007/s10514-026-10251-w",
+      "abstract": "Abstract The “Last Mile Challenge” has long been considered an important, yet unsolved, challenge for autonomous vehicles, public service robots, and delivery robots. A central issue in this challenge is the ability of robots to navigate constrained and cluttered environments that have high agency (e.g., doorways, hallways, corridor intersections), often while competing for space with other robots and humans. We refer to these environments as “Social Mini-Games” (SMGs). Traditional navigation approaches designed for MRN do not perform well in SMGs, which has led to focused research on dedicated SMG solvers. However, publications on SMG navigation research make different assumptions (on centralized versus decentralized, observability, communication, cooperation, etc.), and have different objective functions (safety versus liveness). These assumptions and objectives are sometimes implicitly assumed or described informally. This makes it difficult to establish appropriate baselines for comparison in research papers, as well as making it difficult for practitioners to find the papers relevant to their concrete application. Such ad-hoc representation of the field also presents a barrier to new researchers wanting to start research in this area. SMG navigation research requires its own taxonomy, definitions, and evaluation protocols to guide effective research moving forward. This survey is the first to catalog SMG solvers using a well-defined and unified taxonomy and to classify existing methods accordingly. It also discusses the essential properties of SMG solvers, defines what SMGs are and how they appear in practice, outlines how to evaluate SMG solvers, and highlights the differences between SMG solvers and general navigation systems. The survey concludes with an overview of future directions and open challenges in the field. Our project is open-sourced at https://socialminigames.github.io/ .",
+      "source_homepage": "https://link.springer.com/journal/10514",
+      "keyword_hits": [
+        "navigation",
+        "robot"
+      ],
+      "relevance_score": 4,
+      "cited_by_count": 0,
+      "primary_topic": "Robotic Path Planning Algorithms",
+      "concepts": [
+        "Computer science",
+        "Field (mathematics)",
+        "Representation (politics)",
+        "Agency (philosophy)",
+        "Robot",
+        "Taxonomy (biology)"
+      ],
+      "oa_url": "https://link.springer.com/content/pdf/10.1007/s10514-026-10251-w.pdf",
+      "pdf_url": "https://link.springer.com/content/pdf/10.1007/s10514-026-10251-w.pdf",
+      "oa_status": "hybrid",
+      "direction": "导航与规划",
+      "focus": "导航规划与场景决策",
+      "method_tags": [
+        "约束建模"
+      ],
+      "overview_sentence": "Abstract The “Last Mile Challenge” has long been considered an important, yet unsolved, challenge for autonomous vehicles, public service robots, and delivery robots.",
+      "note": {
+        "summary_cn": "这篇论文关注导航规划与场景决策，方法路线偏向约束建模。",
+        "overview": "主旨上，这篇论文主要落在“导航与规划”方向，更具体地说是在处理导航规划与场景决策。",
+        "method": "方法上，这篇工作更接近约束建模路线，但公开摘要没有把实现细节展开到可直接复现的程度。",
+        "theory": "公开摘要没有展开完整公式，但可以确认作者的理论抓手主要围绕目标函数或损失设计、约束建模。",
+        "experiment": "摘要没有展开完整实验表，但可以确认作者至少做了方法有效性验证。",
+        "result": "结果层面，摘要声称方法在指标或任务完成度上有明显提升。",
+        "application": "更适合长时序任务编排、复杂场景导航和系统级决策。",
+        "reading": "建议先看小文中的主旨、方法和实验，再决定是否进入原文或 PDF。",
+        "access": "已找到合法开放 PDF，可直接从详情页跳转。"
+      },
+      "slug": "paper-02-multi-robot-navigation-in-social-mini-games-definitions-taxonomy-and-alg",
+      "detail_relpath": "daily/2026-04-14/papers/paper-02-multi-robot-navigation-in-social-mini-games-definitions-taxonomy-and-alg.html"
+    },
     {
       "type": "paper",
       "title": "Diffusion-Based mmWave Radar Point Cloud Enhancement Driven by Range Images",
@@ -12,14 +103,6 @@
       "doi": "10.1109/lra.2026.3673977",
       "url": "https://doi.org/10.1109/lra.2026.3673977",
       "abstract": "Millimeter-wave (mmWave) radar has attracted significant attention in robotics and autonomous driving due to its robustness in harsh environments. However, the radar point clouds are typically sparse and noisy, which limits its futher development. Traditional mmWave radar enhancement approaches often struggle to leverage the effectiveness of diffusion models in super-resolution, largely due to the unnatural range-azimuth heatmap (RAH) or bird's eye view (BEV) representation. To address this issue, we pioneer the integration of range image representations into an image diffusion framework that leverages pre-trained image diffusion priors to generate dense and accurate 3D mmWave radar point clouds with LiDAR-like quality. Extensive evaluations on both public datasets and self-constructed datasets demonstrate that our approach provides substantial improvements, establishing a new state-of-the-art performance in generating truly three-dimensional LiDAR-like point clouds via mmWave radar.",
-      "authors": [
-        "Ruixin Wu",
-        "Zihan Li",
-        "Jin Wang",
-        "Xiangyu Xu",
-        "Zhi Zheng",
-        "Kaixiang Huang"
-      ],
       "source_homepage": "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=7083369",
       "keyword_hits": [
         "diffusion"
@@ -35,23 +118,72 @@
         "Point (geometry)",
         "Cloud computing"
       ],
-      "oa_url": "",
+      "oa_url": "https://doi.org/10.1109/lra.2026.3673977",
+      "pdf_url": "",
       "oa_status": "closed",
       "direction": "机器人通用方法",
+      "focus": "雷达感知与点云增强",
       "method_tags": [
-        "Diffusion",
+        "扩散模型",
         "检索增强",
         "几何/深度估计"
       ],
       "overview_sentence": "Millimeter-wave (mmWave) radar has attracted significant attention in robotics and autonomous driving due to its robustness in harsh environments.",
       "note": {
-        "overview": "这篇工作首先强调：Millimeter-wave (mmWave) radar has attracted significant attention in robotics and autonomous driving due to its robustness in harsh environments.",
-        "method": "方法线上更接近 Diffusion / 检索增强 / 几何/深度估计。Traditional mmWave radar enhancement approaches often struggle to leverage the effectiveness of diffusion models in super-resolution, largely due to the unnatural range-azimuth heatmap (RAH) or bird's eye view (BEV) representation.",
+        "summary_cn": "这篇论文关注雷达感知与点云增强，方法路线偏向扩散模型、检索增强、几何/深度估计。",
+        "overview": "主旨上，这篇论文主要落在“机器人通用方法”方向，更具体地说是在处理雷达感知与点云增强。",
+        "method": "方法上，这篇工作更接近扩散模型、检索增强、几何/深度估计路线，但公开摘要没有把实现细节展开到可直接复现的程度。",
+        "theory": "公开摘要没有展开完整公式，但可以确认作者的理论抓手主要围绕状态表征或世界模型、生成式序列建模。",
+        "experiment": "在公开基准或数据集上评估。",
+        "result": "结果层面，摘要声称方法在指标或任务完成度上有明显提升。",
         "application": "对机器人系统设计、实验选题和工程落地都有一定参考价值。",
-        "reading": "建议先看我整理的小文，再决定是否跳原文。"
+        "reading": "建议先看小文中的主旨、方法和实验，再决定是否进入原文或 PDF。",
+        "access": "已找到合法开放获取入口，手机可直接阅读。"
       },
-      "slug": "paper-01-diffusion-based-mmwave-radar-point-cloud-enhancement-driven-by-range-ima",
-      "detail_relpath": "daily/2026-04-14/papers/paper-01-diffusion-based-mmwave-radar-point-cloud-enhancement-driven-by-range-ima.html"
+      "slug": "paper-03-diffusion-based-mmwave-radar-point-cloud-enhancement-driven-by-range-ima",
+      "detail_relpath": "daily/2026-04-14/papers/paper-03-diffusion-based-mmwave-radar-point-cloud-enhancement-driven-by-range-ima.html"
+    },
+    {
+      "type": "paper",
+      "title": "Dual-Stage LiDAR-Inertial SLAM with Hierarchical Dynamic Object Removal in Dynamic Environments",
+      "venue": "Autonomous Robots",
+      "published": "2026-06",
+      "doi": "10.1007/s10514-026-10248-5",
+      "url": "https://doi.org/10.1007/s10514-026-10248-5",
+      "abstract": "",
+      "source_homepage": "https://link.springer.com/journal/10514",
+      "keyword_hits": [],
+      "relevance_score": 0,
+      "cited_by_count": 0,
+      "primary_topic": "Robotics and Sensor-Based Localization",
+      "concepts": [
+        "Computer science",
+        "Ghosting",
+        "Computer vision",
+        "Odometry",
+        "Artificial intelligence",
+        "Simultaneous localization and mapping"
+      ],
+      "oa_url": "https://doi.org/10.1007/s10514-026-10248-5",
+      "pdf_url": "",
+      "oa_status": "closed",
+      "direction": "导航与规划",
+      "focus": "导航规划与场景决策",
+      "method_tags": [],
+      "overview_sentence": "",
+      "note": {
+        "summary_cn": "这篇论文关注导航规划与场景决策，方法路线偏向导航与规划。",
+        "overview": "主旨上，这篇论文主要落在“导航与规划”方向，更具体地说是在处理导航规划与场景决策。",
+        "method": "方法上，这篇工作更接近问题建模 + 感知/控制联合设计路线，但公开摘要没有把实现细节展开到可直接复现的程度。",
+        "theory": "目前只有标题和元数据，无法负责任地还原具体推导，只能保留研究方向判断。",
+        "experiment": "摘要没有展开完整实验表，但可以确认作者至少做了方法有效性验证。",
+        "result": "结果层面，公开摘要没有给出足够细节，适合先把它当作值得复查的候选。",
+        "application": "更适合长时序任务编排、复杂场景导航和系统级决策。",
+        "reading": "建议先看小文中的主旨、方法和实验，再决定是否进入原文或 PDF。",
+        "access": "已找到合法开放获取入口，手机可直接阅读。"
+      },
+      "slug": "paper-04-dual-stage-lidar-inertial-slam-with-hierarchical-dynamic-object-removal",
+      "detail_relpath": "daily/2026-04-14/papers/paper-04-dual-stage-lidar-inertial-slam-with-hierarchical-dynamic-object-removal.html"
     },
     {
       "type": "paper",
@@ -61,10 +193,6 @@
       "doi": "10.1109/lra.2026.3673896",
       "url": "https://doi.org/10.1109/lra.2026.3673896",
       "abstract": "Clay sculpting is a nuanced, artistic task involving dexterous manipulation with long-horizon planning to achieve high-level goals. As a robotics problem, we formulate clay sculpting as a shape-to-shape matching challenge. Prior deformable object manipulation work either requires retraining a policy per goal or relies on dynamics models which represent state as sparse point clouds which do not capture important clay features, such as textures, well. We present a method for modeling the dynamics of deformable materials and planning for robotic sculpting in a representation that is visually-aligned, capturing lighting and texture features. With three different deformable materials and various end-effectors, we demonstrate that our dynamics model is comparable in performance to the state-of-the-art with the added benefit of being compatible with visual planning. Our actions are represented as parametrized pushes into clay with a single end-effector, which proved to be suitable for long-horizon (<inline-formula xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><tex-math notation=\"LaTeX\">$&gt;$</tex-math></inline-formula>100 actions) clay relief sculptures. Lastly, we show the benefits of planning in a visually-aligned representation, but also provide analysis providing evidence as to why this representation is challenging to plan in compared to 3D representations.",
-      "authors": [
-        "Peter Schaldenbrand",
-        "Jean Oh"
-      ],
       "source_homepage": "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=7083369",
       "keyword_hits": [
         "planning",
@@ -81,371 +209,375 @@
         "Visualization",
         "Computer graphics (images)"
       ],
-      "oa_url": "",
+      "oa_url": "https://doi.org/10.1109/lra.2026.3673896",
+      "pdf_url": "",
       "oa_status": "closed",
       "direction": "机械臂操控",
+      "focus": "可变形物体操作",
       "method_tags": [],
       "overview_sentence": "Clay sculpting is a nuanced, artistic task involving dexterous manipulation with long-horizon planning to achieve high-level goals.",
       "note": {
-        "overview": "这篇工作首先强调：Clay sculpting is a nuanced, artistic task involving dexterous manipulation with long-horizon planning to achieve high-level goals.",
-        "method": "方法线上更接近 该方向常见技术。Prior deformable object manipulation work either requires retraining a policy per goal or relies on dynamics models which represent state as sparse point clouds which do not capture important clay features, such as textures, well.",
-        "application": "更偏向抓取、装配、接触丰富操作等真实机械臂任务。",
-        "reading": "建议先看我整理的小文，再决定是否跳原文。"
+        "summary_cn": "这篇论文关注可变形物体操作，方法路线偏向机械臂操控。",
+        "overview": "主旨上，这篇论文主要落在“机械臂操控”方向，更具体地说是在处理可变形物体操作。",
+        "method": "方法上，这篇工作更接近问题建模 + 感知/控制联合设计路线，但公开摘要没有把实现细节展开到可直接复现的程度。",
+        "theory": "公开摘要没有展开完整公式，但可以确认作者的理论抓手主要围绕动力学/几何结构、策略或控制律、状态表征或世界模型。",
+        "experiment": "做了消融或分析实验。",
+        "result": "结果层面，摘要声称方法在指标或任务完成度上有明显提升。",
+        "application": "更偏向抓取、装配、接触丰富操作和机械臂精细执行。",
+        "reading": "建议先看小文中的主旨、方法和实验，再决定是否进入原文或 PDF。",
+        "access": "已找到合法开放获取入口，手机可直接阅读。"
       },
-      "slug": "paper-02-visual-sculpting-visually-aligned-planning-representations-for-long-hori",
-      "detail_relpath": "daily/2026-04-14/papers/paper-02-visual-sculpting-visually-aligned-planning-representations-for-long-hori.html"
-    },
-    {
-      "type": "paper",
-      "title": "Distributed Safe Navigation for Multi-Robot Systems With Fixed-Time Convergence and Deadlock Resolution",
-      "venue": "IEEE Robotics and Automation Letters",
-      "published": "2026-05",
-      "doi": "10.1109/lra.2026.3671566",
-      "url": "https://doi.org/10.1109/lra.2026.3671566",
-      "abstract": "This letter addresses the problem of distributed safe navigation for multi-robot systems (MRSs), proposing a comprehensive framework that unifies safety-critical control, real-time navigation, and deadlock resolution. To enable a fully distributed implementation of control barrier function (CBF)-based safety, this work employs a regularized primal decomposition to decouple inter-agent safety constraints. A novel distributed Fixed-Time Stable Gradient Flow (FxTS-GF) algorithm is then designed, which enables each robot to complete the optimal safety responsibility allocation and efficiently solve its local quadratic program (QP) for collision avoidance within each control cycle. Furthermore, the framework incorporates a distributed deadlock resolution mechanism that breaks undesired equilibria through coordination among neighboring robots. Theoretical guarantees are provided for the framework's anytime-safety, optimality, and fixed-time stability. Finally, the effectiveness and practical applicability of the proposed method are validated through both simulations and hardware experiments on a team of mobile vehicles.",
-      "authors": [
-        "Jia-Yuan Yin",
-        "Guang-Hong Yang",
-        "Huimin Wang",
-        "Jun-Sheng Wang"
-      ],
-      "source_homepage": "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=7083369",
-      "keyword_hits": [
-        "navigation",
-        "robot"
-      ],
-      "relevance_score": 2,
-      "cited_by_count": 0,
-      "primary_topic": "Robotic Path Planning Algorithms",
-      "concepts": [
-        "Computer science",
-        "Deadlock",
-        "Convergence (economics)",
-        "Distributed computing",
-        "Deadlock prevention algorithms",
-        "Collision avoidance"
-      ],
-      "oa_url": "",
-      "oa_status": "closed",
-      "direction": "导航与规划",
-      "method_tags": [
-        "约束建模"
-      ],
-      "overview_sentence": "This letter addresses the problem of distributed safe navigation for multi-robot systems (MRSs), proposing a comprehensive framework that unifies safety-critical control, real-time navigation, and deadlock resolution.",
-      "note": {
-        "overview": "这篇工作首先强调：This letter addresses the problem of distributed safe navigation for multi-robot systems (MRSs), proposing a comprehensive framework that unifies safety-critical control, real-time navigation, and deadlock resolution.",
-        "method": "方法线上更接近 约束建模。This letter addresses the problem of distributed safe navigation for multi-robot systems (MRSs), proposing a comprehensive framework that unifies safety-critical control, real-time navigation, and deadlock resolution.",
-        "application": "更适合长时序任务编排、复杂场景导航和系统级决策。",
-        "reading": "建议先看我整理的小文，再决定是否跳原文。"
-      },
-      "slug": "paper-03-distributed-safe-navigation-for-multi-robot-systems-with-fixed-time-conv",
-      "detail_relpath": "daily/2026-04-14/papers/paper-03-distributed-safe-navigation-for-multi-robot-systems-with-fixed-time-conv.html"
-    },
-    {
-      "type": "paper",
-      "title": "Distributed Lloyd-Based Algorithm for Uncertainty-Aware Multi-Robot Under-Canopy Flocking",
-      "venue": "IEEE Robotics and Automation Letters",
-      "published": "2026-05",
-      "doi": "10.1109/lra.2026.3673985",
-      "url": "https://doi.org/10.1109/lra.2026.3673985",
-      "abstract": "In this letter, we present a distributed algorithm for flocking in complex environments that operates at constant altitude, without explicit communication, no a priori information about the environment, and by using only on-board sensing and computation capabilities. We provide sufficient conditions to guarantee collision avoidance with obstacles and other robots without exceeding a desired maximum distance from a predefined set of neighbors (flocking or proximity maintenance constraint) during the mission. The proposed approach allows to operate in crowded scenarios and to explicitly deal with tracking errors and on-board sensing errors. The algorithm was verified through simulations with varying number of UAVs and also through numerous real-world experiments in a dense forest involving up to four UAVs.",
-      "authors": [
-        "Manuel Boldrer",
-        "Vít Krátký",
-        "Viktor Walter",
-        "Martin Saska"
-      ],
-      "source_homepage": "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=7083369",
-      "keyword_hits": [
-        "robot"
-      ],
-      "relevance_score": 1,
-      "cited_by_count": 0,
-      "primary_topic": "Distributed Control Multi-Agent Systems",
-      "concepts": [
-        "Computer science",
-        "Algorithm",
-        "Flocking (texture)",
-        "Mathematics",
-        "Algorithm design",
-        "Artificial intelligence"
-      ],
-      "oa_url": "https://doi.org/10.1109/lra.2026.3673985",
-      "oa_status": "hybrid",
-      "direction": "仿真到真实迁移",
-      "method_tags": [
-        "约束建模"
-      ],
-      "overview_sentence": "In this letter, we present a distributed algorithm for flocking in complex environments that operates at constant altitude, without explicit communication, no a priori information about the environment, and by using only on-board sensing and computation capabilities.",
-      "note": {
-        "overview": "这篇工作首先强调：In this letter, we present a distributed algorithm for flocking in complex environments that operates at constant altitude, without explicit communication, no a priori information about the environment, and by using only on-board sensing and computation capabilities.",
-        "method": "方法线上更接近 约束建模。In this letter, we present a distributed algorithm for flocking in complex environments that operates at constant altitude, without explicit communication, no a priori information about the environment, and by using only on-board sensing and computation capabilities.",
-        "application": "更适合把仿真中的策略稳定迁移到真实机器人平台。",
-        "reading": "有开放获取入口，手机深读成本相对更低。"
-      },
-      "slug": "paper-04-distributed-lloyd-based-algorithm-for-uncertainty-aware-multi-robot-unde",
-      "detail_relpath": "daily/2026-04-14/papers/paper-04-distributed-lloyd-based-algorithm-for-uncertainty-aware-multi-robot-unde.html"
-    },
-    {
-      "type": "paper",
-      "title": "Rethinking Transparent Object Grasping: Depth Completion With Monocular Depth Estimation and Instance Mask",
-      "venue": "IEEE Robotics and Automation Letters",
-      "published": "2026-05",
-      "doi": "10.1109/lra.2026.3673898",
-      "url": "https://doi.org/10.1109/lra.2026.3673898",
-      "abstract": "Accurate depth maps are essential for robotic grasping. However, transparent objects often cause depth cameras to produce missing or distorted depth due to reflection and refraction, making grasping them particularly challenging. Precise depth estimation for transparent objects is therefore crucial. Existing end-to-end methods aim to predict depth directly from RGB-D inputs. However, depth distortion varies significantly with environment, viewpoint, and illumination, making it difficult to predict. Models trained on limited datasets often fail to generalize effectively in real-world applications. In this letter, we propose ReMake, a novel transparent object depth completion framework that injects structured priors to reformulate the depth estimation learning objective. First, we introduce a mask prior to explicitly separate transparent regions from reliable background depth. This separation ensures consistency between training and real-world application, where masked areas correspond to transparent regions and unmasked areas to opaque ones. This improves the model's generalizability in real-world applications. Second, we further incorporate relative depth as an additional prior obtained from monocular depth estimation, which encodes the depth relationship between transparent objects and their background to guide the reconstruction of transparent regions more effectively. Extensive experiments across datasets and real-world scenes demonstrate that ReMake significantly outperforms existing methods, especially in different-view prediction experiments, evaluating its generalizabilityCode and videos are available at <uri xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">https://chengyaofeng.github.io/ReMake.github.io/</uri>.",
-      "authors": [
-        "Yaofeng Cheng",
-        "Xinkai Gao",
-        "Sen Zhang",
-        "Chao Zeng",
-        "Fusheng Zha",
-        "Lining Sun"
-      ],
-      "source_homepage": "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=7083369",
-      "keyword_hits": [],
-      "relevance_score": 0,
-      "cited_by_count": 0,
-      "primary_topic": "Robot Manipulation and Learning",
-      "concepts": [
-        "Monocular",
-        "Generalization",
-        "Computer science",
-        "Artificial intelligence",
-        "Computer vision",
-        "Context (archaeology)"
-      ],
-      "oa_url": "https://arxiv.org/pdf/2508.02507",
-      "oa_status": "green",
-      "direction": "机械臂操控",
-      "method_tags": [
-        "几何/深度估计"
-      ],
-      "overview_sentence": "Accurate depth maps are essential for robotic grasping.",
-      "note": {
-        "overview": "这篇工作首先强调：Accurate depth maps are essential for robotic grasping.",
-        "method": "方法线上更接近 几何/深度估计。Existing end-to-end methods aim to predict depth directly from RGB-D inputs.",
-        "application": "更偏向抓取、装配、接触丰富操作等真实机械臂任务。",
-        "reading": "有开放获取入口，手机深读成本相对更低。"
-      },
-      "slug": "paper-05-rethinking-transparent-object-grasping-depth-completion-with-monocular-d",
-      "detail_relpath": "daily/2026-04-14/papers/paper-05-rethinking-transparent-object-grasping-depth-completion-with-monocular-d.html"
-    },
-    {
-      "type": "paper",
-      "title": "$\\pi$-BA: Probabilistic Neural Bundle Adjustment With Iterative Cycle Optimization for Driving Scene Reconstruction",
-      "venue": "IEEE Robotics and Automation Letters",
-      "published": "2026-05",
-      "doi": "10.1109/lra.2026.3669066",
-      "url": "https://doi.org/10.1109/lra.2026.3669066",
-      "abstract": "Urban scene reconstruction under noisy camera poses remains a critical challenge for autonomous driving. While recent neural dense Bundle Adjustment (BA) methods have shown promising results in specific settings, their performance often degrades in real-world urban scenarios due to noisy correspondences and imbalanced optimization between camera poses and scene parameters, which leads the scene representation to overfit to erroneous geometric constraints, causing the system to converge to suboptimal local minima. We propose <inline-formula xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><tex-math notation=\"LaTeX\">$\\pi$</tex-math></inline-formula>-BA, a neural BA framework designed to improve robustness in large-scale outdoor reconstruction. <inline-formula xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><tex-math notation=\"LaTeX\">$\\pi$</tex-math></inline-formula>-BA introduces an uncertainty-aware probabilistic model that adaptively down-weights unreliable correspondences, enabling more stable joint optimization of camera poses and scene geometry. To decouple pose estimation from geometry artifacts, we employ a cyclic optimization strategy that periodically reinitializes the radiance field while preserving refined camera poses. Extensive experiments on diverse real-world datasets demonstrate that <inline-formula xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><tex-math notation=\"LaTeX\">$\\pi$</tex-math></inline-formula>-BA consistently outperforms existing neural BA methods in terms of pose and reconstruction accuracy under noisy initialization. These results highlight the effectiveness of integrating probabilistic modeling with iterative refinement for scalable and robust neural reconstruction in complex outdoor environments.",
-      "authors": [
-        "Yunxuan Mao",
-        "Dongkun Zhang",
-        "Lilu Liu",
-        "Yue Wang",
-        "Rong Xiong"
-      ],
-      "source_homepage": "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=7083369",
-      "keyword_hits": [],
-      "relevance_score": 0,
-      "cited_by_count": 0,
-      "primary_topic": "Model Reduction and Neural Networks",
-      "concepts": [
-        "Artificial intelligence",
-        "Computer science",
-        "Bundle adjustment",
-        "Robustness (evolution)",
-        "Overfitting",
-        "Computer vision"
-      ],
-      "oa_url": "",
-      "oa_status": "closed",
-      "direction": "机器人通用方法",
-      "method_tags": [
-        "约束建模",
-        "几何/深度估计"
-      ],
-      "overview_sentence": "Urban scene reconstruction under noisy camera poses remains a critical challenge for autonomous driving.",
-      "note": {
-        "overview": "这篇工作首先强调：Urban scene reconstruction under noisy camera poses remains a critical challenge for autonomous driving.",
-        "method": "方法线上更接近 约束建模 / 几何/深度估计。While recent neural dense Bundle Adjustment (BA) methods have shown promising results in specific settings, their performance often degrades in real-world urban scenarios due to noisy correspondences and imbalanced optimization between camera poses and scene parameters, which leads the scene representation to overfit to erroneous geometric constraints, causing the system to converge to suboptimal local minima.",
-        "application": "对机器人系统设计、实验选题和工程落地都有一定参考价值。",
-        "reading": "建议先看我整理的小文，再决定是否跳原文。"
-      },
-      "slug": "paper-06-pi-ba-probabilistic-neural-bundle-adjustment-with-iterative-cycle-optimi",
-      "detail_relpath": "daily/2026-04-14/papers/paper-06-pi-ba-probabilistic-neural-bundle-adjustment-with-iterative-cycle-optimi.html"
-    },
-    {
-      "type": "paper",
-      "title": "Continual Reinforcement Learning Framework for Scalable Collision Avoidance and Mitigation System With Packing Strategy",
-      "venue": "IEEE Robotics and Automation Letters",
-      "published": "2026-05",
-      "doi": "10.1109/lra.2026.3678453",
-      "url": "https://doi.org/10.1109/lra.2026.3678453",
-      "abstract": "Collision Avoidance and Mitigation System (CAMS) in autonomous driving systems is crucial for ensuring safety by formulating strategies to address various collisions and planning the trajectory accordingly. Although recent learning-based motion planning methods for CAMS have shown promising results for specific collision scenarios, the question of how to continually scale up their knowledge across different driving environments has not yet been thoroughly investigated. In this paper, we propose a scalable learning framework for CAMS that combines deep reinforcement learning and continual learning. By sequentially packing knowledge of new scenarios into a model trained on specific scenarios, the proposed method continually scales up the range of scenarios the model can handle while maintaining performance on previously trained scenarios. We apply this learning framework to a motion planner for CAMS and evaluate its scalability across new driving environments. This approach demonstrates a significant ability to pack knowledge by outperforming a model that jointly trains on all scenarios—typically considered an upper bound for continual learning—in about 2.4× fewer training steps, with a 4.19% higher collision avoidance rate and a 12.02% lower collision impact. Moreover, our approach achieves performance close to models trained on each scenario individually, with a model about 5.8× smaller.",
-      "authors": [
-        "Joonhee Lim",
-        "Jangho Shin",
-        "Dongsuk Kum"
-      ],
-      "source_homepage": "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=7083369",
-      "keyword_hits": [],
-      "relevance_score": 0,
-      "cited_by_count": 0,
-      "primary_topic": "Reinforcement Learning in Robotics",
-      "concepts": [
-        "Reinforcement learning",
-        "Computer science",
-        "Collision avoidance",
-        "Scalability",
-        "Control (management)",
-        "Key (lock)"
-      ],
-      "oa_url": "",
-      "oa_status": "closed",
-      "direction": "导航与规划",
-      "method_tags": [
-        "强化学习"
-      ],
-      "overview_sentence": "Collision Avoidance and Mitigation System (CAMS) in autonomous driving systems is crucial for ensuring safety by formulating strategies to address various collisions and planning the trajectory accordingly.",
-      "note": {
-        "overview": "这篇工作首先强调：Collision Avoidance and Mitigation System (CAMS) in autonomous driving systems is crucial for ensuring safety by formulating strategies to address various collisions and planning the trajectory accordingly.",
-        "method": "方法线上更接近 强化学习。Although recent learning-based motion planning methods for CAMS have shown promising results for specific collision scenarios, the question of how to continually scale up their knowledge across different driving environments has not yet been thoroughly investigated.",
-        "application": "更适合长时序任务编排、复杂场景导航和系统级决策。",
-        "reading": "建议先看我整理的小文，再决定是否跳原文。"
-      },
-      "slug": "paper-07-continual-reinforcement-learning-framework-for-scalable-collision-avoida",
-      "detail_relpath": "daily/2026-04-14/papers/paper-07-continual-reinforcement-learning-framework-for-scalable-collision-avoida.html"
-    },
-    {
-      "type": "paper",
-      "title": "Lightweight Kinematic and Static Modeling of Cable-Driven Continuum Robots via Actuation-Space Energy Formulation",
-      "venue": "IEEE Robotics and Automation Letters",
-      "published": "2026-05",
-      "doi": "10.1109/lra.2026.3674005",
-      "url": "https://doi.org/10.1109/lra.2026.3674005",
-      "abstract": "Continuum robots, inspired by octopus arms and elephant trunks, combine dexterity with intrinsic compliance, making them well suited for unstructured and confined environments. Yet their continuously deformable morphology poses challenges for motion planning and control, calling for accurate but lightweight models. We propose the Lightweight Actuation-Space Energy Modeling (LASEM) framework for cable-driven continuum robots, which formulates actuation potential energy directly in actuation space. LASEM yields an analytical forward model derived from geometrically nonlinear beam and rod theories via Hamilton's principle, while avoiding explicit modeling of cable-backbone contact. It accepts both force and displacement inputs, thereby unifying kinematic and static formulations. Assuming the friction is neglected, the framework generalizes to nonuniform geometries, arbitrary cable routings, distributed loading and axial extensibility, while remaining computationally efficient for real-time use. Numerical simulations validate its accuracy, and a semi-analytical iterative scheme is developed for inverse kinematics. To address discretization in practical robots, LASEM further reformulates the functional minimization as a numerical optimization, which also naturally incorporates cable potential energy without explicit contact modeling.",
-      "authors": [
-        "Ke Wu",
-        "Yuhao Wang",
-        "Kevin Henry",
-        "Cesare Stefanini",
-        "Gang Zheng"
-      ],
-      "source_homepage": "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=7083369",
-      "keyword_hits": [],
-      "relevance_score": 0,
-      "cited_by_count": 0,
-      "primary_topic": "Dynamics and Control of Mechanical Systems",
-      "concepts": [
-        "Kinematics",
-        "Robot",
-        "Computer science",
-        "Control theory (sociology)",
-        "Energy (signal processing)",
-        "Work (physics)"
-      ],
-      "oa_url": "",
-      "oa_status": "closed",
-      "direction": "机械臂操控",
-      "method_tags": [],
-      "overview_sentence": "Continuum robots, inspired by octopus arms and elephant trunks, combine dexterity with intrinsic compliance, making them well suited for unstructured and confined environments.",
-      "note": {
-        "overview": "这篇工作首先强调：Continuum robots, inspired by octopus arms and elephant trunks, combine dexterity with intrinsic compliance, making them well suited for unstructured and confined environments.",
-        "method": "方法线上更接近 该方向常见技术。We propose the Lightweight Actuation-Space Energy Modeling (LASEM) framework for cable-driven continuum robots, which formulates actuation potential energy directly in actuation space.",
-        "application": "更偏向抓取、装配、接触丰富操作等真实机械臂任务。",
-        "reading": "建议先看我整理的小文，再决定是否跳原文。"
-      },
-      "slug": "paper-08-lightweight-kinematic-and-static-modeling-of-cable-driven-continuum-robo",
-      "detail_relpath": "daily/2026-04-14/papers/paper-08-lightweight-kinematic-and-static-modeling-of-cable-driven-continuum-robo.html"
-    },
-    {
-      "type": "paper",
-      "title": "Design and Implementation of an Uncrewed Aerial-Aquatic Vehicle With Antenna Retractor",
-      "venue": "IEEE Robotics and Automation Letters",
-      "published": "2026-05",
-      "doi": "10.1109/lra.2026.3669797",
-      "url": "https://doi.org/10.1109/lra.2026.3669797",
-      "abstract": "Uncrewed aerial-aquatic vehicles (UAAVs) can operate in both aerial and aquatic domains and repeatedly cross domains, thereby presenting considerable application prospects. This letter introduces ‘Diving Hawk-2 (DH-2),’ a forward-tilting coaxial three-axis six-rotor uncrewed aerial-aquatic vehicle (UAAV) that solves the persistent problem of real-time communication for submerged vehicles via an antenna retractor. We detail the vehicle's mechanical and control co-design, which ensures multi-domain agility without actuator redundancy. Experimental results from field trials in polar, lake, and high visibility pool environments confirm both the system's capability for real-time information transmission and control during underwater locomotion, and the vehicle's ability to perform repeatable, cross-domain transitions with stable multi-mode locomotion. The DH-2 platform, with its high modularity, offers a practical and replicable model for future research in real-time control of UAAVs.",
-      "authors": [
-        "Zikun Zhen",
-        "Yunhua Jiang",
-        "Zhihui Zou",
-        "Zhenglin Li"
-      ],
-      "source_homepage": "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=7083369",
-      "keyword_hits": [],
-      "relevance_score": 0,
-      "cited_by_count": 0,
-      "primary_topic": "Underwater Vehicles and Communication Systems",
-      "concepts": [
-        "Visibility",
-        "Actuator",
-        "Antenna (radio)",
-        "Computer science",
-        "Transmission (telecommunications)",
-        "Engineering"
-      ],
-      "oa_url": "",
-      "oa_status": "closed",
-      "direction": "足式与人形运动",
-      "method_tags": [],
-      "overview_sentence": "Uncrewed aerial-aquatic vehicles (UAAVs) can operate in both aerial and aquatic domains and repeatedly cross domains, thereby presenting considerable application prospects.",
-      "note": {
-        "overview": "这篇工作首先强调：Uncrewed aerial-aquatic vehicles (UAAVs) can operate in both aerial and aquatic domains and repeatedly cross domains, thereby presenting considerable application prospects.",
-        "method": "方法线上更接近 该方向常见技术。Uncrewed aerial-aquatic vehicles (UAAVs) can operate in both aerial and aquatic domains and repeatedly cross domains, thereby presenting considerable application prospects.",
-        "application": "更适合行走、跑跳、抗扰和平衡恢复等运动控制问题。",
-        "reading": "建议先看我整理的小文，再决定是否跳原文。"
-      },
-      "slug": "paper-09-design-and-implementation-of-an-uncrewed-aerial-aquatic-vehicle-with-ant",
-      "detail_relpath": "daily/2026-04-14/papers/paper-09-design-and-implementation-of-an-uncrewed-aerial-aquatic-vehicle-with-ant.html"
-    },
-    {
-      "type": "paper",
-      "title": "A Bi-Directional Adaptive Framework for Agile UAV Landing",
-      "venue": "IEEE Robotics and Automation Letters",
-      "published": "2026-05",
-      "doi": "10.1109/lra.2026.3671567",
-      "url": "https://doi.org/10.1109/lra.2026.3671567",
-      "abstract": "Autonomous landing on mobile platforms is crucial for extending quadcopter operational flexibility, yet conventional methods are often too inefficient for highly dynamic scenarios. The core limitation lies in the prevalent “track-then-descend” paradigm, which treats the platform as a passive target and forces the quadcopter to perform complex, sequential maneuvers. This paper challenges that paradigm by introducing a bi-directional cooperative landing framework that redefines the roles of the vehicle and the platform. The essential innovation is transforming the problem from a single-agent tracking challenge into a coupled system optimization. Our key insight is that the mobile platform is not merely a target, but an active agent in the landing process. It proactively tilts its surface to create an optimal, stable terminal attitude for the approaching quadcopter. This active cooperation fundamentally breaks the sequential model by parallelizing the alignment and descent phases. Concurrently, the quadcopter's planning pipeline focuses on generating a time-optimal and dynamically feasible trajectory that minimizes energy consumption. This bi-directional coordination allows the system to execute the recovery in an agile manner, characterized by aggressive trajectory tracking and rapid state synchronization within transient windows. The framework's effectiveness, validated in dynamic scenarios, significantly improves the efficiency, precision, and robustness of autonomous quadrotor recovery in complex and time-constrained missions.",
-      "authors": [
-        "Chunhui Zhao",
-        "Xirui Kao",
-        "Yilin Lu",
-        "Yang Lyu"
-      ],
-      "source_homepage": "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=7083369",
-      "keyword_hits": [],
-      "relevance_score": 0,
-      "cited_by_count": 0,
-      "primary_topic": "Robotic Path Planning Algorithms",
-      "concepts": [
-        "Quadcopter",
-        "Agile software development",
-        "Robustness (evolution)",
-        "Computer science",
-        "Trajectory",
-        "Control engineering"
-      ],
-      "oa_url": "https://arxiv.org/pdf/2601.03037",
-      "oa_status": "green",
-      "direction": "导航与规划",
-      "method_tags": [
-        "约束建模"
-      ],
-      "overview_sentence": "Autonomous landing on mobile platforms is crucial for extending quadcopter operational flexibility, yet conventional methods are often too inefficient for highly dynamic scenarios.",
-      "note": {
-        "overview": "这篇工作首先强调：Autonomous landing on mobile platforms is crucial for extending quadcopter operational flexibility, yet conventional methods are often too inefficient for highly dynamic scenarios.",
-        "method": "方法线上更接近 约束建模。Autonomous landing on mobile platforms is crucial for extending quadcopter operational flexibility, yet conventional methods are often too inefficient for highly dynamic scenarios.",
-        "application": "更适合长时序任务编排、复杂场景导航和系统级决策。",
-        "reading": "有开放获取入口，手机深读成本相对更低。"
-      },
-      "slug": "paper-10-a-bi-directional-adaptive-framework-for-agile-uav-landing",
-      "detail_relpath": "daily/2026-04-14/papers/paper-10-a-bi-directional-adaptive-framework-for-agile-uav-landing.html"
+      "slug": "paper-05-visual-sculpting-visually-aligned-planning-representations-for-long-hori",
+      "detail_relpath": "daily/2026-04-14/papers/paper-05-visual-sculpting-visually-aligned-planning-representations-for-long-hori.html"
     }
   ],
-  "repos": [],
+  "repos": [
+    {
+      "type": "repo",
+      "repo": "BoosterRobotics/booster_gym",
+      "url": "https://github.com/BoosterRobotics/booster_gym",
+      "description": "Booster Gym is a reinforcement learning (RL) framework designed for humanoid robot locomotion developed by Booster Robotics.",
+      "language": "Python",
+      "total_stars": "267",
+      "forks": "50",
+      "stars_today": "0",
+      "source_kind": "research_pick",
+      "search_label": "人形与足式控制",
+      "readme_excerpt": "Booster Gym ** News **: We now provide a new RL pipeline supporting K1 robot! Booster Train trains a set of reinforcement learning tasks for Booster robots using Isaac Lab . Booster Deploy provides an easy-to-use deployment framework that enables seamlessly running the same policy code in both simulation and on real robots. Booster Assets provides Booster robot descriptions and example motion data. Booster Gym is a reinforcement learning (RL) framework designed for humanoid robot locomotion developed by Booster Robotics . Features Complete Training-to-Deployment Pipeline : Full support for training, evaluating, and deploying policies in simulation and on real robots. Sim-to-Real Transfer : Including effective settings and techniques to minimize the sim-to-real gap and improve policy generalization. Customizable Environments and Algorithms : Easily modify environments and RL algorithms to suit a wide range of tasks. Out-of-the-Box Booster T1 Support : Pre-configured for quick setup and deployment on the Booster T1 robot. Overview The framework supports the following stages for reinforcement learning: Training : Train reinforcement learning policies using Isaac Gym with parallelized…",
+      "topics": [],
+      "relevance_score": 26,
+      "keyword_hits": [
+        "robot",
+        "robotics",
+        "locomotion",
+        "humanoid",
+        "simulation",
+        "isaac",
+        "reinforcement",
+        "rl",
+        "policy"
+      ],
+      "relevance_label": "直接相关",
+      "use_mode": "工具链/基础设施",
+      "domain": "机器人中间件/系统集成",
+      "note": {
+        "summary_cn": "这是一个偏机器人中间件/系统集成的开源仓库，更像工具链/基础设施。",
+        "overview": "这是一个偏“机器人中间件/系统集成”的仓库，从公开描述看更像工具链/基础设施。核心关键词包括：暂无明确 topic。",
+        "why_trending": "这不是当天最热的全站 Trending，但它更贴近机器人研究主线，被作为研究向补位推荐。",
+        "robotics_value": "对机器人研究是可直接复用的主线资源。",
+        "integration": "使用姿势上，建议先把它当作“工具链/基础设施”来看，重点关注它能不能进入你的训练、仿真、规划或系统集成链路。",
+        "reading": "先看小文里的定位、可复用模块和接入位置，再决定要不要进 GitHub 深挖。"
+      },
+      "slug": "repo-01-boosterrobotics-booster-gym",
+      "detail_relpath": "daily/2026-04-14/repos/repo-01-boosterrobotics-booster-gym.html"
+    },
+    {
+      "type": "repo",
+      "repo": "luckyrobots/luckyrobots",
+      "url": "https://github.com/luckyrobots/luckyrobots",
+      "description": "Python SDK for LuckyEngine robotics simulation. Contribute to luckyrobots/luckyrobots development by creating an account on GitHub.",
+      "language": "Python",
+      "total_stars": "253",
+      "forks": "14",
+      "stars_today": "0",
+      "source_kind": "research_pick",
+      "search_label": "仿真与 sim2real",
+      "readme_excerpt": "Infinite synthetic data generation for embodied AI luck-e.mp4 Lucky Robots Hyperrealistic robotics simulation framework with Python API for embodied AI training and testing. Quick Start Download LuckyEngine from our releases page and set the path: # Set environment variable (choose one method): # Method 1: Set LUCKYENGINE_PATH directly to the executable export LUCKYENGINE_PATH=/path/to/LuckyEngine # Linux/Mac export LUCKYENGINE_PATH=/path/to/LuckyEngine.exe # Windows # Method 2: Set LUCKYENGINE_HOME to the directory containing the executable export LUCKYENGINE_HOME=/path/to/luckyengine/directory Install pip install luckyrobots Run Example git clone https://github.com/luckyrobots/luckyrobots.git cd luckyrobots/examples python controller.py --skip-launch # If LuckyEngine is already running Basic Usage Low-level client (direct gRPC) from luckyrobots import LuckyEngineClient client = LuckyEngineClient ( host = \"127.0.0.1\" , port = 50051 , robot_name = \"unitreego2\" ) client . wait_for_server () # RL step: send action, get observation obs = client . step ( actions = [ 0.0 ] * 12 ) print ( f\"Observation: { obs . observation [: 5 ] } ...\" ) # Or separately: client . send_control ( control…",
+      "topics": [
+        "mujoco",
+        "robotics-simulation",
+        "sim2real",
+        "system-id"
+      ],
+      "relevance_score": 25,
+      "keyword_hits": [
+        "robot",
+        "robotics",
+        "embodied",
+        "simulation",
+        "sim2real",
+        "mujoco",
+        "control",
+        "rl"
+      ],
+      "relevance_label": "直接相关",
+      "use_mode": "工具链/基础设施",
+      "domain": "仿真平台或训练环境",
+      "note": {
+        "summary_cn": "这是一个偏仿真平台或训练环境的开源仓库，更像工具链/基础设施。",
+        "overview": "这是一个偏“仿真平台或训练环境”的仓库，从公开描述看更像工具链/基础设施。核心关键词包括：mujoco, robotics-simulation, sim2real。",
+        "why_trending": "这不是当天最热的全站 Trending，但它更贴近机器人研究主线，被作为研究向补位推荐。",
+        "robotics_value": "对机器人研究是可直接复用的主线资源。",
+        "integration": "使用姿势上，建议先把它当作“工具链/基础设施”来看，重点关注它能不能进入你的训练、仿真、规划或系统集成链路。",
+        "reading": "先看小文里的定位、可复用模块和接入位置，再决定要不要进 GitHub 深挖。"
+      },
+      "slug": "repo-02-luckyrobots-luckyrobots",
+      "detail_relpath": "daily/2026-04-14/repos/repo-02-luckyrobots-luckyrobots.html"
+    },
+    {
+      "type": "repo",
+      "repo": "rohanpsingh/LearningHumanoidWalking",
+      "url": "https://github.com/rohanpsingh/LearningHumanoidWalking",
+      "description": "Training a humanoid robot for locomotion using Reinforcement Learning",
+      "language": "Python",
+      "total_stars": "1112",
+      "forks": "130",
+      "stars_today": "0",
+      "source_kind": "research_pick",
+      "search_label": "人形与足式控制",
+      "readme_excerpt": "LearningHumanoidWalking Code for the papers: Robust Humanoid Walking on Compliant and Uneven Terrain with Deep Reinforcement Learning Rohan P. Singh , Mitsuharu Morisawa , Mehdi Benallegue , Zhaoming Xie , Fumio Kanehiro Learning Bipedal Walking for Humanoids with Current Feedback Rohan P. Singh , Zhaoming Xie , Pierre Gergondet , Fumio Kanehiro Learning Bipedal Walking On Planned Footsteps For Humanoid Robots Rohan P. Singh , Mehdi Benallegue , Mitsuharu Morisawa , Rafael Cisneros , Fumio Kanehiro Code structure: A rough outline for the repository that might be useful for adding your own robot: LearningHumanoidWalking/ ├── envs/ <-- Environment implementations │ ├── common/ │ │ ├── base_humanoid_env.py <-- Base class for all humanoid environments │ │ ├── mujoco_env.py <-- MuJoCo simulation wrapper │ │ └── robot_interface.py <-- Robot state/control abstraction │ ├── jvrc/ <-- JVRC robot environments │ └── h1/ <-- Unitree H1 robot environment ├── tasks/ <-- Task definitions (rewards, termination) ├── rl/ <-- Reinforcement learning ├── robots/ <-- Robot abstractions (PD control, stepping logic) ├── models/ <-- MuJoCo model files └── tests/ <-- Test suite Key abstractions: BaseHumano…",
+      "topics": [
+        "reinforcement-learning",
+        "humanoids",
+        "cassie",
+        "mujoco",
+        "ppo",
+        "bipedal-robots",
+        "jvrc-1"
+      ],
+      "relevance_score": 21,
+      "keyword_hits": [
+        "robot",
+        "locomotion",
+        "humanoid",
+        "simulation",
+        "mujoco",
+        "control",
+        "reinforcement",
+        "rl"
+      ],
+      "relevance_label": "直接相关",
+      "use_mode": "工程灵感源",
+      "domain": "机器人中间件/系统集成",
+      "note": {
+        "summary_cn": "这是一个偏机器人中间件/系统集成的开源仓库，更像工程灵感源。",
+        "overview": "这是一个偏“机器人中间件/系统集成”的仓库，从公开描述看更像工程灵感源。核心关键词包括：reinforcement-learning, humanoids, cassie。",
+        "why_trending": "这不是当天最热的全站 Trending，但它更贴近机器人研究主线，被作为研究向补位推荐。",
+        "robotics_value": "对机器人研究是可直接复用的主线资源。",
+        "integration": "使用姿势上，建议先把它当作“工程灵感源”来看，重点关注它能不能进入你的训练、仿真、规划或系统集成链路。",
+        "reading": "先看小文里的定位、可复用模块和接入位置，再决定要不要进 GitHub 深挖。"
+      },
+      "slug": "repo-03-rohanpsingh-learninghumanoidwalking",
+      "detail_relpath": "daily/2026-04-14/repos/repo-03-rohanpsingh-learninghumanoidwalking.html"
+    },
+    {
+      "type": "repo",
+      "repo": "manumerous/wb_humanoid_mpc",
+      "url": "https://github.com/manumerous/wb_humanoid_mpc",
+      "description": "Whole-Body Nonlinear MPC for Realtime Humanoid Loco-Manipulation Planning and Control",
+      "language": "C++",
+      "total_stars": "290",
+      "forks": "61",
+      "stars_today": "0",
+      "source_kind": "research_pick",
+      "search_label": "人形与足式控制",
+      "readme_excerpt": "Whole-Body Humanoid MPC This repository contains a Whole-Body Nonlinear Model Predictive Controller (NMPC) for humanoid loco-manipulation control. This approach enables to directly optimize through the full-order torque-level dynamics in realtime to generate a wide range of humanoid behaviors building up on an extended & updated version of ocs2 Interactive Velocity and Base Height Control via Joystick: It contains the following hardware platform agnostic MPC fromulations: Centroidal Dynamics MPC The centroidal MPC optimizes over the whole-body kinematics and the center off mass dynamics, with a choice to either use a single rigid body model or the full centroidal dynamics. This specific approach builds up on the centroidal model in ocs2 by generalizing costs and constraints to a 6 DoF contact among others. I am still working on documenting this. Until then a conscise explanation of the ocs2 centroidal model can be found here Sleiman et. al., A Unified MPC Framework for Whole-Body Dynamic Locomotion and Manipulation Whole-Body Dynamics MPC The whole-body dynamics MPC optimized over the contact forces and joint accelerations with the option to compute the joint torques for each step…",
+      "topics": [
+        "ai",
+        "robotics",
+        "optimization",
+        "nonlinear",
+        "planning",
+        "data-generation",
+        "mpc",
+        "locomotion",
+        "walking",
+        "humanoid-robot"
+      ],
+      "relevance_score": 21,
+      "keyword_hits": [
+        "robot",
+        "robotics",
+        "locomotion",
+        "humanoid",
+        "manipulation",
+        "planning",
+        "control"
+      ],
+      "relevance_label": "直接相关",
+      "use_mode": "工具链/基础设施",
+      "domain": "运动规划与执行",
+      "note": {
+        "summary_cn": "这是一个偏运动规划与执行的开源仓库，更像工具链/基础设施。",
+        "overview": "这是一个偏“运动规划与执行”的仓库，从公开描述看更像工具链/基础设施。核心关键词包括：ai, robotics, optimization。",
+        "why_trending": "这不是当天最热的全站 Trending，但它更贴近机器人研究主线，被作为研究向补位推荐。",
+        "robotics_value": "对机器人研究是可直接复用的主线资源。",
+        "integration": "使用姿势上，建议先把它当作“工具链/基础设施”来看，重点关注它能不能进入你的训练、仿真、规划或系统集成链路。",
+        "reading": "先看小文里的定位、可复用模块和接入位置，再决定要不要进 GitHub 深挖。"
+      },
+      "slug": "repo-04-manumerous-wb-humanoid-mpc",
+      "detail_relpath": "daily/2026-04-14/repos/repo-04-manumerous-wb-humanoid-mpc.html"
+    },
+    {
+      "type": "repo",
+      "repo": "allenai/MolmoBot",
+      "url": "https://github.com/allenai/MolmoBot",
+      "description": "Code and website for \"MolmoB0T: Large-Scale Simulation Enables Zero-Shot Manipulation\".",
+      "language": "Python",
+      "total_stars": "58",
+      "forks": "10",
+      "stars_today": "0",
+      "source_kind": "research_pick",
+      "search_label": "仿真与 sim2real",
+      "readme_excerpt": "Large-Scale Simulation Enables Zero-Shot Manipulation Code and website for \"MolmoB0T: Large-Scale Simulation Enables Zero-Shot Manipulation\". Getting started MolmoBot policies have strong demonstrated sim-to-real transfer to a wide variety of novel scenes, objects, and camera viewpoints. Try it out for yourself on your DROID platform with MolmoBot-DROID! MolmoBot-DROID uses only the wrist camera and 1 exo camera. Don't worry about camera placement, MolmoBot policies are robust to arbitrary camera viewpoints! Trying it out in simulation See here to try out MolmoBot interactively! Modify the scene and task to test policy behavior. Set up and run MolmoBot-DROID Set up MolmoBot-DROID by following the installation instructions . See these instructions for detailed instructions on setting up and running the policy on your DROID! Any existing DROID or polymetis setups will work easily. Briefly, after starting the polymetis robot and gripper servers: # In one terminal cd MolmoBot/MolmoBot source .venv/bin/activate PYTHONPATH=. python launch_scripts/serve_molmo.py --hf-repo allenai/MolmoBot-DROID --action-type joint_pos # in another terminal cd MolmoBot/robot_eval conda activate molmobot p…",
+      "topics": [
+        "robotics",
+        "simulation",
+        "manipulation",
+        "sim2real",
+        "mobile-manipulation"
+      ],
+      "relevance_score": 20,
+      "keyword_hits": [
+        "robot",
+        "robotics",
+        "simulation",
+        "sim2real",
+        "manipulation",
+        "policy"
+      ],
+      "relevance_label": "直接相关",
+      "use_mode": "工程灵感源",
+      "domain": "仿真平台或训练环境",
+      "note": {
+        "summary_cn": "这是一个偏仿真平台或训练环境的开源仓库，更像工程灵感源。",
+        "overview": "这是一个偏“仿真平台或训练环境”的仓库，从公开描述看更像工程灵感源。核心关键词包括：robotics, simulation, manipulation。",
+        "why_trending": "这不是当天最热的全站 Trending，但它更贴近机器人研究主线，被作为研究向补位推荐。",
+        "robotics_value": "对机器人研究是可直接复用的主线资源。",
+        "integration": "使用姿势上，建议先把它当作“工程灵感源”来看，重点关注它能不能进入你的训练、仿真、规划或系统集成链路。",
+        "reading": "先看小文里的定位、可复用模块和接入位置，再决定要不要进 GitHub 深挖。"
+      },
+      "slug": "repo-05-allenai-molmobot",
+      "detail_relpath": "daily/2026-04-14/repos/repo-05-allenai-molmobot.html"
+    },
+    {
+      "type": "repo",
+      "repo": "iit-DLSLab/sim2real-robot-identification",
+      "url": "https://github.com/iit-DLSLab/sim2real-robot-identification",
+      "description": "A joints calibration routine for quadrupeds to facilitate sim-to-real transfer from isaaclab and mujoco to real robots",
+      "language": "Python",
+      "total_stars": "15",
+      "forks": "0",
+      "stars_today": "0",
+      "source_kind": "research_pick",
+      "search_label": "仿真与 sim2real",
+      "readme_excerpt": "Overwiew A joint calibration routine for IsaacLab and Mujoco, to estimate leg motor parameters. It provides scripts for data collection on the real robot (the robot should be in the air with the base fixed). This repo interfaces directly with Pace and the new sys-id functionality of Mujoco. Work in progress for supporting mujoco identification, PRs are very welcome! Run a collection This repo works best with unitree-ros2-dls for communicating with unitree go2, b2, a2, and z1 robots. Soon, will support agilex piper arms using piper-ros2-dls2 . Choose the robot and the gains in the config file Runs one of the following files python3 run_collection_quadruped_ros2.py python3 run_collection_manipulator_ros2.py modifying inside USE_MUJOCO_RENDER and USE_MUJOCO_SIMULATION depending on your usecase Visualize your trajectory runnining python3 datasets/replay_dataset_quadruped.py python3 datasets/replay_dataset_manipulator.py Run a calibration in IsaacLab python3 sysid_isaaclab/my_fit.py --headless Maintainer This repository is maintained by Giulio Turrisi .",
+      "topics": [
+        "reinforcement-learning",
+        "simulation",
+        "quadruped",
+        "mujoco",
+        "sim-to-real",
+        "isaaclab"
+      ],
+      "relevance_score": 20,
+      "keyword_hits": [
+        "robot",
+        "simulation",
+        "sim2real",
+        "ros2",
+        "mujoco",
+        "reinforcement",
+        "dataset"
+      ],
+      "relevance_label": "直接相关",
+      "use_mode": "基准/数据资源",
+      "domain": "机器人中间件/系统集成",
+      "note": {
+        "summary_cn": "这是一个偏机器人中间件/系统集成的开源仓库，更像基准/数据资源。",
+        "overview": "这是一个偏“机器人中间件/系统集成”的仓库，从公开描述看更像基准/数据资源。核心关键词包括：reinforcement-learning, simulation, quadruped。",
+        "why_trending": "这不是当天最热的全站 Trending，但它更贴近机器人研究主线，被作为研究向补位推荐。",
+        "robotics_value": "对机器人研究是可直接复用的主线资源。",
+        "integration": "使用姿势上，建议先把它当作“基准/数据资源”来看，重点关注它能不能进入你的训练、仿真、规划或系统集成链路。",
+        "reading": "先看小文里的定位、可复用模块和接入位置，再决定要不要进 GitHub 深挖。"
+      },
+      "slug": "repo-06-iit-dlslab-sim2real-robot-identification",
+      "detail_relpath": "daily/2026-04-14/repos/repo-06-iit-dlslab-sim2real-robot-identification.html"
+    },
+    {
+      "type": "repo",
+      "repo": "AbhijeetRathi12/Vision-Grasping-Robot-or-Robotic-Conveyor-Sorting",
+      "url": "https://github.com/AbhijeetRathi12/Vision-Grasping-Robot-or-Robotic-Conveyor-Sorting",
+      "description": "A robotic manipulation framework integrating YOLO object detection and GRConvNet-based grasp planning to perform real-time sorting of objects on conveyor belts in warehouse environments.",
+      "language": "Python",
+      "total_stars": "7",
+      "forks": "0",
+      "stars_today": "0",
+      "source_kind": "research_pick",
+      "search_label": "机械臂与抓取",
+      "readme_excerpt": "Vision-Based Robotic Manipulation: Pick-and-Place from Moving Conveyors This project develops a robotic system for precise pick-and-place operations on moving conveyor belts, focusing on dynamic and cluttered environments. A dual-camera setup ensures reliable object detection, tracking, and grasping using fine-tuned algorithms and real-time control. Key Features Dual-Camera System : Overhead camera for initial object detection and tracking. Eye-in-hand camera for position correction near the grasp point. Algorithmic Integration : YOLO : Object detection fine-tuned on YCB dataset. GRConvNet : Grasp synthesis with RGB-D inputs for real-time grasp generation. Dynamic Control Loop : Real-time end-effector adjustments based on object position updates and grasp planning. Implementation Object Detection : Overhead camera detects objects and tracks their movement. In-hand camera refines object positions for final grasp. Grasp Planning : GRConvNet generates grasp parameters, including position, angle, and gripper width. Motion Control : MoveIt framework handles manipulator movement and end-effector adjustments. End-to-End Process : Objects are detected, tracked, re-evaluated dynamically, g…",
+      "topics": [],
+      "relevance_score": 20,
+      "keyword_hits": [
+        "robot",
+        "grasp",
+        "moveit",
+        "manipulation",
+        "planning",
+        "control",
+        "dataset",
+        "vision"
+      ],
+      "relevance_label": "直接相关",
+      "use_mode": "工具链/基础设施",
+      "domain": "运动规划与执行",
+      "note": {
+        "summary_cn": "这是一个偏运动规划与执行的开源仓库，更像工具链/基础设施。",
+        "overview": "这是一个偏“运动规划与执行”的仓库，从公开描述看更像工具链/基础设施。核心关键词包括：暂无明确 topic。",
+        "why_trending": "这不是当天最热的全站 Trending，但它更贴近机器人研究主线，被作为研究向补位推荐。",
+        "robotics_value": "对机器人研究是可直接复用的主线资源。",
+        "integration": "使用姿势上，建议先把它当作“工具链/基础设施”来看，重点关注它能不能进入你的训练、仿真、规划或系统集成链路。",
+        "reading": "先看小文里的定位、可复用模块和接入位置，再决定要不要进 GitHub 深挖。"
+      },
+      "slug": "repo-07-abhijeetrathi12-vision-grasping-robot-or-robotic-conveyor-sorting",
+      "detail_relpath": "daily/2026-04-14/repos/repo-07-abhijeetrathi12-vision-grasping-robot-or-robotic-conveyor-sorting.html"
+    },
+    {
+      "type": "repo",
+      "repo": "LeCAR-Lab/dial-mpc",
+      "url": "https://github.com/LeCAR-Lab/dial-mpc",
+      "description": "Official implementation for the paper \"Full-Order Sampling-Based MPC for Torque-Level Locomotion Control via Diffusion-Style Annealing\". DIAL-MPC is a novel sampling-based MPC framework for legged robot full-order torque-level control with both precision and agility in a training-free manner.",
+      "language": "Python",
+      "total_stars": "955",
+      "forks": "99",
+      "stars_today": "0",
+      "source_kind": "research_pick",
+      "search_label": "人形与足式控制",
+      "readme_excerpt": "DIAL-MPC: Diffusion-Inspired Annealing For Legged MPC ICRA 2025, Best Paper Finalist [Website] [PDF] [Arxiv] This repository contains the code (simulation and real-world experiments with minimum setup) for the paper \"Full-Order Sampling-Based MPC for Torque-Level Locomotion Control via Diffusion-Style Annealing\". DIAL-MPC is a sampling-based MPC framework for legged robot full-order torque-level control with both precision and agility in a training-free manner. DIAL-MPC is designed to be simple and flexible, with minimal requirements for specific reward design and dynamics model. It directly samples and rolls out in physics-based simulations ( Brax ) and does not require reduced-order modeling, linearization, convexification, or predefined contact sequences. That means you can test out the controller in a plug-and-play manner with minimum setup. News 05/19/2025: 🫰 New demo for ball-spinning on finger can be run with dial-mpc --example allegro_reorient . 04/24/2025: 🎉 DIAL-MPC made into the best paper final list of ICRA 2025. 11/03/2024: 🎉 Sim2Real pipeline is ready! Check out the Sim2Real section for more details. 09/25/2024: 🎉 DIAL-MPC is released with open-source codes! Sim2Real…",
+      "topics": [
+        "mpc",
+        "optimal-control",
+        "diffusion",
+        "humanoid",
+        "legged-robots",
+        "quadruped",
+        "online-control",
+        "sampling-based-control"
+      ],
+      "relevance_score": 19,
+      "keyword_hits": [
+        "robot",
+        "locomotion",
+        "humanoid",
+        "simulation",
+        "sim2real",
+        "control"
+      ],
+      "relevance_label": "直接相关",
+      "use_mode": "工具链/基础设施",
+      "domain": "机器人中间件/系统集成",
+      "note": {
+        "summary_cn": "这是一个偏机器人中间件/系统集成的开源仓库，更像工具链/基础设施。",
+        "overview": "这是一个偏“机器人中间件/系统集成”的仓库，从公开描述看更像工具链/基础设施。核心关键词包括：mpc, optimal-control, diffusion。",
+        "why_trending": "这不是当天最热的全站 Trending，但它更贴近机器人研究主线，被作为研究向补位推荐。",
+        "robotics_value": "对机器人研究是可直接复用的主线资源。",
+        "integration": "使用姿势上，建议先把它当作“工具链/基础设施”来看，重点关注它能不能进入你的训练、仿真、规划或系统集成链路。",
+        "reading": "先看小文里的定位、可复用模块和接入位置，再决定要不要进 GitHub 深挖。"
+      },
+      "slug": "repo-08-lecar-lab-dial-mpc",
+      "detail_relpath": "daily/2026-04-14/repos/repo-08-lecar-lab-dial-mpc.html"
+    }
+  ],
   "errors": [],
   "daily_relpath": "daily/2026-04-14/index.html"
 }
