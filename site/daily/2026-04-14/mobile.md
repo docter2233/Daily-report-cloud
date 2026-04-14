@@ -10,12 +10,12 @@
 - 理论: 公开摘要没有展开完整公式，但可以确认作者的理论抓手主要围绕策略或控制律、生成式序列建模。
 - 实验: 含仿真实验；在公开基准或数据集上评估。
 - 小文: [手机解读](https://docter2233.github.io/Daily-report-cloud/daily/2026-04-14/papers/paper-01-affordsim-a-scalable-data-generator-and-benchmark-for-affordance-aware-r.html) | [合法入口](https://arxiv.org/pdf/2604.11674v1)
-2. Multi-robot navigation in social mini-games: definitions, taxonomy, and algorithms
-- 主旨: 这篇论文关注导航规划与场景决策，方法路线偏向约束建模。
-- 方法: 方法上，这篇工作更接近约束建模路线，但公开摘要没有把实现细节展开到可直接复现的程度。
-- 理论: 公开摘要没有展开完整公式，但可以确认作者的理论抓手主要围绕目标函数或损失设计、约束建模。
-- 实验: 摘要没有展开完整实验表，但可以确认作者至少做了方法有效性验证。
-- 小文: [手机解读](https://docter2233.github.io/Daily-report-cloud/daily/2026-04-14/papers/paper-02-multi-robot-navigation-in-social-mini-games-definitions-taxonomy-and-alg.html) | [合法入口](https://link.springer.com/content/pdf/10.1007/s10514-026-10251-w.pdf)
+2. Diffusion-Based mmWave Radar Point Cloud Enhancement Driven by Range Images
+- 主旨: 这篇论文关注雷达感知与点云增强，方法路线偏向扩散模型、检索增强、几何/深度估计。
+- 方法: 方法上，这篇工作更接近扩散模型、检索增强、几何/深度估计路线，但公开摘要没有把实现细节展开到可直接复现的程度。
+- 理论: 公开摘要没有展开完整公式，但可以确认作者的理论抓手主要围绕状态表征或世界模型、生成式序列建模。
+- 实验: 在公开基准或数据集上评估。
+- 小文: [手机解读](https://docter2233.github.io/Daily-report-cloud/daily/2026-04-14/papers/paper-02-diffusion-based-mmwave-radar-point-cloud-enhancement-driven-by-range-ima.html) | [合法入口](https://doi.org/10.1109/lra.2026.3673977)
 
 ## GitHub 项目
 

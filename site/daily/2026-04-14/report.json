@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-04-14T13:27:56+08:00",
+  "generated_at": "2026-04-14T13:43:19+08:00",
   "reference_date": "2026-04-14",
-  "window_start": "2026-04-05",
+  "window_start": "2026-04-14",
   "timezone": "Asia/Shanghai",
   "papers": [
     {
@@ -50,53 +50,6 @@
     },
     {
       "type": "paper",
-      "title": "Multi-robot navigation in social mini-games: definitions, taxonomy, and algorithms",
-      "venue": "Autonomous Robots",
-      "published": "2026-06",
-      "doi": "10.1007/s10514-026-10251-w",
-      "url": "https://doi.org/10.1007/s10514-026-10251-w",
-      "abstract": "Abstract The “Last Mile Challenge” has long been considered an important, yet unsolved, challenge for autonomous vehicles, public service robots, and delivery robots. A central issue in this challenge is the ability of robots to navigate constrained and cluttered environments that have high agency (e.g., doorways, hallways, corridor intersections), often while competing for space with other robots and humans. We refer to these environments as “Social Mini-Games” (SMGs). Traditional navigation approaches designed for MRN do not perform well in SMGs, which has led to focused research on dedicated SMG solvers. However, publications on SMG navigation research make different assumptions (on centralized versus decentralized, observability, communication, cooperation, etc.), and have different objective functions (safety versus liveness). These assumptions and objectives are sometimes implicitly assumed or described informally. This makes it difficult to establish appropriate baselines for comparison in research papers, as well as making it difficult for practitioners to find the papers relevant to their concrete application. Such ad-hoc representation of the field also presents a barrier to new researchers wanting to start research in this area. SMG navigation research requires its own taxonomy, definitions, and evaluation protocols to guide effective research moving forward. This survey is the first to catalog SMG solvers using a well-defined and unified taxonomy and to classify existing methods accordingly. It also discusses the essential properties of SMG solvers, defines what SMGs are and how they appear in practice, outlines how to evaluate SMG solvers, and highlights the differences between SMG solvers and general navigation systems. The survey concludes with an overview of future directions and open challenges in the field. Our project is open-sourced at https://socialminigames.github.io/ .",
-      "source_homepage": "https://link.springer.com/journal/10514",
-      "keyword_hits": [
-        "navigation",
-        "robot"
-      ],
-      "relevance_score": 4,
-      "cited_by_count": 0,
-      "primary_topic": "Robotic Path Planning Algorithms",
-      "concepts": [
-        "Computer science",
-        "Field (mathematics)",
-        "Representation (politics)",
-        "Agency (philosophy)",
-        "Robot",
-        "Taxonomy (biology)"
-      ],
-      "oa_url": "https://link.springer.com/content/pdf/10.1007/s10514-026-10251-w.pdf",
-      "pdf_url": "https://link.springer.com/content/pdf/10.1007/s10514-026-10251-w.pdf",
-      "oa_status": "hybrid",
-      "direction": "导航与规划",
-      "focus": "导航规划与场景决策",
-      "method_tags": [
-        "约束建模"
-      ],
-      "overview_sentence": "Abstract The “Last Mile Challenge” has long been considered an important, yet unsolved, challenge for autonomous vehicles, public service robots, and delivery robots.",
-      "note": {
-        "summary_cn": "这篇论文关注导航规划与场景决策，方法路线偏向约束建模。",
-        "overview": "主旨上，这篇论文主要落在“导航与规划”方向，更具体地说是在处理导航规划与场景决策。",
-        "method": "方法上，这篇工作更接近约束建模路线，但公开摘要没有把实现细节展开到可直接复现的程度。",
-        "theory": "公开摘要没有展开完整公式，但可以确认作者的理论抓手主要围绕目标函数或损失设计、约束建模。",
-        "experiment": "摘要没有展开完整实验表，但可以确认作者至少做了方法有效性验证。",
-        "result": "结果层面，摘要声称方法在指标或任务完成度上有明显提升。",
-        "application": "更适合长时序任务编排、复杂场景导航和系统级决策。",
-        "reading": "建议先看小文中的主旨、方法和实验，再决定是否进入原文或 PDF。",
-        "access": "已找到合法开放 PDF，可直接从详情页跳转。"
-      },
-      "slug": "paper-02-multi-robot-navigation-in-social-mini-games-definitions-taxonomy-and-alg",
-      "detail_relpath": "daily/2026-04-14/papers/paper-02-multi-robot-navigation-in-social-mini-games-definitions-taxonomy-and-alg.html"
-    },
-    {
-      "type": "paper",
       "title": "Diffusion-Based mmWave Radar Point Cloud Enhancement Driven by Range Images",
       "venue": "IEEE Robotics and Automation Letters",
       "published": "2026-05",
@@ -140,50 +93,8 @@
         "reading": "建议先看小文中的主旨、方法和实验，再决定是否进入原文或 PDF。",
         "access": "已找到合法开放获取入口，手机可直接阅读。"
       },
-      "slug": "paper-03-diffusion-based-mmwave-radar-point-cloud-enhancement-driven-by-range-ima",
-      "detail_relpath": "daily/2026-04-14/papers/paper-03-diffusion-based-mmwave-radar-point-cloud-enhancement-driven-by-range-ima.html"
-    },
-    {
-      "type": "paper",
-      "title": "Dual-Stage LiDAR-Inertial SLAM with Hierarchical Dynamic Object Removal in Dynamic Environments",
-      "venue": "Autonomous Robots",
-      "published": "2026-06",
-      "doi": "10.1007/s10514-026-10248-5",
-      "url": "https://doi.org/10.1007/s10514-026-10248-5",
-      "abstract": "",
-      "source_homepage": "https://link.springer.com/journal/10514",
-      "keyword_hits": [],
-      "relevance_score": 0,
-      "cited_by_count": 0,
-      "primary_topic": "Robotics and Sensor-Based Localization",
-      "concepts": [
-        "Computer science",
-        "Ghosting",
-        "Computer vision",
-        "Odometry",
-        "Artificial intelligence",
-        "Simultaneous localization and mapping"
-      ],
-      "oa_url": "https://doi.org/10.1007/s10514-026-10248-5",
-      "pdf_url": "",
-      "oa_status": "closed",
-      "direction": "导航与规划",
-      "focus": "导航规划与场景决策",
-      "method_tags": [],
-      "overview_sentence": "",
-      "note": {
-        "summary_cn": "这篇论文关注导航规划与场景决策，方法路线偏向导航与规划。",
-        "overview": "主旨上，这篇论文主要落在“导航与规划”方向，更具体地说是在处理导航规划与场景决策。",
-        "method": "方法上，这篇工作更接近问题建模 + 感知/控制联合设计路线，但公开摘要没有把实现细节展开到可直接复现的程度。",
-        "theory": "目前只有标题和元数据，无法负责任地还原具体推导，只能保留研究方向判断。",
-        "experiment": "摘要没有展开完整实验表，但可以确认作者至少做了方法有效性验证。",
-        "result": "结果层面，公开摘要没有给出足够细节，适合先把它当作值得复查的候选。",
-        "application": "更适合长时序任务编排、复杂场景导航和系统级决策。",
-        "reading": "建议先看小文中的主旨、方法和实验，再决定是否进入原文或 PDF。",
-        "access": "已找到合法开放获取入口，手机可直接阅读。"
-      },
-      "slug": "paper-04-dual-stage-lidar-inertial-slam-with-hierarchical-dynamic-object-removal",
-      "detail_relpath": "daily/2026-04-14/papers/paper-04-dual-stage-lidar-inertial-slam-with-hierarchical-dynamic-object-removal.html"
+      "slug": "paper-02-diffusion-based-mmwave-radar-point-cloud-enhancement-driven-by-range-ima",
+      "detail_relpath": "daily/2026-04-14/papers/paper-02-diffusion-based-mmwave-radar-point-cloud-enhancement-driven-by-range-ima.html"
     },
     {
       "type": "paper",
@@ -227,8 +138,8 @@
         "reading": "建议先看小文中的主旨、方法和实验，再决定是否进入原文或 PDF。",
         "access": "已找到合法开放获取入口，手机可直接阅读。"
       },
-      "slug": "paper-05-visual-sculpting-visually-aligned-planning-representations-for-long-hori",
-      "detail_relpath": "daily/2026-04-14/papers/paper-05-visual-sculpting-visually-aligned-planning-representations-for-long-hori.html"
+      "slug": "paper-03-visual-sculpting-visually-aligned-planning-representations-for-long-hori",
+      "detail_relpath": "daily/2026-04-14/papers/paper-03-visual-sculpting-visually-aligned-planning-representations-for-long-hori.html"
     }
   ],
   "repos": [
