@@ -1,0 +1,59 @@
+<svg width="1280" height="880" viewBox="0 0 1280 880" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1280" y2="880" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F8F3EA"/>
+      <stop offset="1" stop-color="#EFE3D2"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#FFF8F2"/>
+    </linearGradient>
+    <filter id="shadow" x="76" y="83" width="1128" height="714" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="28" stdDeviation="32" flood-color="#8B5B38" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="1280" height="880" fill="url(#bg)"/>
+  <circle cx="196" cy="130" r="150" fill="#FFFFFF" fill-opacity="0.58"/>
+  <circle cx="1120" cy="740" r="170" fill="#F4DDC9" fill-opacity="0.66"/>
+
+  <text x="126" y="122" fill="#1F1A16" font-family="Georgia, Source Han Serif SC, serif" font-size="42" font-weight="700">What the user actually sees</text>
+  <text x="126" y="164" fill="#6A6158" font-family="Segoe UI, PingFang SC, Noto Sans SC, sans-serif" font-size="22">Mobile push digest + daily site instead of raw links.</text>
+
+  <g filter="url(#shadow)">
+    <rect x="120" y="212" width="360" height="520" rx="42" fill="#1F1A16"/>
+    <rect x="136" y="228" width="328" height="488" rx="34" fill="url(#panel)"/>
+    <rect x="250" y="244" width="100" height="10" rx="5" fill="#D5C7B8"/>
+    <text x="166" y="292" fill="#A24D29" font-family="Segoe UI, PingFang SC, Noto Sans SC, sans-serif" font-size="15" font-weight="700">微信推送 / Mobile Digest</text>
+
+    <rect x="166" y="318" width="268" height="92" rx="20" fill="#F7EFE5"/>
+    <text x="186" y="351" fill="#1F1A16" font-family="Segoe UI, PingFang SC, Noto Sans SC, sans-serif" font-size="18" font-weight="700">论文 01</text>
+    <text x="186" y="378" fill="#6A6158" font-family="Segoe UI, PingFang SC, Noto Sans SC, sans-serif" font-size="15">主旨 / 方法 / 理论 / 实验</text>
+
+    <rect x="166" y="428" width="268" height="92" rx="20" fill="#F7EFE5"/>
+    <text x="186" y="461" fill="#1F1A16" font-family="Segoe UI, PingFang SC, Noto Sans SC, sans-serif" font-size="18" font-weight="700">论文 02</text>
+    <text x="186" y="488" fill="#6A6158" font-family="Segoe UI, PingFang SC, Noto Sans SC, sans-serif" font-size="15">来源多样，不只单一期刊</text>
+
+    <rect x="166" y="538" width="268" height="120" rx="20" fill="#F7EFE5"/>
+    <text x="186" y="571" fill="#1F1A16" font-family="Segoe UI, PingFang SC, Noto Sans SC, sans-serif" font-size="18" font-weight="700">GitHub 项目</text>
+    <text x="186" y="598" fill="#6A6158" font-family="Segoe UI, PingFang SC, Noto Sans SC, sans-serif" font-size="15">定位 / 推荐理由 / 可用点</text>
+    <text x="186" y="625" fill="#6A6158" font-family="Segoe UI, PingFang SC, Noto Sans SC, sans-serif" font-size="15">Trending 不够相关时自动补位</text>
+
+    <rect x="560" y="164" width="600" height="600" rx="36" fill="url(#panel)"/>
+    <text x="606" y="222" fill="#A24D29" font-family="Segoe UI, PingFang SC, Noto Sans SC, sans-serif" font-size="15" font-weight="700">GitHub Pages / Daily Detail Page</text>
+    <text x="606" y="282" fill="#1F1A16" font-family="Georgia, Source Han Serif SC, serif" font-size="42" font-weight="700">2026-04-14 具身智能日报</text>
+    <text x="606" y="324" fill="#6A6158" font-family="Segoe UI, PingFang SC, Noto Sans SC, sans-serif" font-size="21">给手机阅读重写过的中文判断页，而不是原始链接列表。</text>
+
+    <rect x="606" y="364" width="508" height="118" rx="24" fill="#FAF2E9"/>
+    <text x="632" y="404" fill="#1F1A16" font-family="Segoe UI, PingFang SC, Noto Sans SC, sans-serif" font-size="22" font-weight="700">研究主旨</text>
+    <text x="632" y="436" fill="#6A6158" font-family="Segoe UI, PingFang SC, Noto Sans SC, sans-serif" font-size="18">这篇论文到底在解决什么问题，为什么今天值得看。</text>
+
+    <rect x="606" y="500" width="242" height="168" rx="24" fill="#FAF2E9"/>
+    <text x="632" y="540" fill="#1F1A16" font-family="Segoe UI, PingFang SC, Noto Sans SC, sans-serif" font-size="22" font-weight="700">方法抓手</text>
+    <text x="632" y="572" fill="#6A6158" font-family="Segoe UI, PingFang SC, Noto Sans SC, sans-serif" font-size="18">扩散模型 / 控制 / 规划 / 约束</text>
+
+    <rect x="872" y="500" width="242" height="168" rx="24" fill="#FAF2E9"/>
+    <text x="898" y="540" fill="#1F1A16" font-family="Segoe UI, PingFang SC, Noto Sans SC, sans-serif" font-size="22" font-weight="700">理论线索</text>
+    <text x="898" y="572" fill="#6A6158" font-family="Segoe UI, PingFang SC, Noto Sans SC, sans-serif" font-size="18">告诉你推导抓手在哪里，而不是只贴摘要。</text>
+  </g>
+</svg>

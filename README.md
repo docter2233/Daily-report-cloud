@@ -23,6 +23,16 @@ A mobile-first daily digest system for embodied AI and robotics researchers.
 - GitHub Pages: [docter2233.github.io/Daily-report-cloud](https://docter2233.github.io/Daily-report-cloud/)
 - Example mobile digest: [docs/example-mobile-digest.md](docs/example-mobile-digest.md)
 
+## Preview
+
+![Mobile digest preview](assets/mobile-preview.svg)
+
+What a reader actually gets each day:
+
+- 微信可直接浏览的中文摘要，不是原始链接堆叠
+- 每篇论文和每个项目都有独立详情页，说明主旨、方法、理论线索和实验价值
+- GitHub Pages 上保留可回看的日报归档，手机打开也能顺着读
+
 ## At A Glance
 
 | 普通科研日报 | 这个仓库 |
@@ -52,6 +62,12 @@ A mobile-first daily digest system for embodied AI and robotics researchers.
 - 论文选择优先做来源分散，避免长期被单一期刊淹没
 - GitHub 先看 Trending，不够相关时自动补研究向仓库
 - 只保留合法开放入口，不接入 Sci-Hub 或其他侵权资源
+
+## Who It Is For
+
+- 主要在手机上看科研更新的中文机器人研究者
+- 想先筛选“值不值得深挖”再决定是否去读原论文的人
+- 希望电脑关机后系统依然能每天自动推送的个人研究者或小组
 
 ## Output Layers
 
@@ -188,7 +204,7 @@ Useful settings:
 - Stronger theory-line templates
 - Better GitHub project categorization
 - More push channels
-- Example screenshots on the landing README
+- More sample archives and configuration presets
 
 ## Contributing
 
