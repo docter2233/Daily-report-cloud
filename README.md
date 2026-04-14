@@ -1,104 +1,182 @@
-# Daily Report Cloud
+# Embodied AI Daily Report Cloud
 
-这个项目现在不是单纯“把链接推到微信”，而是一个手机优先的每日小文系统：
+[![CI](https://github.com/docter2233/Daily-report-cloud/actions/workflows/daily-report.yml/badge.svg)](https://github.com/docter2233/Daily-report-cloud/actions/workflows/daily-report.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![Python 3.11+](https://img.shields.io/badge/Python-3.11%2B-blue.svg)](requirements.txt)
 
-- 微信推送里直接给论文/项目的内容、理论线索、应用价值和阅读建议
-- 每条条目自动生成一个适合手机看的“小文页”
-- 每天再生成一个总览页，推送里优先放自己的小文链接，原始论文站点和 GitHub 只做二跳入口
-- 全部由 GitHub Actions 定时生成和部署，所以电脑关机也不影响
+中文机器人研究者的手机优先日报系统。  
+A mobile-first daily digest system for embodied AI and robotics researchers.
 
-## 当前方案
+它做的不是“把一堆原始链接推到微信”，而是：
 
-- 云端调度：GitHub Actions
-- 页面托管：GitHub Pages
-- 微信通道默认：PushPlus
-- 备选通道：企业微信机器人
-- 默认定时：每天北京时间 08:30
-  - GitHub Actions 对应 UTC cron：`30 0 * * *`
+- 先抓论文和 GitHub 项目
+- 再自动整理成中文小文
+- 再生成移动端网页
+- 最后把适合手机阅读的摘要推到微信
 
-## 目录
+电脑关机不影响运行，因为整个流程跑在 GitHub Actions 上。
 
-- `scripts/research_briefing.py`
-  - 采集论文和 GitHub Trending
-  - 补充摘要/README 信息
-  - 生成长报告、手机摘要、静态小文页
-  - 支持直接推送
-- `scripts/mobile_digest_helpers.py`
-  - 负责“小文”内容组织、摘要生成和静态站点输出
-- `config/default_watchlist.json`
-  - 默认期刊、Trending 语言、GitHub 相关性关键词和筛选阈值
-- `.github/workflows/daily-report.yml`
-  - 云端定时生成、Pages 部署和微信推送
-- `site/`
-  - 自动生成的静态小文站点
+## Why This Repo Exists
 
-## GitHub Secrets
+大多数“科研日报”都有同一个问题：
 
-至少配置：
+- 推送内容太原始，必须再去开 GitHub、翻 PDF、找论文页
+- 手机端阅读体验很差，英文摘要堆在一起很难判断值不值得深挖
+- GitHub Trending 噪声大，经常和具身智能主线关系不强
+- 小文页只是摘抄，不会告诉你研究主旨、方法抓手和理论线索
 
-- `PUSHPLUS_TOKEN`
+这个仓库的目标是把“日报”从信息搬运，做成研究判断层。
 
-可选配置：
+## What It Does
 
-- `WECOM_BOT_WEBHOOK`
-- `CROSSREF_MAILTO`
+- 手机推送只给中文摘要和小文链接，不再直接堆原始链接
+- 每篇论文生成一页中文小文
+- 每个 GitHub 项目生成一页“做什么 / 为什么推 / 怎么接进实验链路”的中文小文
+- 论文选择优先做来源分散，避免长期被单一期刊淹没
+- GitHub 先看 Trending，不够相关时自动补研究向仓库
+- 只保留合法开放入口，不接入 Sci-Hub 或其他侵权资源
 
-可选 GitHub Repository Variable：
+## Output Layers
 
-- `PUBLIC_BASE_URL`
-  - 如果你以后想改成自定义域名或别的托管地址，可以用它覆盖默认的 GitHub Pages URL
+每天会生成三层内容：
 
-## 本地测试
+1. 手机推送摘要  
+适合直接在微信里快速看 2-3 篇论文和 2-3 个项目。
+
+2. 当日日报页  
+一个聚合页，汇总当天所有论文和 GitHub 小文。
+
+3. 条目详情页  
+论文页会给出：
+- 研究主旨
+- 方法抓手
+- 理论推导线索
+- 实验与结果
+- 阅读建议
+- 合法获取入口
+
+项目页会给出：
+- 方向定位
+- 为什么推它
+- 对机器人研究的价值
+- 怎么接进训练、仿真、规划或系统集成链路
+
+## Architecture
+
+```mermaid
+flowchart TD
+    A["Crossref / OpenAlex / arXiv"] --> B["Paper Collector"]
+    C["GitHub Trending"] --> D["Trending Filter"]
+    E["GitHub Search Fallback"] --> D
+    B --> F["Chinese Digest Builder"]
+    D --> F
+    F --> G["Mobile Markdown Push"]
+    F --> H["Static Daily Site"]
+    H --> I["GitHub Pages"]
+    G --> J["PushPlus / WeCom"]
+```
+
+## Core Features
+
+- Multi-source paper collection
+  - `Science Robotics`
+  - `T-RO`
+  - `IJRR`
+  - `RA-L`
+  - `Autonomous Robots`
+  - fallback `arXiv cs.RO`
+- GitHub dual-path selection
+  - trending first
+  - research-oriented fallback if trending is too noisy
+- Chinese-first summaries for mobile reading
+- Static site generation with daily archive pages
+- Cloud scheduling and cloud push
+
+## Quick Start
 
 ```powershell
 python -m venv .venv
 .venv\Scripts\Activate.ps1
 pip install -r requirements.txt
-python scripts/research_briefing.py collect --days 1 --max-papers 4 --max-repos 4 --public-base-url "https://example.com/"
-python scripts/research_briefing.py run --days 1 --push-provider pushplus --dry-run --token dummy --public-base-url "https://example.com/"
+python scripts/research_briefing.py collect --days 1 --max-papers 4 --max-repos 3 --public-base-url "https://example.com/"
+python scripts/research_briefing.py run --days 1 --max-papers 3 --max-repos 3 --push-provider pushplus --dry-run --token dummy --public-base-url "https://example.com/"
 ```
 
-测试后重点看：
+重点查看：
 
 - `artifacts/*-mobile.md`
-  - 推送内容是否已经是“手机可读的小文摘要”
 - `site/index.html`
-  - 站点首页是否能按日期进入
-- `site/daily/<date>/`
-  - 是否生成了当日总览页和每条项目详情页
+- `site/daily/<date>/index.html`
+- `site/daily/<date>/papers/*.html`
+- `site/daily/<date>/repos/*.html`
 
-如果当天 GitHub Trending 没有通过相关性阈值的仓库，系统会保留空结果，而不是为了凑数把泛 AI 热门项目塞进手机日报。
+## Deploy To GitHub Pages
 
-## GitHub 相关性调参
+1. Push this repository to GitHub
+2. Add `PUSHPLUS_TOKEN` in `Settings > Secrets and variables > Actions`
+3. Set `Settings > Pages > Source` to `GitHub Actions`
+4. Run `Daily Robotics Report` once from the Actions tab
+5. Confirm:
+- GitHub Pages is live
+- WeChat receives the mobile digest
+- The push message points to your own daily detail page
 
+## Configuration
+
+Main knobs live in [config/default_watchlist.json](config/default_watchlist.json).
+
+Useful settings:
+
+- `paper_candidate_pool_per_journal`
+- `paper_per_venue_cap`
+- `paper_target_venue_count`
+- `paper_fallback_arxiv_query`
 - `github_candidate_pool_size`
-  - 先从 GitHub Trending 扩大抓取候选池，再做相关性排序，避免只被全站最热但不相关的仓库占满
 - `github_min_relevance_score`
-  - 通过关键词打分做硬过滤；分数不够的项目不会进入日报
-- `github_allowed_relevance_labels`
-  - 默认只允许 `直接相关` 和 `中度相关`
+- `github_fallback_min_relevance_score`
 - `github_required_keywords_any`
-  - 再加一道“核心机器人关键词”门槛；如果条目只命中 `agent`、`rl` 这类泛 AI 词，而没有命中机器人主线词，就不会进入日报
-- `github_keywords`
-  - 你可以按自己的研究方向提高或降低关键词权重，比如更偏操作、触觉、人形或 sim2real
+- `github_fallback_queries`
 
-## 真正上线
+## Repository Layout
 
-1. 把 `D:\robot\daily-report-cloud` 作为独立 Git 仓库推到 GitHub。
-2. 在仓库 `Settings > Secrets and variables > Actions` 中添加 `PUSHPLUS_TOKEN`。
-3. 在仓库 `Settings > Pages` 中启用 GitHub Pages。
-   Source 选 GitHub Actions。
-4. 允许 Actions 对仓库内容写入。
-   这个项目会把生成好的 `site/` 更新回仓库，以保留每日历史页面。
-5. 手动执行一次 `workflow_dispatch`，确认：
-   - Pages 正常部署
-   - 微信收到的消息优先指向自己的小文页
+- [scripts/research_briefing.py](scripts/research_briefing.py)
+  - collection, filtering, orchestration, push
+- [scripts/mobile_digest_helpers.py](scripts/mobile_digest_helpers.py)
+  - Chinese digest writing and site rendering
+- [config/default_watchlist.json](config/default_watchlist.json)
+  - keywords, thresholds, source list, fallback rules
+- [.github/workflows/daily-report.yml](.github/workflows/daily-report.yml)
+  - scheduled cloud workflow
 
-## 结果
+## Legal Boundary
 
-只要 GitHub Actions 在跑：
+- This project only keeps legal access links
+- If OpenAlex, arXiv, or the publisher exposes an open PDF, it will be surfaced
+- If no legal open full text exists, the project only keeps DOI, publisher page, or official landing page
+- This repository does not integrate Sci-Hub or piracy-based download flows
 
-- 电脑关机不影响推送
-- 手机里先看我替你整理好的内容
-- 想深挖时再点自己的小文页
-- 实在需要再跳原始论文站点或 GitHub
+## Why It Might Be Worth A Star
+
+如果你也想要一个真正“手机能看、电脑能关机、内容不是噪声”的科研日报系统，这个仓库解决的是非常具体的需求：
+
+- 中文用户
+- 手机优先
+- 具身智能 / 机器人研究
+- 云端自动运行
+- 输出的是判断，而不是原始链接垃圾桶
+
+## Roadmap
+
+- Better paper method extraction
+- Stronger theory-line templates
+- Better GitHub project categorization
+- More push channels
+- Example screenshots on the landing README
+
+## Contributing
+
+欢迎提 issue 和 PR。贡献方式见 [CONTRIBUTING.md](CONTRIBUTING.md)。
+
+## License
+
+MIT. See [LICENSE](LICENSE).

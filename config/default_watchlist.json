@@ -44,6 +44,12 @@
     "constraint": 1,
     "robot": 1
   },
+  "paper_candidate_pool_per_journal": 6,
+  "paper_per_venue_cap": 2,
+  "paper_target_venue_count": 2,
+  "paper_fallback_arxiv_query": "cat:cs.RO",
+  "paper_fallback_arxiv_recent_days": 14,
+  "paper_fallback_arxiv_max_results": 12,
   "github_trending": {
     "since": "daily",
     "languages": [
@@ -55,6 +61,7 @@
   },
   "github_candidate_pool_size": 40,
   "github_min_relevance_score": 4,
+  "github_fallback_min_relevance_score": 3,
   "github_allowed_relevance_labels": [
     "直接相关",
     "中度相关"
@@ -75,6 +82,26 @@
     "isaac",
     "mujoco",
     "pinocchio"
+  ],
+  "github_fallback_recent_days": 365,
+  "github_fallback_per_query": 5,
+  "github_fallback_queries": [
+    {
+      "label": "机器人中间件与系统集成",
+      "q": "topic:robotics ros2"
+    },
+    {
+      "label": "机械臂与抓取",
+      "q": "robotics manipulation grasp"
+    },
+    {
+      "label": "仿真与 sim2real",
+      "q": "robotics simulation sim2real"
+    },
+    {
+      "label": "人形与足式控制",
+      "q": "robotics humanoid locomotion"
+    }
   ],
   "github_keywords": {
     "robot": 4,
