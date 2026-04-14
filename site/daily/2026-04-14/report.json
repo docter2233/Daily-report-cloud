@@ -1,0 +1,451 @@
+{
+  "generated_at": "2026-04-14T11:46:53+08:00",
+  "reference_date": "2026-04-14",
+  "window_start": "2026-04-14",
+  "timezone": "Asia/Shanghai",
+  "papers": [
+    {
+      "type": "paper",
+      "title": "Diffusion-Based mmWave Radar Point Cloud Enhancement Driven by Range Images",
+      "venue": "IEEE Robotics and Automation Letters",
+      "published": "2026-05",
+      "doi": "10.1109/lra.2026.3673977",
+      "url": "https://doi.org/10.1109/lra.2026.3673977",
+      "abstract": "Millimeter-wave (mmWave) radar has attracted significant attention in robotics and autonomous driving due to its robustness in harsh environments. However, the radar point clouds are typically sparse and noisy, which limits its futher development. Traditional mmWave radar enhancement approaches often struggle to leverage the effectiveness of diffusion models in super-resolution, largely due to the unnatural range-azimuth heatmap (RAH) or bird's eye view (BEV) representation. To address this issue, we pioneer the integration of range image representations into an image diffusion framework that leverages pre-trained image diffusion priors to generate dense and accurate 3D mmWave radar point clouds with LiDAR-like quality. Extensive evaluations on both public datasets and self-constructed datasets demonstrate that our approach provides substantial improvements, establishing a new state-of-the-art performance in generating truly three-dimensional LiDAR-like point clouds via mmWave radar.",
+      "authors": [
+        "Ruixin Wu",
+        "Zihan Li",
+        "Jin Wang",
+        "Xiangyu Xu",
+        "Zhi Zheng",
+        "Kaixiang Huang"
+      ],
+      "source_homepage": "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=7083369",
+      "keyword_hits": [
+        "diffusion"
+      ],
+      "relevance_score": 2,
+      "cited_by_count": 0,
+      "primary_topic": "Microwave Imaging and Scattering Analysis",
+      "concepts": [
+        "Remote sensing",
+        "Radar",
+        "Computer science",
+        "Range (aeronautics)",
+        "Point (geometry)",
+        "Cloud computing"
+      ],
+      "oa_url": "",
+      "oa_status": "closed",
+      "direction": "机器人通用方法",
+      "method_tags": [
+        "Diffusion",
+        "检索增强",
+        "几何/深度估计"
+      ],
+      "overview_sentence": "Millimeter-wave (mmWave) radar has attracted significant attention in robotics and autonomous driving due to its robustness in harsh environments.",
+      "note": {
+        "overview": "这篇工作首先强调：Millimeter-wave (mmWave) radar has attracted significant attention in robotics and autonomous driving due to its robustness in harsh environments.",
+        "method": "方法线上更接近 Diffusion / 检索增强 / 几何/深度估计。Traditional mmWave radar enhancement approaches often struggle to leverage the effectiveness of diffusion models in super-resolution, largely due to the unnatural range-azimuth heatmap (RAH) or bird's eye view (BEV) representation.",
+        "application": "对机器人系统设计、实验选题和工程落地都有一定参考价值。",
+        "reading": "建议先看我整理的小文，再决定是否跳原文。"
+      },
+      "slug": "paper-01-diffusion-based-mmwave-radar-point-cloud-enhancement-driven-by-range-ima",
+      "detail_relpath": "daily/2026-04-14/papers/paper-01-diffusion-based-mmwave-radar-point-cloud-enhancement-driven-by-range-ima.html"
+    },
+    {
+      "type": "paper",
+      "title": "Visual Sculpting: Visually-Aligned Planning Representations for Long-Horizon Robot Clay Sculpting",
+      "venue": "IEEE Robotics and Automation Letters",
+      "published": "2026-05",
+      "doi": "10.1109/lra.2026.3673896",
+      "url": "https://doi.org/10.1109/lra.2026.3673896",
+      "abstract": "Clay sculpting is a nuanced, artistic task involving dexterous manipulation with long-horizon planning to achieve high-level goals. As a robotics problem, we formulate clay sculpting as a shape-to-shape matching challenge. Prior deformable object manipulation work either requires retraining a policy per goal or relies on dynamics models which represent state as sparse point clouds which do not capture important clay features, such as textures, well. We present a method for modeling the dynamics of deformable materials and planning for robotic sculpting in a representation that is visually-aligned, capturing lighting and texture features. With three different deformable materials and various end-effectors, we demonstrate that our dynamics model is comparable in performance to the state-of-the-art with the added benefit of being compatible with visual planning. Our actions are represented as parametrized pushes into clay with a single end-effector, which proved to be suitable for long-horizon (<inline-formula xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><tex-math notation=\"LaTeX\">$&gt;$</tex-math></inline-formula>100 actions) clay relief sculptures. Lastly, we show the benefits of planning in a visually-aligned representation, but also provide analysis providing evidence as to why this representation is challenging to plan in compared to 3D representations.",
+      "authors": [
+        "Peter Schaldenbrand",
+        "Jean Oh"
+      ],
+      "source_homepage": "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=7083369",
+      "keyword_hits": [
+        "planning",
+        "robot"
+      ],
+      "relevance_score": 2,
+      "cited_by_count": 0,
+      "primary_topic": "Robotic Path Planning Algorithms",
+      "concepts": [
+        "Computer vision",
+        "Robot",
+        "Artificial intelligence",
+        "Computer science",
+        "Visualization",
+        "Computer graphics (images)"
+      ],
+      "oa_url": "",
+      "oa_status": "closed",
+      "direction": "机械臂操控",
+      "method_tags": [],
+      "overview_sentence": "Clay sculpting is a nuanced, artistic task involving dexterous manipulation with long-horizon planning to achieve high-level goals.",
+      "note": {
+        "overview": "这篇工作首先强调：Clay sculpting is a nuanced, artistic task involving dexterous manipulation with long-horizon planning to achieve high-level goals.",
+        "method": "方法线上更接近 该方向常见技术。Prior deformable object manipulation work either requires retraining a policy per goal or relies on dynamics models which represent state as sparse point clouds which do not capture important clay features, such as textures, well.",
+        "application": "更偏向抓取、装配、接触丰富操作等真实机械臂任务。",
+        "reading": "建议先看我整理的小文，再决定是否跳原文。"
+      },
+      "slug": "paper-02-visual-sculpting-visually-aligned-planning-representations-for-long-hori",
+      "detail_relpath": "daily/2026-04-14/papers/paper-02-visual-sculpting-visually-aligned-planning-representations-for-long-hori.html"
+    },
+    {
+      "type": "paper",
+      "title": "Distributed Safe Navigation for Multi-Robot Systems With Fixed-Time Convergence and Deadlock Resolution",
+      "venue": "IEEE Robotics and Automation Letters",
+      "published": "2026-05",
+      "doi": "10.1109/lra.2026.3671566",
+      "url": "https://doi.org/10.1109/lra.2026.3671566",
+      "abstract": "This letter addresses the problem of distributed safe navigation for multi-robot systems (MRSs), proposing a comprehensive framework that unifies safety-critical control, real-time navigation, and deadlock resolution. To enable a fully distributed implementation of control barrier function (CBF)-based safety, this work employs a regularized primal decomposition to decouple inter-agent safety constraints. A novel distributed Fixed-Time Stable Gradient Flow (FxTS-GF) algorithm is then designed, which enables each robot to complete the optimal safety responsibility allocation and efficiently solve its local quadratic program (QP) for collision avoidance within each control cycle. Furthermore, the framework incorporates a distributed deadlock resolution mechanism that breaks undesired equilibria through coordination among neighboring robots. Theoretical guarantees are provided for the framework's anytime-safety, optimality, and fixed-time stability. Finally, the effectiveness and practical applicability of the proposed method are validated through both simulations and hardware experiments on a team of mobile vehicles.",
+      "authors": [
+        "Jia-Yuan Yin",
+        "Guang-Hong Yang",
+        "Huimin Wang",
+        "Jun-Sheng Wang"
+      ],
+      "source_homepage": "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=7083369",
+      "keyword_hits": [
+        "navigation",
+        "robot"
+      ],
+      "relevance_score": 2,
+      "cited_by_count": 0,
+      "primary_topic": "Robotic Path Planning Algorithms",
+      "concepts": [
+        "Computer science",
+        "Deadlock",
+        "Convergence (economics)",
+        "Distributed computing",
+        "Deadlock prevention algorithms",
+        "Collision avoidance"
+      ],
+      "oa_url": "",
+      "oa_status": "closed",
+      "direction": "导航与规划",
+      "method_tags": [
+        "约束建模"
+      ],
+      "overview_sentence": "This letter addresses the problem of distributed safe navigation for multi-robot systems (MRSs), proposing a comprehensive framework that unifies safety-critical control, real-time navigation, and deadlock resolution.",
+      "note": {
+        "overview": "这篇工作首先强调：This letter addresses the problem of distributed safe navigation for multi-robot systems (MRSs), proposing a comprehensive framework that unifies safety-critical control, real-time navigation, and deadlock resolution.",
+        "method": "方法线上更接近 约束建模。This letter addresses the problem of distributed safe navigation for multi-robot systems (MRSs), proposing a comprehensive framework that unifies safety-critical control, real-time navigation, and deadlock resolution.",
+        "application": "更适合长时序任务编排、复杂场景导航和系统级决策。",
+        "reading": "建议先看我整理的小文，再决定是否跳原文。"
+      },
+      "slug": "paper-03-distributed-safe-navigation-for-multi-robot-systems-with-fixed-time-conv",
+      "detail_relpath": "daily/2026-04-14/papers/paper-03-distributed-safe-navigation-for-multi-robot-systems-with-fixed-time-conv.html"
+    },
+    {
+      "type": "paper",
+      "title": "Distributed Lloyd-Based Algorithm for Uncertainty-Aware Multi-Robot Under-Canopy Flocking",
+      "venue": "IEEE Robotics and Automation Letters",
+      "published": "2026-05",
+      "doi": "10.1109/lra.2026.3673985",
+      "url": "https://doi.org/10.1109/lra.2026.3673985",
+      "abstract": "In this letter, we present a distributed algorithm for flocking in complex environments that operates at constant altitude, without explicit communication, no a priori information about the environment, and by using only on-board sensing and computation capabilities. We provide sufficient conditions to guarantee collision avoidance with obstacles and other robots without exceeding a desired maximum distance from a predefined set of neighbors (flocking or proximity maintenance constraint) during the mission. The proposed approach allows to operate in crowded scenarios and to explicitly deal with tracking errors and on-board sensing errors. The algorithm was verified through simulations with varying number of UAVs and also through numerous real-world experiments in a dense forest involving up to four UAVs.",
+      "authors": [
+        "Manuel Boldrer",
+        "Vít Krátký",
+        "Viktor Walter",
+        "Martin Saska"
+      ],
+      "source_homepage": "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=7083369",
+      "keyword_hits": [
+        "robot"
+      ],
+      "relevance_score": 1,
+      "cited_by_count": 0,
+      "primary_topic": "Distributed Control Multi-Agent Systems",
+      "concepts": [
+        "Computer science",
+        "Algorithm",
+        "Flocking (texture)",
+        "Mathematics",
+        "Algorithm design",
+        "Artificial intelligence"
+      ],
+      "oa_url": "https://doi.org/10.1109/lra.2026.3673985",
+      "oa_status": "hybrid",
+      "direction": "仿真到真实迁移",
+      "method_tags": [
+        "约束建模"
+      ],
+      "overview_sentence": "In this letter, we present a distributed algorithm for flocking in complex environments that operates at constant altitude, without explicit communication, no a priori information about the environment, and by using only on-board sensing and computation capabilities.",
+      "note": {
+        "overview": "这篇工作首先强调：In this letter, we present a distributed algorithm for flocking in complex environments that operates at constant altitude, without explicit communication, no a priori information about the environment, and by using only on-board sensing and computation capabilities.",
+        "method": "方法线上更接近 约束建模。In this letter, we present a distributed algorithm for flocking in complex environments that operates at constant altitude, without explicit communication, no a priori information about the environment, and by using only on-board sensing and computation capabilities.",
+        "application": "更适合把仿真中的策略稳定迁移到真实机器人平台。",
+        "reading": "有开放获取入口，手机深读成本相对更低。"
+      },
+      "slug": "paper-04-distributed-lloyd-based-algorithm-for-uncertainty-aware-multi-robot-unde",
+      "detail_relpath": "daily/2026-04-14/papers/paper-04-distributed-lloyd-based-algorithm-for-uncertainty-aware-multi-robot-unde.html"
+    },
+    {
+      "type": "paper",
+      "title": "Rethinking Transparent Object Grasping: Depth Completion With Monocular Depth Estimation and Instance Mask",
+      "venue": "IEEE Robotics and Automation Letters",
+      "published": "2026-05",
+      "doi": "10.1109/lra.2026.3673898",
+      "url": "https://doi.org/10.1109/lra.2026.3673898",
+      "abstract": "Accurate depth maps are essential for robotic grasping. However, transparent objects often cause depth cameras to produce missing or distorted depth due to reflection and refraction, making grasping them particularly challenging. Precise depth estimation for transparent objects is therefore crucial. Existing end-to-end methods aim to predict depth directly from RGB-D inputs. However, depth distortion varies significantly with environment, viewpoint, and illumination, making it difficult to predict. Models trained on limited datasets often fail to generalize effectively in real-world applications. In this letter, we propose ReMake, a novel transparent object depth completion framework that injects structured priors to reformulate the depth estimation learning objective. First, we introduce a mask prior to explicitly separate transparent regions from reliable background depth. This separation ensures consistency between training and real-world application, where masked areas correspond to transparent regions and unmasked areas to opaque ones. This improves the model's generalizability in real-world applications. Second, we further incorporate relative depth as an additional prior obtained from monocular depth estimation, which encodes the depth relationship between transparent objects and their background to guide the reconstruction of transparent regions more effectively. Extensive experiments across datasets and real-world scenes demonstrate that ReMake significantly outperforms existing methods, especially in different-view prediction experiments, evaluating its generalizabilityCode and videos are available at <uri xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">https://chengyaofeng.github.io/ReMake.github.io/</uri>.",
+      "authors": [
+        "Yaofeng Cheng",
+        "Xinkai Gao",
+        "Sen Zhang",
+        "Chao Zeng",
+        "Fusheng Zha",
+        "Lining Sun"
+      ],
+      "source_homepage": "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=7083369",
+      "keyword_hits": [],
+      "relevance_score": 0,
+      "cited_by_count": 0,
+      "primary_topic": "Robot Manipulation and Learning",
+      "concepts": [
+        "Monocular",
+        "Generalization",
+        "Computer science",
+        "Artificial intelligence",
+        "Computer vision",
+        "Context (archaeology)"
+      ],
+      "oa_url": "https://arxiv.org/pdf/2508.02507",
+      "oa_status": "green",
+      "direction": "机械臂操控",
+      "method_tags": [
+        "几何/深度估计"
+      ],
+      "overview_sentence": "Accurate depth maps are essential for robotic grasping.",
+      "note": {
+        "overview": "这篇工作首先强调：Accurate depth maps are essential for robotic grasping.",
+        "method": "方法线上更接近 几何/深度估计。Existing end-to-end methods aim to predict depth directly from RGB-D inputs.",
+        "application": "更偏向抓取、装配、接触丰富操作等真实机械臂任务。",
+        "reading": "有开放获取入口，手机深读成本相对更低。"
+      },
+      "slug": "paper-05-rethinking-transparent-object-grasping-depth-completion-with-monocular-d",
+      "detail_relpath": "daily/2026-04-14/papers/paper-05-rethinking-transparent-object-grasping-depth-completion-with-monocular-d.html"
+    },
+    {
+      "type": "paper",
+      "title": "$\\pi$-BA: Probabilistic Neural Bundle Adjustment With Iterative Cycle Optimization for Driving Scene Reconstruction",
+      "venue": "IEEE Robotics and Automation Letters",
+      "published": "2026-05",
+      "doi": "10.1109/lra.2026.3669066",
+      "url": "https://doi.org/10.1109/lra.2026.3669066",
+      "abstract": "Urban scene reconstruction under noisy camera poses remains a critical challenge for autonomous driving. While recent neural dense Bundle Adjustment (BA) methods have shown promising results in specific settings, their performance often degrades in real-world urban scenarios due to noisy correspondences and imbalanced optimization between camera poses and scene parameters, which leads the scene representation to overfit to erroneous geometric constraints, causing the system to converge to suboptimal local minima. We propose <inline-formula xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><tex-math notation=\"LaTeX\">$\\pi$</tex-math></inline-formula>-BA, a neural BA framework designed to improve robustness in large-scale outdoor reconstruction. <inline-formula xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><tex-math notation=\"LaTeX\">$\\pi$</tex-math></inline-formula>-BA introduces an uncertainty-aware probabilistic model that adaptively down-weights unreliable correspondences, enabling more stable joint optimization of camera poses and scene geometry. To decouple pose estimation from geometry artifacts, we employ a cyclic optimization strategy that periodically reinitializes the radiance field while preserving refined camera poses. Extensive experiments on diverse real-world datasets demonstrate that <inline-formula xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><tex-math notation=\"LaTeX\">$\\pi$</tex-math></inline-formula>-BA consistently outperforms existing neural BA methods in terms of pose and reconstruction accuracy under noisy initialization. These results highlight the effectiveness of integrating probabilistic modeling with iterative refinement for scalable and robust neural reconstruction in complex outdoor environments.",
+      "authors": [
+        "Yunxuan Mao",
+        "Dongkun Zhang",
+        "Lilu Liu",
+        "Yue Wang",
+        "Rong Xiong"
+      ],
+      "source_homepage": "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=7083369",
+      "keyword_hits": [],
+      "relevance_score": 0,
+      "cited_by_count": 0,
+      "primary_topic": "Model Reduction and Neural Networks",
+      "concepts": [
+        "Artificial intelligence",
+        "Computer science",
+        "Bundle adjustment",
+        "Robustness (evolution)",
+        "Overfitting",
+        "Computer vision"
+      ],
+      "oa_url": "",
+      "oa_status": "closed",
+      "direction": "机器人通用方法",
+      "method_tags": [
+        "约束建模",
+        "几何/深度估计"
+      ],
+      "overview_sentence": "Urban scene reconstruction under noisy camera poses remains a critical challenge for autonomous driving.",
+      "note": {
+        "overview": "这篇工作首先强调：Urban scene reconstruction under noisy camera poses remains a critical challenge for autonomous driving.",
+        "method": "方法线上更接近 约束建模 / 几何/深度估计。While recent neural dense Bundle Adjustment (BA) methods have shown promising results in specific settings, their performance often degrades in real-world urban scenarios due to noisy correspondences and imbalanced optimization between camera poses and scene parameters, which leads the scene representation to overfit to erroneous geometric constraints, causing the system to converge to suboptimal local minima.",
+        "application": "对机器人系统设计、实验选题和工程落地都有一定参考价值。",
+        "reading": "建议先看我整理的小文，再决定是否跳原文。"
+      },
+      "slug": "paper-06-pi-ba-probabilistic-neural-bundle-adjustment-with-iterative-cycle-optimi",
+      "detail_relpath": "daily/2026-04-14/papers/paper-06-pi-ba-probabilistic-neural-bundle-adjustment-with-iterative-cycle-optimi.html"
+    },
+    {
+      "type": "paper",
+      "title": "Continual Reinforcement Learning Framework for Scalable Collision Avoidance and Mitigation System With Packing Strategy",
+      "venue": "IEEE Robotics and Automation Letters",
+      "published": "2026-05",
+      "doi": "10.1109/lra.2026.3678453",
+      "url": "https://doi.org/10.1109/lra.2026.3678453",
+      "abstract": "Collision Avoidance and Mitigation System (CAMS) in autonomous driving systems is crucial for ensuring safety by formulating strategies to address various collisions and planning the trajectory accordingly. Although recent learning-based motion planning methods for CAMS have shown promising results for specific collision scenarios, the question of how to continually scale up their knowledge across different driving environments has not yet been thoroughly investigated. In this paper, we propose a scalable learning framework for CAMS that combines deep reinforcement learning and continual learning. By sequentially packing knowledge of new scenarios into a model trained on specific scenarios, the proposed method continually scales up the range of scenarios the model can handle while maintaining performance on previously trained scenarios. We apply this learning framework to a motion planner for CAMS and evaluate its scalability across new driving environments. This approach demonstrates a significant ability to pack knowledge by outperforming a model that jointly trains on all scenarios—typically considered an upper bound for continual learning—in about 2.4× fewer training steps, with a 4.19% higher collision avoidance rate and a 12.02% lower collision impact. Moreover, our approach achieves performance close to models trained on each scenario individually, with a model about 5.8× smaller.",
+      "authors": [
+        "Joonhee Lim",
+        "Jangho Shin",
+        "Dongsuk Kum"
+      ],
+      "source_homepage": "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=7083369",
+      "keyword_hits": [],
+      "relevance_score": 0,
+      "cited_by_count": 0,
+      "primary_topic": "Reinforcement Learning in Robotics",
+      "concepts": [
+        "Reinforcement learning",
+        "Computer science",
+        "Collision avoidance",
+        "Scalability",
+        "Control (management)",
+        "Key (lock)"
+      ],
+      "oa_url": "",
+      "oa_status": "closed",
+      "direction": "导航与规划",
+      "method_tags": [
+        "强化学习"
+      ],
+      "overview_sentence": "Collision Avoidance and Mitigation System (CAMS) in autonomous driving systems is crucial for ensuring safety by formulating strategies to address various collisions and planning the trajectory accordingly.",
+      "note": {
+        "overview": "这篇工作首先强调：Collision Avoidance and Mitigation System (CAMS) in autonomous driving systems is crucial for ensuring safety by formulating strategies to address various collisions and planning the trajectory accordingly.",
+        "method": "方法线上更接近 强化学习。Although recent learning-based motion planning methods for CAMS have shown promising results for specific collision scenarios, the question of how to continually scale up their knowledge across different driving environments has not yet been thoroughly investigated.",
+        "application": "更适合长时序任务编排、复杂场景导航和系统级决策。",
+        "reading": "建议先看我整理的小文，再决定是否跳原文。"
+      },
+      "slug": "paper-07-continual-reinforcement-learning-framework-for-scalable-collision-avoida",
+      "detail_relpath": "daily/2026-04-14/papers/paper-07-continual-reinforcement-learning-framework-for-scalable-collision-avoida.html"
+    },
+    {
+      "type": "paper",
+      "title": "Lightweight Kinematic and Static Modeling of Cable-Driven Continuum Robots via Actuation-Space Energy Formulation",
+      "venue": "IEEE Robotics and Automation Letters",
+      "published": "2026-05",
+      "doi": "10.1109/lra.2026.3674005",
+      "url": "https://doi.org/10.1109/lra.2026.3674005",
+      "abstract": "Continuum robots, inspired by octopus arms and elephant trunks, combine dexterity with intrinsic compliance, making them well suited for unstructured and confined environments. Yet their continuously deformable morphology poses challenges for motion planning and control, calling for accurate but lightweight models. We propose the Lightweight Actuation-Space Energy Modeling (LASEM) framework for cable-driven continuum robots, which formulates actuation potential energy directly in actuation space. LASEM yields an analytical forward model derived from geometrically nonlinear beam and rod theories via Hamilton's principle, while avoiding explicit modeling of cable-backbone contact. It accepts both force and displacement inputs, thereby unifying kinematic and static formulations. Assuming the friction is neglected, the framework generalizes to nonuniform geometries, arbitrary cable routings, distributed loading and axial extensibility, while remaining computationally efficient for real-time use. Numerical simulations validate its accuracy, and a semi-analytical iterative scheme is developed for inverse kinematics. To address discretization in practical robots, LASEM further reformulates the functional minimization as a numerical optimization, which also naturally incorporates cable potential energy without explicit contact modeling.",
+      "authors": [
+        "Ke Wu",
+        "Yuhao Wang",
+        "Kevin Henry",
+        "Cesare Stefanini",
+        "Gang Zheng"
+      ],
+      "source_homepage": "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=7083369",
+      "keyword_hits": [],
+      "relevance_score": 0,
+      "cited_by_count": 0,
+      "primary_topic": "Dynamics and Control of Mechanical Systems",
+      "concepts": [
+        "Kinematics",
+        "Robot",
+        "Computer science",
+        "Control theory (sociology)",
+        "Energy (signal processing)",
+        "Work (physics)"
+      ],
+      "oa_url": "",
+      "oa_status": "closed",
+      "direction": "机械臂操控",
+      "method_tags": [],
+      "overview_sentence": "Continuum robots, inspired by octopus arms and elephant trunks, combine dexterity with intrinsic compliance, making them well suited for unstructured and confined environments.",
+      "note": {
+        "overview": "这篇工作首先强调：Continuum robots, inspired by octopus arms and elephant trunks, combine dexterity with intrinsic compliance, making them well suited for unstructured and confined environments.",
+        "method": "方法线上更接近 该方向常见技术。We propose the Lightweight Actuation-Space Energy Modeling (LASEM) framework for cable-driven continuum robots, which formulates actuation potential energy directly in actuation space.",
+        "application": "更偏向抓取、装配、接触丰富操作等真实机械臂任务。",
+        "reading": "建议先看我整理的小文，再决定是否跳原文。"
+      },
+      "slug": "paper-08-lightweight-kinematic-and-static-modeling-of-cable-driven-continuum-robo",
+      "detail_relpath": "daily/2026-04-14/papers/paper-08-lightweight-kinematic-and-static-modeling-of-cable-driven-continuum-robo.html"
+    },
+    {
+      "type": "paper",
+      "title": "Design and Implementation of an Uncrewed Aerial-Aquatic Vehicle With Antenna Retractor",
+      "venue": "IEEE Robotics and Automation Letters",
+      "published": "2026-05",
+      "doi": "10.1109/lra.2026.3669797",
+      "url": "https://doi.org/10.1109/lra.2026.3669797",
+      "abstract": "Uncrewed aerial-aquatic vehicles (UAAVs) can operate in both aerial and aquatic domains and repeatedly cross domains, thereby presenting considerable application prospects. This letter introduces ‘Diving Hawk-2 (DH-2),’ a forward-tilting coaxial three-axis six-rotor uncrewed aerial-aquatic vehicle (UAAV) that solves the persistent problem of real-time communication for submerged vehicles via an antenna retractor. We detail the vehicle's mechanical and control co-design, which ensures multi-domain agility without actuator redundancy. Experimental results from field trials in polar, lake, and high visibility pool environments confirm both the system's capability for real-time information transmission and control during underwater locomotion, and the vehicle's ability to perform repeatable, cross-domain transitions with stable multi-mode locomotion. The DH-2 platform, with its high modularity, offers a practical and replicable model for future research in real-time control of UAAVs.",
+      "authors": [
+        "Zikun Zhen",
+        "Yunhua Jiang",
+        "Zhihui Zou",
+        "Zhenglin Li"
+      ],
+      "source_homepage": "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=7083369",
+      "keyword_hits": [],
+      "relevance_score": 0,
+      "cited_by_count": 0,
+      "primary_topic": "Underwater Vehicles and Communication Systems",
+      "concepts": [
+        "Visibility",
+        "Actuator",
+        "Antenna (radio)",
+        "Computer science",
+        "Transmission (telecommunications)",
+        "Engineering"
+      ],
+      "oa_url": "",
+      "oa_status": "closed",
+      "direction": "足式与人形运动",
+      "method_tags": [],
+      "overview_sentence": "Uncrewed aerial-aquatic vehicles (UAAVs) can operate in both aerial and aquatic domains and repeatedly cross domains, thereby presenting considerable application prospects.",
+      "note": {
+        "overview": "这篇工作首先强调：Uncrewed aerial-aquatic vehicles (UAAVs) can operate in both aerial and aquatic domains and repeatedly cross domains, thereby presenting considerable application prospects.",
+        "method": "方法线上更接近 该方向常见技术。Uncrewed aerial-aquatic vehicles (UAAVs) can operate in both aerial and aquatic domains and repeatedly cross domains, thereby presenting considerable application prospects.",
+        "application": "更适合行走、跑跳、抗扰和平衡恢复等运动控制问题。",
+        "reading": "建议先看我整理的小文，再决定是否跳原文。"
+      },
+      "slug": "paper-09-design-and-implementation-of-an-uncrewed-aerial-aquatic-vehicle-with-ant",
+      "detail_relpath": "daily/2026-04-14/papers/paper-09-design-and-implementation-of-an-uncrewed-aerial-aquatic-vehicle-with-ant.html"
+    },
+    {
+      "type": "paper",
+      "title": "A Bi-Directional Adaptive Framework for Agile UAV Landing",
+      "venue": "IEEE Robotics and Automation Letters",
+      "published": "2026-05",
+      "doi": "10.1109/lra.2026.3671567",
+      "url": "https://doi.org/10.1109/lra.2026.3671567",
+      "abstract": "Autonomous landing on mobile platforms is crucial for extending quadcopter operational flexibility, yet conventional methods are often too inefficient for highly dynamic scenarios. The core limitation lies in the prevalent “track-then-descend” paradigm, which treats the platform as a passive target and forces the quadcopter to perform complex, sequential maneuvers. This paper challenges that paradigm by introducing a bi-directional cooperative landing framework that redefines the roles of the vehicle and the platform. The essential innovation is transforming the problem from a single-agent tracking challenge into a coupled system optimization. Our key insight is that the mobile platform is not merely a target, but an active agent in the landing process. It proactively tilts its surface to create an optimal, stable terminal attitude for the approaching quadcopter. This active cooperation fundamentally breaks the sequential model by parallelizing the alignment and descent phases. Concurrently, the quadcopter's planning pipeline focuses on generating a time-optimal and dynamically feasible trajectory that minimizes energy consumption. This bi-directional coordination allows the system to execute the recovery in an agile manner, characterized by aggressive trajectory tracking and rapid state synchronization within transient windows. The framework's effectiveness, validated in dynamic scenarios, significantly improves the efficiency, precision, and robustness of autonomous quadrotor recovery in complex and time-constrained missions.",
+      "authors": [
+        "Chunhui Zhao",
+        "Xirui Kao",
+        "Yilin Lu",
+        "Yang Lyu"
+      ],
+      "source_homepage": "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=7083369",
+      "keyword_hits": [],
+      "relevance_score": 0,
+      "cited_by_count": 0,
+      "primary_topic": "Robotic Path Planning Algorithms",
+      "concepts": [
+        "Quadcopter",
+        "Agile software development",
+        "Robustness (evolution)",
+        "Computer science",
+        "Trajectory",
+        "Control engineering"
+      ],
+      "oa_url": "https://arxiv.org/pdf/2601.03037",
+      "oa_status": "green",
+      "direction": "导航与规划",
+      "method_tags": [
+        "约束建模"
+      ],
+      "overview_sentence": "Autonomous landing on mobile platforms is crucial for extending quadcopter operational flexibility, yet conventional methods are often too inefficient for highly dynamic scenarios.",
+      "note": {
+        "overview": "这篇工作首先强调：Autonomous landing on mobile platforms is crucial for extending quadcopter operational flexibility, yet conventional methods are often too inefficient for highly dynamic scenarios.",
+        "method": "方法线上更接近 约束建模。Autonomous landing on mobile platforms is crucial for extending quadcopter operational flexibility, yet conventional methods are often too inefficient for highly dynamic scenarios.",
+        "application": "更适合长时序任务编排、复杂场景导航和系统级决策。",
+        "reading": "有开放获取入口，手机深读成本相对更低。"
+      },
+      "slug": "paper-10-a-bi-directional-adaptive-framework-for-agile-uav-landing",
+      "detail_relpath": "daily/2026-04-14/papers/paper-10-a-bi-directional-adaptive-framework-for-agile-uav-landing.html"
+    }
+  ],
+  "repos": [],
+  "errors": [],
+  "daily_relpath": "daily/2026-04-14/index.html"
+}
