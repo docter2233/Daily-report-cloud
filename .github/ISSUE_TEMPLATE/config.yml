@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Setup guide
+    url: https://github.com/docter2233/Daily-report-cloud#quick-start
+    about: Check the Quick Start section before opening a setup issue.

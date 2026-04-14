@@ -1,0 +1,59 @@
+<svg width="1280" height="720" viewBox="0 0 1280 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1280" y2="720" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFF7EE"/>
+      <stop offset="0.5" stop-color="#F4EBDD"/>
+      <stop offset="1" stop-color="#F0E2D2"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="202" y1="113" x2="1002" y2="617" gradientUnits="userSpaceOnUse">
+      <stop stop-color="white" stop-opacity="0.92"/>
+      <stop offset="1" stop-color="#FFF8F1" stop-opacity="0.97"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#A24D29"/>
+      <stop offset="1" stop-color="#D06B37"/>
+    </linearGradient>
+    <filter id="shadow" x="140" y="90" width="1000" height="560" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="24" stdDeviation="30" flood-color="#8C5B38" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <circle cx="160" cy="120" r="160" fill="#FFFFFF" fill-opacity="0.55"/>
+  <circle cx="1170" cy="620" r="190" fill="#F2D9C4" fill-opacity="0.65"/>
+  <circle cx="1110" cy="105" r="82" fill="#F8E6D4"/>
+
+  <g filter="url(#shadow)">
+    <rect x="180" y="110" width="920" height="500" rx="36" fill="url(#panel)"/>
+    <rect x="214" y="146" width="178" height="36" rx="18" fill="#F3E0D0"/>
+    <circle cx="239" cy="164" r="6" fill="#A24D29"/>
+    <text x="257" y="170" fill="#A24D29" font-family="Segoe UI, PingFang SC, Noto Sans SC, sans-serif" font-size="16" font-weight="700">Embodied AI Digest</text>
+
+    <text x="214" y="245" fill="#1F1A16" font-family="Georgia, Source Han Serif SC, serif" font-size="56" font-weight="700">Embodied AI</text>
+    <text x="214" y="310" fill="#1F1A16" font-family="Georgia, Source Han Serif SC, serif" font-size="56" font-weight="700">Daily Report Cloud</text>
+    <text x="214" y="366" fill="#6A6158" font-family="Segoe UI, PingFang SC, Noto Sans SC, sans-serif" font-size="24">Chinese-first, mobile-first daily paper and GitHub briefings</text>
+    <text x="214" y="402" fill="#6A6158" font-family="Segoe UI, PingFang SC, Noto Sans SC, sans-serif" font-size="24">for robotics and embodied AI researchers.</text>
+
+    <rect x="214" y="446" width="206" height="58" rx="29" fill="url(#accent)"/>
+    <text x="250" y="482" fill="white" font-family="Segoe UI, PingFang SC, Noto Sans SC, sans-serif" font-size="22" font-weight="700">Push to WeChat</text>
+
+    <rect x="440" y="446" width="214" height="58" rx="29" fill="#F5E6D8"/>
+    <text x="478" y="482" fill="#8C451E" font-family="Segoe UI, PingFang SC, Noto Sans SC, sans-serif" font-size="22" font-weight="700">GitHub Pages Site</text>
+
+    <rect x="720" y="180" width="320" height="360" rx="30" fill="#FFFDF8" stroke="#E5D7C6"/>
+    <rect x="748" y="213" width="120" height="22" rx="11" fill="#F1DFCF"/>
+    <text x="762" y="229" fill="#8C451E" font-family="Segoe UI, PingFang SC, Noto Sans SC, sans-serif" font-size="13" font-weight="700">Today on your phone</text>
+
+    <rect x="748" y="255" width="264" height="72" rx="18" fill="#F9F1E8"/>
+    <text x="766" y="284" fill="#1F1A16" font-family="Segoe UI, PingFang SC, Noto Sans SC, sans-serif" font-size="18" font-weight="700">论文 01</text>
+    <text x="766" y="311" fill="#6A6158" font-family="Segoe UI, PingFang SC, Noto Sans SC, sans-serif" font-size="15">研究主旨 / 方法抓手 / 理论线索</text>
+
+    <rect x="748" y="341" width="264" height="72" rx="18" fill="#F9F1E8"/>
+    <text x="766" y="370" fill="#1F1A16" font-family="Segoe UI, PingFang SC, Noto Sans SC, sans-serif" font-size="18" font-weight="700">GitHub 01</text>
+    <text x="766" y="397" fill="#6A6158" font-family="Segoe UI, PingFang SC, Noto Sans SC, sans-serif" font-size="15">定位 / 价值 / 接入姿势</text>
+
+    <rect x="748" y="427" width="264" height="72" rx="18" fill="#F9F1E8"/>
+    <text x="766" y="456" fill="#1F1A16" font-family="Segoe UI, PingFang SC, Noto Sans SC, sans-serif" font-size="18" font-weight="700">Cloud Delivery</text>
+    <text x="766" y="483" fill="#6A6158" font-family="Segoe UI, PingFang SC, Noto Sans SC, sans-serif" font-size="15">GitHub Actions + Pages + PushPlus</text>
+  </g>
+</svg>

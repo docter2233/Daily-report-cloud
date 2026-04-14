@@ -4,6 +4,8 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![Python 3.11+](https://img.shields.io/badge/Python-3.11%2B-blue.svg)](requirements.txt)
 
+![Embodied AI Daily Report Cloud](assets/readme-hero.svg)
+
 中文机器人研究者的手机优先日报系统。  
 A mobile-first daily digest system for embodied AI and robotics researchers.
 
@@ -15,6 +17,21 @@ A mobile-first daily digest system for embodied AI and robotics researchers.
 - 最后把适合手机阅读的摘要推到微信
 
 电脑关机不影响运行，因为整个流程跑在 GitHub Actions 上。
+
+## Live Demo
+
+- GitHub Pages: [docter2233.github.io/Daily-report-cloud](https://docter2233.github.io/Daily-report-cloud/)
+- Example mobile digest: [docs/example-mobile-digest.md](docs/example-mobile-digest.md)
+
+## At A Glance
+
+| 普通科研日报 | 这个仓库 |
+| --- | --- |
+| 直接推原始链接 | 先整理成中文小文再推送 |
+| 手机上很难判断值不值得看 | 手机上先看主旨、方法、理论线索 |
+| GitHub Trending 噪声大 | Trending 不够相关时自动补研究向仓库 |
+| 电脑必须开着 | GitHub Actions 云端自动跑 |
+| 只是信息堆积 | 更像研究判断层 |
 
 ## Why This Repo Exists
 
@@ -176,6 +193,11 @@ Useful settings:
 ## Contributing
 
 欢迎提 issue 和 PR。贡献方式见 [CONTRIBUTING.md](CONTRIBUTING.md)。
+
+## Community
+
+- Contribution guide: [CONTRIBUTING.md](CONTRIBUTING.md)
+- Code of conduct: [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md)
 
 ## License
 
