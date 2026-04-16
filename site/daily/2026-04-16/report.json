@@ -1,0 +1,155 @@
+{
+  "generated_at": "2026-04-16T11:51:49+08:00",
+  "reference_date": "2026-04-16",
+  "window_start": "2026-04-16",
+  "timezone": "Asia/Shanghai",
+  "papers": [
+    {
+      "type": "paper",
+      "title": "HiVLA: A Visual-Grounded-Centric Hierarchical Embodied Manipulation System",
+      "venue": "arXiv cs.RO",
+      "published": "2026-04-15",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2604.14125v1",
+      "abstract": "While end-to-end Vision-Language-Action (VLA) models offer a promising paradigm for robotic manipulation, fine-tuning them on narrow control data often compromises the profound reasoning capabilities inherited from their base Vision-Language Models (VLMs). To resolve this fundamental trade-off, we propose HiVLA, a visual-grounded-centric hierarchical framework that explicitly decouples high-level semantic planning from low-level motor control. In high-level part, a VLM planner first performs task decomposition and visual grounding to generate structured plans, comprising a subtask instruction and a precise target bounding box. Then, to translate this plan into physical actions, we introduce a flow-matching Diffusion Transformer (DiT) action expert in low-level part equipped with a novel cascaded cross-attention mechanism. This design sequentially fuses global context, high-resolution object-centric crops and skill semantics, enabling the DiT to focus purely on robust execution. Our decoupled architecture preserves the VLM's zero-shot reasoning while allowing independent improvement of both components. Extensive experiments in simulation and the real world demonstrate that HiVLA significantly outperforms state-of-the-art end-to-end baselines, particularly excelling in long-horizon skill composition and the fine-grained manipulation of small objects in cluttered scenes.",
+      "pdf_url": "https://arxiv.org/pdf/2604.14125v1",
+      "oa_url": "https://arxiv.org/pdf/2604.14125v1",
+      "source_homepage": "https://arxiv.org/list/cs.RO/recent",
+      "keyword_hits": [
+        "embodied",
+        "manipulation",
+        "diffusion",
+        "transformer",
+        "planning",
+        "control"
+      ],
+      "relevance_score": 13,
+      "cited_by_count": null,
+      "primary_topic": "",
+      "concepts": [],
+      "oa_status": "",
+      "direction": "机械臂操控",
+      "focus": "导航规划与场景决策",
+      "method_tags": [
+        "Transformer",
+        "扩散模型",
+        "语言模型"
+      ],
+      "overview_sentence": "While end-to-end Vision-Language-Action (VLA) models offer a promising paradigm for robotic manipulation, fine-tuning them on narrow control data often compromises the profound reasoning capabilities inherited from their base Vision-Language Models (VLMs).",
+      "note": {
+        "summary_cn": "这篇论文关注导航规划与场景决策，方法路线偏向Transformer、扩散模型、语言模型。",
+        "overview": "主旨上，这篇论文主要落在“机械臂操控”方向，更具体地说是在处理导航规划与场景决策。",
+        "method": "方法上，这篇工作更接近Transformer、扩散模型、语言模型路线，但公开摘要没有把实现细节展开到可直接复现的程度。",
+        "theory": "公开摘要没有展开完整公式，但可以确认作者的理论抓手主要围绕策略或控制律、状态表征或世界模型、生成式序列建模。",
+        "experiment": "含仿真实验。",
+        "result": "结果层面，摘要声称方法在指标或任务完成度上有明显提升。",
+        "application": "更偏向抓取、装配、接触丰富操作和机械臂精细执行。",
+        "reading": "建议先看小文中的主旨、方法和实验，再决定是否进入原文或 PDF。",
+        "access": "已找到合法开放 PDF，可直接从详情页跳转。"
+      },
+      "slug": "paper-01-hivla-a-visual-grounded-centric-hierarchical-embodied-manipulation-syste",
+      "detail_relpath": "daily/2026-04-16/papers/paper-01-hivla-a-visual-grounded-centric-hierarchical-embodied-manipulation-syste.html"
+    },
+    {
+      "type": "paper",
+      "title": "Visual Sculpting: Visually-Aligned Planning Representations for Long-Horizon Robot Clay Sculpting",
+      "venue": "IEEE Robotics and Automation Letters",
+      "published": "2026-05",
+      "doi": "10.1109/lra.2026.3673896",
+      "url": "https://doi.org/10.1109/lra.2026.3673896",
+      "abstract": "Clay sculpting is a nuanced, artistic task involving dexterous manipulation with long-horizon planning to achieve high-level goals. As a robotics problem, we formulate clay sculpting as a shape-to-shape matching challenge. Prior deformable object manipulation work either requires retraining a policy per goal or relies on dynamics models which represent state as sparse point clouds which do not capture important clay features, such as textures, well. We present a method for modeling the dynamics of deformable materials and planning for robotic sculpting in a representation that is visually-aligned, capturing lighting and texture features. With three different deformable materials and various end-effectors, we demonstrate that our dynamics model is comparable in performance to the state-of-the-art with the added benefit of being compatible with visual planning. Our actions are represented as parametrized pushes into clay with a single end-effector, which proved to be suitable for long-horizon (<inline-formula xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><tex-math notation=\"LaTeX\">$&gt;$</tex-math></inline-formula>100 actions) clay relief sculptures. Lastly, we show the benefits of planning in a visually-aligned representation, but also provide analysis providing evidence as to why this representation is challenging to plan in compared to 3D representations.",
+      "source_homepage": "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=7083369",
+      "keyword_hits": [
+        "planning",
+        "robot"
+      ],
+      "relevance_score": 2,
+      "cited_by_count": 0,
+      "primary_topic": "Robotic Path Planning Algorithms",
+      "concepts": [
+        "Computer vision",
+        "Robot",
+        "Artificial intelligence",
+        "Computer science",
+        "Visualization",
+        "Computer graphics (images)"
+      ],
+      "oa_url": "https://doi.org/10.1109/lra.2026.3673896",
+      "pdf_url": "",
+      "oa_status": "closed",
+      "direction": "机械臂操控",
+      "focus": "可变形物体操作",
+      "method_tags": [],
+      "overview_sentence": "Clay sculpting is a nuanced, artistic task involving dexterous manipulation with long-horizon planning to achieve high-level goals.",
+      "note": {
+        "summary_cn": "这篇论文关注可变形物体操作，方法路线偏向机械臂操控。",
+        "overview": "主旨上，这篇论文主要落在“机械臂操控”方向，更具体地说是在处理可变形物体操作。",
+        "method": "方法上，这篇工作更接近问题建模 + 感知/控制联合设计路线，但公开摘要没有把实现细节展开到可直接复现的程度。",
+        "theory": "公开摘要没有展开完整公式，但可以确认作者的理论抓手主要围绕动力学/几何结构、策略或控制律、状态表征或世界模型。",
+        "experiment": "做了消融或分析实验。",
+        "result": "结果层面，摘要声称方法在指标或任务完成度上有明显提升。",
+        "application": "更偏向抓取、装配、接触丰富操作和机械臂精细执行。",
+        "reading": "建议先看小文中的主旨、方法和实验，再决定是否进入原文或 PDF。",
+        "access": "已找到合法开放获取入口，手机可直接阅读。"
+      },
+      "slug": "paper-02-visual-sculpting-visually-aligned-planning-representations-for-long-hori",
+      "detail_relpath": "daily/2026-04-16/papers/paper-02-visual-sculpting-visually-aligned-planning-representations-for-long-hori.html"
+    },
+    {
+      "type": "paper",
+      "title": "Diffusion-Based mmWave Radar Point Cloud Enhancement Driven by Range Images",
+      "venue": "IEEE Robotics and Automation Letters",
+      "published": "2026-05",
+      "doi": "10.1109/lra.2026.3673977",
+      "url": "https://doi.org/10.1109/lra.2026.3673977",
+      "abstract": "Millimeter-wave (mmWave) radar has attracted significant attention in robotics and autonomous driving due to its robustness in harsh environments. However, the radar point clouds are typically sparse and noisy, which limits its futher development. Traditional mmWave radar enhancement approaches often struggle to leverage the effectiveness of diffusion models in super-resolution, largely due to the unnatural range-azimuth heatmap (RAH) or bird's eye view (BEV) representation. To address this issue, we pioneer the integration of range image representations into an image diffusion framework that leverages pre-trained image diffusion priors to generate dense and accurate 3D mmWave radar point clouds with LiDAR-like quality. Extensive evaluations on both public datasets and self-constructed datasets demonstrate that our approach provides substantial improvements, establishing a new state-of-the-art performance in generating truly three-dimensional LiDAR-like point clouds via mmWave radar.",
+      "source_homepage": "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=7083369",
+      "keyword_hits": [
+        "diffusion"
+      ],
+      "relevance_score": 2,
+      "cited_by_count": 0,
+      "primary_topic": "Microwave Imaging and Scattering Analysis",
+      "concepts": [
+        "Remote sensing",
+        "Radar",
+        "Computer science",
+        "Range (aeronautics)",
+        "Point (geometry)",
+        "Cloud computing"
+      ],
+      "oa_url": "https://doi.org/10.1109/lra.2026.3673977",
+      "pdf_url": "",
+      "oa_status": "closed",
+      "direction": "机器人通用方法",
+      "focus": "雷达感知与点云增强",
+      "method_tags": [
+        "扩散模型",
+        "检索增强",
+        "几何/深度估计"
+      ],
+      "overview_sentence": "Millimeter-wave (mmWave) radar has attracted significant attention in robotics and autonomous driving due to its robustness in harsh environments.",
+      "note": {
+        "summary_cn": "这篇论文关注雷达感知与点云增强，方法路线偏向扩散模型、检索增强、几何/深度估计。",
+        "overview": "主旨上，这篇论文主要落在“机器人通用方法”方向，更具体地说是在处理雷达感知与点云增强。",
+        "method": "方法上，这篇工作更接近扩散模型、检索增强、几何/深度估计路线，但公开摘要没有把实现细节展开到可直接复现的程度。",
+        "theory": "公开摘要没有展开完整公式，但可以确认作者的理论抓手主要围绕状态表征或世界模型、生成式序列建模。",
+        "experiment": "在公开基准或数据集上评估。",
+        "result": "结果层面，摘要声称方法在指标或任务完成度上有明显提升。",
+        "application": "对机器人系统设计、实验选题和工程落地都有一定参考价值。",
+        "reading": "建议先看小文中的主旨、方法和实验，再决定是否进入原文或 PDF。",
+        "access": "已找到合法开放获取入口，手机可直接阅读。"
+      },
+      "slug": "paper-03-diffusion-based-mmwave-radar-point-cloud-enhancement-driven-by-range-ima",
+      "detail_relpath": "daily/2026-04-16/papers/paper-03-diffusion-based-mmwave-radar-point-cloud-enhancement-driven-by-range-ima.html"
+    }
+  ],
+  "repos": [],
+  "errors": [
+    {
+      "source": "GitHub Search",
+      "error": "403 Client Error: rate limit exceeded for url: https://api.github.com/search/repositories?q=topic%3Arobotics+ros2+pushed%3A%3E%3D2025-04-16+archived%3Afalse+fork%3Afalse&sort=stars&order=desc&per_page=5"
+    }
+  ],
+  "daily_relpath": "daily/2026-04-16/index.html"
+}
