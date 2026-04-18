@@ -1,0 +1,482 @@
+{
+  "generated_at": "2026-04-18T11:34:12+08:00",
+  "reference_date": "2026-04-18",
+  "window_start": "2026-04-18",
+  "timezone": "Asia/Shanghai",
+  "papers": [
+    {
+      "type": "paper",
+      "title": "R3D: Revisiting 3D Policy Learning",
+      "venue": "arXiv cs.RO",
+      "published": "2026-04-16",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2604.15281v1",
+      "abstract": "3D policy learning promises superior generalization and cross-embodiment transfer, but progress has been hindered by training instabilities and severe overfitting, precluding the adoption of powerful 3D perception models. In this work, we systematically diagnose these failures, identifying the omission of 3D data augmentation and the adverse effects of Batch Normalization as primary causes. We propose a new architecture coupling a scalable transformer-based 3D encoder with a diffusion decoder, engineered specifically for stability at scale and designed to leverage large-scale pre-training. Our approach significantly outperforms state-of-the-art 3D baselines on challenging manipulation benchmarks, establishing a new and robust foundation for scalable 3D imitation learning. Project Page: https://r3d-policy.github.io/",
+      "pdf_url": "https://arxiv.org/pdf/2604.15281v1",
+      "oa_url": "https://arxiv.org/pdf/2604.15281v1",
+      "source_homepage": "https://arxiv.org/list/cs.RO/recent",
+      "keyword_hits": [
+        "manipulation",
+        "diffusion",
+        "transformer",
+        "policy"
+      ],
+      "relevance_score": 9,
+      "cited_by_count": null,
+      "primary_topic": "",
+      "concepts": [],
+      "oa_status": "",
+      "direction": "机械臂操控",
+      "focus": "机械臂操控",
+      "method_tags": [
+        "Transformer",
+        "扩散模型",
+        "检索增强"
+      ],
+      "overview_sentence": "3D policy learning promises superior generalization and cross-embodiment transfer, but progress has been hindered by training instabilities and severe overfitting, precluding the adoption of powerful 3D perception models.",
+      "note": {
+        "summary_cn": "这篇论文关注机械臂操控，方法路线偏向Transformer、扩散模型、检索增强。",
+        "overview": "主旨上，这篇论文主要落在“机械臂操控”方向，更具体地说是在处理机械臂操控。",
+        "method": "方法上，这篇工作更接近Transformer、扩散模型、检索增强路线，但公开摘要没有把实现细节展开到可直接复现的程度。",
+        "theory": "公开摘要没有展开完整公式，但可以确认作者的理论抓手主要围绕策略或控制律、状态表征或世界模型、生成式序列建模。",
+        "experiment": "在公开基准或数据集上评估。",
+        "result": "结果层面，摘要声称方法在指标或任务完成度上有明显提升。",
+        "application": "更偏向抓取、装配、接触丰富操作和机械臂精细执行。",
+        "reading": "建议先看小文中的主旨、方法和实验，再决定是否进入原文或 PDF。",
+        "access": "已找到合法开放 PDF，可直接从详情页跳转。"
+      },
+      "slug": "paper-01-r3d-revisiting-3d-policy-learning",
+      "detail_relpath": "daily/2026-04-18/papers/paper-01-r3d-revisiting-3d-policy-learning.html"
+    },
+    {
+      "type": "paper",
+      "title": "Koopman-Based Online Identification With Sim2Real Transfer for Hydrodynamic Modeling of Turtle Inspired Robot",
+      "venue": "IEEE Robotics and Automation Letters",
+      "published": "2026-06",
+      "doi": "10.1109/lra.2026.3682620",
+      "url": "https://doi.org/10.1109/lra.2026.3682620",
+      "abstract": "",
+      "source_homepage": "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=7083369",
+      "keyword_hits": [
+        "sim2real",
+        "robot"
+      ],
+      "relevance_score": 3,
+      "cited_by_count": 0,
+      "primary_topic": "Biomimetic flight and propulsion mechanisms",
+      "concepts": [
+        "Turtle (robot)",
+        "Computer science",
+        "Identification (biology)",
+        "Robot",
+        "Artificial intelligence",
+        "Transfer (computing)"
+      ],
+      "oa_url": "https://doi.org/10.1109/lra.2026.3682620",
+      "pdf_url": "",
+      "oa_status": "closed",
+      "direction": "仿真到真实迁移",
+      "focus": "仿真到真实迁移",
+      "method_tags": [
+        "Sim2Real"
+      ],
+      "overview_sentence": "",
+      "note": {
+        "summary_cn": "这篇论文关注仿真到真实迁移，方法路线偏向Sim2Real。",
+        "overview": "主旨上，这篇论文主要落在“仿真到真实迁移”方向，更具体地说是在处理仿真到真实迁移。",
+        "method": "方法上，这篇工作更接近Sim2Real路线，但公开摘要没有把实现细节展开到可直接复现的程度。",
+        "theory": "目前只有标题和元数据，无法负责任地还原具体推导，只能保留研究方向判断。",
+        "experiment": "摘要没有展开完整实验表，但可以确认作者至少做了方法有效性验证。",
+        "result": "结果层面，公开摘要没有给出足够细节，适合先把它当作值得复查的候选。",
+        "application": "更适合把仿真中的策略稳定迁移到真实机器人平台。",
+        "reading": "建议先看小文中的主旨、方法和实验，再决定是否进入原文或 PDF。",
+        "access": "已找到合法开放获取入口，手机可直接阅读。"
+      },
+      "slug": "paper-02-koopman-based-online-identification-with-sim2real-transfer-for-hydrodyna",
+      "detail_relpath": "daily/2026-04-18/papers/paper-02-koopman-based-online-identification-with-sim2real-transfer-for-hydrodyna.html"
+    },
+    {
+      "type": "paper",
+      "title": "Sample-Efficient Learning of a Robotic Tube Insertion Policy",
+      "venue": "IEEE Robotics and Automation Letters",
+      "published": "2026-06",
+      "doi": "10.1109/lra.2026.3675942",
+      "url": "https://doi.org/10.1109/lra.2026.3675942",
+      "abstract": "Reinforcement learning for manipulation with real robots is complicated when faced with object variations and contact dynamics. Further, achieving support across a category of objects for manipulation is in itself a challenging task. A recent work that addresses training inefficiencies on a real robot is the Contrastive Pre-training and Data Augmentation for Efficient Robotic Learning (CoDER) framework. It uses a combination of contrastive-pretraining, data augmentation, expert demonstrations and reinforcement learning to achieve sample-efficiency. To improve sample-efficiency further, we used force/torque inputs, pre-trained image encoders, layer normalization, and we warmed up our actor-critic networks before training. In this work, we propose these improvements to the original CoDER for stable and efficient training of a real robot for fine manipulation - we insert medical tubes into a rack. Our policy is trained on a single tube and it is able to support different tubes in the test set. The experimental results show an average insertion success rate of 98.1% across several different types of medical tubes. We achieve this robustness with a policy trained in only 800 episodes over approximately 6 hours using sparse rewards.",
+      "source_homepage": "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=7083369",
+      "keyword_hits": [
+        "policy"
+      ],
+      "relevance_score": 1,
+      "cited_by_count": 0,
+      "primary_topic": "Robot Manipulation and Learning",
+      "concepts": [
+        "Robustness (evolution)",
+        "Robot",
+        "Reinforcement learning",
+        "Artificial intelligence",
+        "Computer science",
+        "Training set"
+      ],
+      "oa_url": "https://doi.org/10.1109/lra.2026.3675942",
+      "pdf_url": "",
+      "oa_status": "closed",
+      "direction": "机械臂操控",
+      "focus": "机械臂操控",
+      "method_tags": [
+        "强化学习",
+        "检索增强"
+      ],
+      "overview_sentence": "Reinforcement learning for manipulation with real robots is complicated when faced with object variations and contact dynamics.",
+      "note": {
+        "summary_cn": "这篇论文关注机械臂操控，方法路线偏向强化学习、检索增强。",
+        "overview": "主旨上，这篇论文主要落在“机械臂操控”方向，更具体地说是在处理机械臂操控。",
+        "method": "方法上，这篇工作更接近强化学习、检索增强路线，但公开摘要没有把实现细节展开到可直接复现的程度。",
+        "theory": "公开摘要没有展开完整公式，但可以确认作者的理论抓手主要围绕动力学/几何结构、策略或控制律。",
+        "experiment": "包含真实机器人或真实环境验证。",
+        "result": "结果层面，摘要声称方法在指标或任务完成度上有明显提升。",
+        "application": "更偏向抓取、装配、接触丰富操作和机械臂精细执行。",
+        "reading": "建议先看小文中的主旨、方法和实验，再决定是否进入原文或 PDF。",
+        "access": "已找到合法开放获取入口，手机可直接阅读。"
+      },
+      "slug": "paper-03-sample-efficient-learning-of-a-robotic-tube-insertion-policy",
+      "detail_relpath": "daily/2026-04-18/papers/paper-03-sample-efficient-learning-of-a-robotic-tube-insertion-policy.html"
+    }
+  ],
+  "repos": [
+    {
+      "type": "repo",
+      "repo": "NVlabs/GR00T-WholeBodyControl",
+      "url": "https://github.com/NVlabs/GR00T-WholeBodyControl",
+      "description": "Welcome to GR00T Whole-Body Control (WBC)! This is a unified platform for developing and deploying advanced humanoid controllers. This includes: Decoupled WBC models used in NVIDIA Isaac-Gr00t, Gr00t N1.5 and N1.6 and GEAR-SONIC - GitHub: Welcome to GR00T Whole-Body Control (WBC)! This is a unified platform for developing and deploying advanced humanoid controllers. This includes: Decoupled WBC models used in NVIDIA Isaac-Gr00t, Gr00t N1.5 and N1.6 and GEAR-SONIC",
+      "language": "Python",
+      "total_stars": "1505",
+      "forks": "187",
+      "stars_today": "21",
+      "source_kind": "trending",
+      "readme_excerpt": "GR00T-WholeBodyControl This is the codebase for the GR00T Whole-Body Control (WBC) projects. It hosts model checkpoints and scripts for training, evaluating, and deploying advanced whole-body controllers for humanoid robots. We currently support: Decoupled WBC : the decoupled controller (RL for lower body, and IK for upper body) used in NVIDIA GR00T N1.5 and N1.6 models; GEAR-SONIC Series : our latest iteration of generalist humanoid whole-body controllers (see our whitepaper ). News [2026-04-14] 🌐 Live web demo — try SONIC interactively in your browser. Features Kimodo text-to-motion generation. [2026-04-10] 🚀 Released SONIC training code and checkpoint on HuggingFace . Train from scratch or finetune. Additional embodiment support and VLA data collection pipeline . See Training Guide . [2026-03-24] 🔧 C++ inference stack update: motor error monitoring, TTS alerts, ZMQ protocol v4, idle-mode readaptation. ZMQ header size changed to 1280 bytes. [2026-03-16] 📦 BONES-SEED open-sourced — 142K+ human motions (~288 hours) with G1 MuJoCo trajectories. [2026-02-19] 🎉 Released GEAR-SONIC: pretrained checkpoints, C++ inference, VR teleoperation, and documentation. [2025-11-12] 🏁 Initial rele…",
+      "topics": [],
+      "relevance_score": 12,
+      "keyword_hits": [
+        "humanoid",
+        "isaac",
+        "mujoco",
+        "control",
+        "rl"
+      ],
+      "relevance_label": "直接相关",
+      "use_mode": "工具链/基础设施",
+      "domain": "机器人中间件/系统集成",
+      "note": {
+        "summary_cn": "这是一个偏机器人中间件/系统集成的开源仓库，更像工具链/基础设施。",
+        "overview": "这是一个偏“机器人中间件/系统集成”的仓库，从公开描述看更像工具链/基础设施。核心关键词包括：暂无明确 topic。",
+        "why_trending": "今天在 Trending 里新增 21 star。",
+        "robotics_value": "对机器人研究是可直接复用的主线资源。",
+        "integration": "使用姿势上，建议先把它当作“工具链/基础设施”来看，重点关注它能不能进入你的训练、仿真、规划或系统集成链路。",
+        "reading": "先看小文里的定位、可复用模块和接入位置，再决定要不要进 GitHub 深挖。"
+      },
+      "slug": "repo-01-nvlabs-gr00t-wholebodycontrol",
+      "detail_relpath": "daily/2026-04-18/repos/repo-01-nvlabs-gr00t-wholebodycontrol.html"
+    },
+    {
+      "type": "repo",
+      "repo": "google-deepmind/mujoco",
+      "url": "https://github.com/google-deepmind/mujoco",
+      "description": "Multi-Joint dynamics with Contact. A general purpose physics simulator.",
+      "language": "C++",
+      "total_stars": "12908",
+      "forks": "1446",
+      "stars_today": "26",
+      "source_kind": "trending",
+      "readme_excerpt": "MuJoCo stands for Mu lti- Jo int dynamics with Co ntact. It is a general purpose physics engine that aims to facilitate research and development in robotics, biomechanics, graphics and animation, machine learning, and other areas which demand fast and accurate simulation of articulated structures interacting with their environment. This repository is maintained by Google DeepMind . MuJoCo has a C API and is intended for researchers and developers. The runtime simulation module is tuned to maximize performance and operates on low-level data structures that are preallocated by the built-in XML compiler. The library includes interactive visualization with a native GUI, rendered in OpenGL. MuJoCo further exposes a large number of utility functions for computing physics-related quantities. We also provide Python bindings and a plug-in for the Unity game engine. Documentation MuJoCo's documentation can be found at mujoco.readthedocs.io . Upcoming features due for the next release can be found in the changelog in the \"latest\" branch. Getting Started There are two easy ways to get started with MuJoCo: Run simulate on your machine. This video shows a screen capture of simulate , MuJoCo's n…",
+      "topics": [
+        "robotics",
+        "physics",
+        "mujoco"
+      ],
+      "relevance_score": 9,
+      "keyword_hits": [
+        "robotics",
+        "simulation",
+        "mujoco"
+      ],
+      "relevance_label": "直接相关",
+      "use_mode": "工具链/基础设施",
+      "domain": "仿真平台或训练环境",
+      "note": {
+        "summary_cn": "这是一个偏仿真平台或训练环境的开源仓库，更像工具链/基础设施。",
+        "overview": "这是一个偏“仿真平台或训练环境”的仓库，从公开描述看更像工具链/基础设施。核心关键词包括：robotics, physics, mujoco。",
+        "why_trending": "今天在 Trending 里新增 26 star。",
+        "robotics_value": "对机器人研究是可直接复用的主线资源。",
+        "integration": "使用姿势上，建议先把它当作“工具链/基础设施”来看，重点关注它能不能进入你的训练、仿真、规划或系统集成链路。",
+        "reading": "先看小文里的定位、可复用模块和接入位置，再决定要不要进 GitHub 深挖。"
+      },
+      "slug": "repo-02-google-deepmind-mujoco",
+      "detail_relpath": "daily/2026-04-18/repos/repo-02-google-deepmind-mujoco.html"
+    },
+    {
+      "type": "repo",
+      "repo": "BoosterRobotics/booster_gym",
+      "url": "https://github.com/BoosterRobotics/booster_gym",
+      "description": "Booster Gym is a reinforcement learning (RL) framework designed for humanoid robot locomotion developed by Booster Robotics.",
+      "language": "Python",
+      "total_stars": "267",
+      "forks": "50",
+      "stars_today": "0",
+      "source_kind": "research_pick",
+      "search_label": "人形与足式控制",
+      "readme_excerpt": "Booster Gym ** News **: We now provide a new RL pipeline supporting K1 robot! Booster Train trains a set of reinforcement learning tasks for Booster robots using Isaac Lab . Booster Deploy provides an easy-to-use deployment framework that enables seamlessly running the same policy code in both simulation and on real robots. Booster Assets provides Booster robot descriptions and example motion data. Booster Gym is a reinforcement learning (RL) framework designed for humanoid robot locomotion developed by Booster Robotics . Features Complete Training-to-Deployment Pipeline : Full support for training, evaluating, and deploying policies in simulation and on real robots. Sim-to-Real Transfer : Including effective settings and techniques to minimize the sim-to-real gap and improve policy generalization. Customizable Environments and Algorithms : Easily modify environments and RL algorithms to suit a wide range of tasks. Out-of-the-Box Booster T1 Support : Pre-configured for quick setup and deployment on the Booster T1 robot. Overview The framework supports the following stages for reinforcement learning: Training : Train reinforcement learning policies using Isaac Gym with parallelized…",
+      "topics": [],
+      "relevance_score": 26,
+      "keyword_hits": [
+        "robot",
+        "robotics",
+        "locomotion",
+        "humanoid",
+        "simulation",
+        "isaac",
+        "reinforcement",
+        "rl",
+        "policy"
+      ],
+      "relevance_label": "直接相关",
+      "use_mode": "工具链/基础设施",
+      "domain": "机器人中间件/系统集成",
+      "note": {
+        "summary_cn": "这是一个偏机器人中间件/系统集成的开源仓库，更像工具链/基础设施。",
+        "overview": "这是一个偏“机器人中间件/系统集成”的仓库，从公开描述看更像工具链/基础设施。核心关键词包括：暂无明确 topic。",
+        "why_trending": "这不是当天最热的全站 Trending，但它更贴近机器人研究主线，被作为研究向补位推荐。",
+        "robotics_value": "对机器人研究是可直接复用的主线资源。",
+        "integration": "使用姿势上，建议先把它当作“工具链/基础设施”来看，重点关注它能不能进入你的训练、仿真、规划或系统集成链路。",
+        "reading": "先看小文里的定位、可复用模块和接入位置，再决定要不要进 GitHub 深挖。"
+      },
+      "slug": "repo-03-boosterrobotics-booster-gym",
+      "detail_relpath": "daily/2026-04-18/repos/repo-03-boosterrobotics-booster-gym.html"
+    },
+    {
+      "type": "repo",
+      "repo": "luckyrobots/luckyrobots",
+      "url": "https://github.com/luckyrobots/luckyrobots",
+      "description": "Python SDK for LuckyEngine robotics simulation. Contribute to luckyrobots/luckyrobots development by creating an account on GitHub.",
+      "language": "Python",
+      "total_stars": "251",
+      "forks": "14",
+      "stars_today": "0",
+      "source_kind": "research_pick",
+      "search_label": "仿真与 sim2real",
+      "readme_excerpt": "Infinite synthetic data generation for embodied AI luck-e.mp4 Lucky Robots Hyperrealistic robotics simulation framework with Python API for embodied AI training and testing. Quick Start Download LuckyEngine from our releases page and set the path: # Set environment variable (choose one method): # Method 1: Set LUCKYENGINE_PATH directly to the executable export LUCKYENGINE_PATH=/path/to/LuckyEngine # Linux/Mac export LUCKYENGINE_PATH=/path/to/LuckyEngine.exe # Windows # Method 2: Set LUCKYENGINE_HOME to the directory containing the executable export LUCKYENGINE_HOME=/path/to/luckyengine/directory Install pip install luckyrobots Run Example git clone https://github.com/luckyrobots/luckyrobots.git cd luckyrobots/examples python controller.py --skip-launch # If LuckyEngine is already running Basic Usage Low-level client (direct gRPC) from luckyrobots import LuckyEngineClient client = LuckyEngineClient ( host = \"127.0.0.1\" , port = 50051 , robot_name = \"unitreego2\" ) client . wait_for_server () # RL step: send action, get observation obs = client . step ( actions = [ 0.0 ] * 12 ) print ( f\"Observation: { obs . observation [: 5 ] } ...\" ) # Or separately: client . send_control ( control…",
+      "topics": [
+        "mujoco",
+        "robotics-simulation",
+        "sim2real",
+        "system-id"
+      ],
+      "relevance_score": 25,
+      "keyword_hits": [
+        "robot",
+        "robotics",
+        "embodied",
+        "simulation",
+        "sim2real",
+        "mujoco",
+        "control",
+        "rl"
+      ],
+      "relevance_label": "直接相关",
+      "use_mode": "工具链/基础设施",
+      "domain": "仿真平台或训练环境",
+      "note": {
+        "summary_cn": "这是一个偏仿真平台或训练环境的开源仓库，更像工具链/基础设施。",
+        "overview": "这是一个偏“仿真平台或训练环境”的仓库，从公开描述看更像工具链/基础设施。核心关键词包括：mujoco, robotics-simulation, sim2real。",
+        "why_trending": "这不是当天最热的全站 Trending，但它更贴近机器人研究主线，被作为研究向补位推荐。",
+        "robotics_value": "对机器人研究是可直接复用的主线资源。",
+        "integration": "使用姿势上，建议先把它当作“工具链/基础设施”来看，重点关注它能不能进入你的训练、仿真、规划或系统集成链路。",
+        "reading": "先看小文里的定位、可复用模块和接入位置，再决定要不要进 GitHub 深挖。"
+      },
+      "slug": "repo-04-luckyrobots-luckyrobots",
+      "detail_relpath": "daily/2026-04-18/repos/repo-04-luckyrobots-luckyrobots.html"
+    },
+    {
+      "type": "repo",
+      "repo": "rohanpsingh/LearningHumanoidWalking",
+      "url": "https://github.com/rohanpsingh/LearningHumanoidWalking",
+      "description": "Training a humanoid robot for locomotion using Reinforcement Learning",
+      "language": "Python",
+      "total_stars": "1119",
+      "forks": "131",
+      "stars_today": "0",
+      "source_kind": "research_pick",
+      "search_label": "人形与足式控制",
+      "readme_excerpt": "LearningHumanoidWalking Code for the papers: Robust Humanoid Walking on Compliant and Uneven Terrain with Deep Reinforcement Learning Rohan P. Singh , Mitsuharu Morisawa , Mehdi Benallegue , Zhaoming Xie , Fumio Kanehiro Learning Bipedal Walking for Humanoids with Current Feedback Rohan P. Singh , Zhaoming Xie , Pierre Gergondet , Fumio Kanehiro Learning Bipedal Walking On Planned Footsteps For Humanoid Robots Rohan P. Singh , Mehdi Benallegue , Mitsuharu Morisawa , Rafael Cisneros , Fumio Kanehiro Code structure: A rough outline for the repository that might be useful for adding your own robot: LearningHumanoidWalking/ ├── envs/ <-- Environment implementations │ ├── common/ │ │ ├── base_humanoid_env.py <-- Base class for all humanoid environments │ │ ├── mujoco_env.py <-- MuJoCo simulation wrapper │ │ └── robot_interface.py <-- Robot state/control abstraction │ ├── jvrc/ <-- JVRC robot environments │ └── h1/ <-- Unitree H1 robot environment ├── tasks/ <-- Task definitions (rewards, termination) ├── rl/ <-- Reinforcement learning ├── robots/ <-- Robot abstractions (PD control, stepping logic) ├── models/ <-- MuJoCo model files └── tests/ <-- Test suite Key abstractions: BaseHumano…",
+      "topics": [
+        "reinforcement-learning",
+        "humanoids",
+        "cassie",
+        "mujoco",
+        "ppo",
+        "bipedal-robots",
+        "jvrc-1"
+      ],
+      "relevance_score": 21,
+      "keyword_hits": [
+        "robot",
+        "locomotion",
+        "humanoid",
+        "simulation",
+        "mujoco",
+        "control",
+        "reinforcement",
+        "rl"
+      ],
+      "relevance_label": "直接相关",
+      "use_mode": "工程灵感源",
+      "domain": "机器人中间件/系统集成",
+      "note": {
+        "summary_cn": "这是一个偏机器人中间件/系统集成的开源仓库，更像工程灵感源。",
+        "overview": "这是一个偏“机器人中间件/系统集成”的仓库，从公开描述看更像工程灵感源。核心关键词包括：reinforcement-learning, humanoids, cassie。",
+        "why_trending": "这不是当天最热的全站 Trending，但它更贴近机器人研究主线，被作为研究向补位推荐。",
+        "robotics_value": "对机器人研究是可直接复用的主线资源。",
+        "integration": "使用姿势上，建议先把它当作“工程灵感源”来看，重点关注它能不能进入你的训练、仿真、规划或系统集成链路。",
+        "reading": "先看小文里的定位、可复用模块和接入位置，再决定要不要进 GitHub 深挖。"
+      },
+      "slug": "repo-05-rohanpsingh-learninghumanoidwalking",
+      "detail_relpath": "daily/2026-04-18/repos/repo-05-rohanpsingh-learninghumanoidwalking.html"
+    },
+    {
+      "type": "repo",
+      "repo": "manumerous/wb_humanoid_mpc",
+      "url": "https://github.com/manumerous/wb_humanoid_mpc",
+      "description": "Whole-Body Nonlinear MPC for Realtime Humanoid Loco-Manipulation Planning and Control",
+      "language": "C++",
+      "total_stars": "292",
+      "forks": "61",
+      "stars_today": "0",
+      "source_kind": "research_pick",
+      "search_label": "人形与足式控制",
+      "readme_excerpt": "Whole-Body Humanoid MPC This repository contains a Whole-Body Nonlinear Model Predictive Controller (NMPC) for humanoid loco-manipulation control. This approach enables to directly optimize through the full-order torque-level dynamics in realtime to generate a wide range of humanoid behaviors building up on an extended & updated version of ocs2 Interactive Velocity and Base Height Control via Joystick: It contains the following hardware platform agnostic MPC fromulations: Centroidal Dynamics MPC The centroidal MPC optimizes over the whole-body kinematics and the center off mass dynamics, with a choice to either use a single rigid body model or the full centroidal dynamics. This specific approach builds up on the centroidal model in ocs2 by generalizing costs and constraints to a 6 DoF contact among others. I am still working on documenting this. Until then a conscise explanation of the ocs2 centroidal model can be found here Sleiman et. al., A Unified MPC Framework for Whole-Body Dynamic Locomotion and Manipulation Whole-Body Dynamics MPC The whole-body dynamics MPC optimized over the contact forces and joint accelerations with the option to compute the joint torques for each step…",
+      "topics": [
+        "ai",
+        "robotics",
+        "optimization",
+        "nonlinear",
+        "planning",
+        "data-generation",
+        "mpc",
+        "locomotion",
+        "walking",
+        "humanoid-robot"
+      ],
+      "relevance_score": 21,
+      "keyword_hits": [
+        "robot",
+        "robotics",
+        "locomotion",
+        "humanoid",
+        "manipulation",
+        "planning",
+        "control"
+      ],
+      "relevance_label": "直接相关",
+      "use_mode": "工具链/基础设施",
+      "domain": "运动规划与执行",
+      "note": {
+        "summary_cn": "这是一个偏运动规划与执行的开源仓库，更像工具链/基础设施。",
+        "overview": "这是一个偏“运动规划与执行”的仓库，从公开描述看更像工具链/基础设施。核心关键词包括：ai, robotics, optimization。",
+        "why_trending": "这不是当天最热的全站 Trending，但它更贴近机器人研究主线，被作为研究向补位推荐。",
+        "robotics_value": "对机器人研究是可直接复用的主线资源。",
+        "integration": "使用姿势上，建议先把它当作“工具链/基础设施”来看，重点关注它能不能进入你的训练、仿真、规划或系统集成链路。",
+        "reading": "先看小文里的定位、可复用模块和接入位置，再决定要不要进 GitHub 深挖。"
+      },
+      "slug": "repo-06-manumerous-wb-humanoid-mpc",
+      "detail_relpath": "daily/2026-04-18/repos/repo-06-manumerous-wb-humanoid-mpc.html"
+    },
+    {
+      "type": "repo",
+      "repo": "allenai/MolmoBot",
+      "url": "https://github.com/allenai/MolmoBot",
+      "description": "Code and website for \"MolmoB0T: Large-Scale Simulation Enables Zero-Shot Manipulation\".",
+      "language": "Python",
+      "total_stars": "61",
+      "forks": "11",
+      "stars_today": "0",
+      "source_kind": "research_pick",
+      "search_label": "仿真与 sim2real",
+      "readme_excerpt": "Large-Scale Simulation Enables Zero-Shot Manipulation Code and website for \"MolmoB0T: Large-Scale Simulation Enables Zero-Shot Manipulation\". Getting started MolmoBot policies have strong demonstrated sim-to-real transfer to a wide variety of novel scenes, objects, and camera viewpoints. Try it out for yourself on your DROID platform with MolmoBot-DROID! MolmoBot-DROID uses only the wrist camera and 1 exo camera. Don't worry about camera placement, MolmoBot policies are robust to arbitrary camera viewpoints! Trying it out in simulation See here to try out MolmoBot interactively! Modify the scene and task to test policy behavior. Set up and run MolmoBot-DROID Set up MolmoBot-DROID by following the installation instructions . See these instructions for detailed instructions on setting up and running the policy on your DROID! Any existing DROID or polymetis setups will work easily. Briefly, after starting the polymetis robot and gripper servers: # In one terminal cd MolmoBot/MolmoBot source .venv/bin/activate PYTHONPATH=. python launch_scripts/serve_molmo.py --hf-repo allenai/MolmoBot-DROID --action-type joint_pos # in another terminal cd MolmoBot/robot_eval conda activate molmobot p…",
+      "topics": [
+        "robotics",
+        "simulation",
+        "manipulation",
+        "sim2real",
+        "mobile-manipulation"
+      ],
+      "relevance_score": 20,
+      "keyword_hits": [
+        "robot",
+        "robotics",
+        "simulation",
+        "sim2real",
+        "manipulation",
+        "policy"
+      ],
+      "relevance_label": "直接相关",
+      "use_mode": "工程灵感源",
+      "domain": "仿真平台或训练环境",
+      "note": {
+        "summary_cn": "这是一个偏仿真平台或训练环境的开源仓库，更像工程灵感源。",
+        "overview": "这是一个偏“仿真平台或训练环境”的仓库，从公开描述看更像工程灵感源。核心关键词包括：robotics, simulation, manipulation。",
+        "why_trending": "这不是当天最热的全站 Trending，但它更贴近机器人研究主线，被作为研究向补位推荐。",
+        "robotics_value": "对机器人研究是可直接复用的主线资源。",
+        "integration": "使用姿势上，建议先把它当作“工程灵感源”来看，重点关注它能不能进入你的训练、仿真、规划或系统集成链路。",
+        "reading": "先看小文里的定位、可复用模块和接入位置，再决定要不要进 GitHub 深挖。"
+      },
+      "slug": "repo-07-allenai-molmobot",
+      "detail_relpath": "daily/2026-04-18/repos/repo-07-allenai-molmobot.html"
+    },
+    {
+      "type": "repo",
+      "repo": "iit-DLSLab/sim2real-robot-identification",
+      "url": "https://github.com/iit-DLSLab/sim2real-robot-identification",
+      "description": "A joints calibration routine for quadrupeds to facilitate sim-to-real transfer from isaaclab and mujoco to real robots",
+      "language": "Python",
+      "total_stars": "17",
+      "forks": "1",
+      "stars_today": "0",
+      "source_kind": "research_pick",
+      "search_label": "仿真与 sim2real",
+      "readme_excerpt": "Overwiew A joint calibration routine for IsaacLab and Mujoco, to estimate leg motor parameters. It provides scripts for data collection on the real robot (the robot should be in the air with the base fixed). This repo interfaces directly with Pace and the new sys-id functionality of Mujoco. Work in progress for supporting mujoco identification! The models (usd and xml) identified so far can be found in the folder robot_model . Run a collection This repo works best with unitree-ros2-dls for communicating with unitree go2, b2, a2, and z1 robots. Soon, will support agilex piper arms using piper-ros2-dls2 . Choose the robot and the gains in the config file Runs one of the following files python3 run_collection_quadruped_ros2.py python3 run_collection_manipulator_ros2.py modifying inside USE_MUJOCO_RENDER and USE_MUJOCO_SIMULATION depending on your usecase Visualize your trajectory running python3 datasets/replay_dataset_quadruped.py python3 datasets/replay_dataset_manipulator.py Run a calibration in IsaacLab python3 sysid_isaaclab/my_fit.py --headless How to contribute PRs are very welcome (search for TODO in the issue, or add what you like)! Maintainer This repository is maintained b…",
+      "topics": [
+        "reinforcement-learning",
+        "simulation",
+        "quadruped",
+        "mujoco",
+        "sim-to-real",
+        "isaaclab"
+      ],
+      "relevance_score": 20,
+      "keyword_hits": [
+        "robot",
+        "simulation",
+        "sim2real",
+        "ros2",
+        "mujoco",
+        "reinforcement",
+        "dataset"
+      ],
+      "relevance_label": "直接相关",
+      "use_mode": "基准/数据资源",
+      "domain": "机器人中间件/系统集成",
+      "note": {
+        "summary_cn": "这是一个偏机器人中间件/系统集成的开源仓库，更像基准/数据资源。",
+        "overview": "这是一个偏“机器人中间件/系统集成”的仓库，从公开描述看更像基准/数据资源。核心关键词包括：reinforcement-learning, simulation, quadruped。",
+        "why_trending": "这不是当天最热的全站 Trending，但它更贴近机器人研究主线，被作为研究向补位推荐。",
+        "robotics_value": "对机器人研究是可直接复用的主线资源。",
+        "integration": "使用姿势上，建议先把它当作“基准/数据资源”来看，重点关注它能不能进入你的训练、仿真、规划或系统集成链路。",
+        "reading": "先看小文里的定位、可复用模块和接入位置，再决定要不要进 GitHub 深挖。"
+      },
+      "slug": "repo-08-iit-dlslab-sim2real-robot-identification",
+      "detail_relpath": "daily/2026-04-18/repos/repo-08-iit-dlslab-sim2real-robot-identification.html"
+    }
+  ],
+  "errors": [],
+  "daily_relpath": "daily/2026-04-18/index.html"
+}
