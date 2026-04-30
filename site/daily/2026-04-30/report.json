@@ -1,0 +1,148 @@
+{
+  "generated_at": "2026-04-30T12:09:47+08:00",
+  "reference_date": "2026-04-30",
+  "window_start": "2026-04-30",
+  "timezone": "Asia/Shanghai",
+  "papers": [
+    {
+      "type": "paper",
+      "title": "Stochastic Entanglement of Deterministic Origami Tentacles For Universal Robotic Gripping",
+      "venue": "arXiv cs.RO",
+      "published": "2026-04-29",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2604.26897v1",
+      "abstract": "Origami-inspired robotic grippers have shown promising potential for object manipulation tasks due to their compact volume and mechanical flexibility. However, robust capture of objects with random shapes in dynamic working environments often comes at the cost of additional actuation channels and control complexity. Here, we introduce a tendon-driven origami tentacle gripper capable of universal object gripping by exploiting a synergy between local, deterministic deformation programming and global, stochastic entanglements. Each origami tentacle is made by cutting thin Mylar sheets; It features carefully placed holes for routing an actuation tendon, origami creases for controlling the deformation, and a tapered shape. By tailoring these design features, one can prescribe the shrinking, bending, and twisting deformation, eventually creating deterministic coiling with a simple tendon pull. Then, when multiple coiling tentacles are placed in proximity, stochastic entanglement emerges, allowing the tentacles to braid, knot, and grip objects with random shapes. We derived a simulation model by integrating origami mechanics with Cosserat rods to correlate origami design, tendon deformation, and their collective gripping performance. Then, we experimentally tested how these coiling and entangling origami tentacles can grasp objects under gravity and in water. A stow-and-release deployment mechanism was also tested to simulate in-orbit grasping. Overall, the entertaining origami tentacle gripper presents a new strategy for robust object grasping with simple design and actuation.",
+      "pdf_url": "https://arxiv.org/pdf/2604.26897v1",
+      "oa_url": "https://arxiv.org/pdf/2604.26897v1",
+      "source_homepage": "https://arxiv.org/list/cs.RO/recent",
+      "keyword_hits": [
+        "manipulation",
+        "grasp",
+        "control"
+      ],
+      "relevance_score": 7,
+      "cited_by_count": null,
+      "primary_topic": "",
+      "concepts": [],
+      "oa_status": "",
+      "direction": "机械臂操控",
+      "focus": "机械臂操控",
+      "method_tags": [],
+      "overview_sentence": "Origami-inspired robotic grippers have shown promising potential for object manipulation tasks due to their compact volume and mechanical flexibility.",
+      "note": {
+        "summary_cn": "这篇论文关注机械臂操控，方法路线偏向机械臂操控。",
+        "overview": "主旨上，这篇论文主要落在“机械臂操控”方向，更具体地说是在处理机械臂操控。",
+        "method": "方法上，这篇工作更接近问题建模 + 感知/控制联合设计路线，但公开摘要没有把实现细节展开到可直接复现的程度。",
+        "theory": "公开摘要没有展开完整公式，但可以确认作者的理论抓手主要围绕动力学/几何结构、策略或控制律。",
+        "experiment": "含仿真实验。",
+        "result": "结果层面，摘要声称方法在指标或任务完成度上有明显提升。",
+        "application": "更偏向抓取、装配、接触丰富操作和机械臂精细执行。",
+        "reading": "建议先看小文中的主旨、方法和实验，再决定是否进入原文或 PDF。",
+        "access": "已找到合法开放 PDF，可直接从详情页跳转。"
+      },
+      "slug": "paper-01-stochastic-entanglement-of-deterministic-origami-tentacles-for-universal",
+      "detail_relpath": "daily/2026-04-30/papers/paper-01-stochastic-entanglement-of-deterministic-origami-tentacles-for-universal.html"
+    },
+    {
+      "type": "paper",
+      "title": "Koopman-Based Online Identification With Sim2Real Transfer for Hydrodynamic Modeling of Turtle Inspired Robot",
+      "venue": "IEEE Robotics and Automation Letters",
+      "published": "2026-06",
+      "doi": "10.1109/lra.2026.3682620",
+      "url": "https://doi.org/10.1109/lra.2026.3682620",
+      "abstract": "",
+      "source_homepage": "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=7083369",
+      "keyword_hits": [
+        "sim2real",
+        "robot"
+      ],
+      "relevance_score": 3,
+      "cited_by_count": 0,
+      "primary_topic": "Biomimetic flight and propulsion mechanisms",
+      "concepts": [
+        "Turtle (robot)",
+        "Computer science",
+        "Identification (biology)",
+        "Robot",
+        "Artificial intelligence",
+        "Transfer (computing)"
+      ],
+      "oa_url": "https://doi.org/10.1109/lra.2026.3682620",
+      "pdf_url": "",
+      "oa_status": "closed",
+      "direction": "仿真到真实迁移",
+      "focus": "仿真到真实迁移",
+      "method_tags": [
+        "Sim2Real"
+      ],
+      "overview_sentence": "",
+      "note": {
+        "summary_cn": "这篇论文关注仿真到真实迁移，方法路线偏向Sim2Real。",
+        "overview": "主旨上，这篇论文主要落在“仿真到真实迁移”方向，更具体地说是在处理仿真到真实迁移。",
+        "method": "方法上，这篇工作更接近Sim2Real路线，但公开摘要没有把实现细节展开到可直接复现的程度。",
+        "theory": "目前只有标题和元数据，无法负责任地还原具体推导，只能保留研究方向判断。",
+        "experiment": "摘要没有展开完整实验表，但可以确认作者至少做了方法有效性验证。",
+        "result": "结果层面，公开摘要没有给出足够细节，适合先把它当作值得复查的候选。",
+        "application": "更适合把仿真中的策略稳定迁移到真实机器人平台。",
+        "reading": "建议先看小文中的主旨、方法和实验，再决定是否进入原文或 PDF。",
+        "access": "已找到合法开放获取入口，手机可直接阅读。"
+      },
+      "slug": "paper-02-koopman-based-online-identification-with-sim2real-transfer-for-hydrodyna",
+      "detail_relpath": "daily/2026-04-30/papers/paper-02-koopman-based-online-identification-with-sim2real-transfer-for-hydrodyna.html"
+    },
+    {
+      "type": "paper",
+      "title": "From Pixels to Touch: Direct Tactile Servoing With Learned Photometric Normalization",
+      "venue": "IEEE Robotics and Automation Letters",
+      "published": "2026-06",
+      "doi": "10.1109/lra.2026.3685944",
+      "url": "https://doi.org/10.1109/lra.2026.3685944",
+      "abstract": "Vision-Based Tactile Sensors (VBTSs) offer highresolution contact information essential for robust robotic contactrich manipulation under occlusions and variable lighting. Direct Visual Servoing (DVS) is an interesting alternative to classical Position-Based Visual Servoing (PBVS) as it operates directly on raw pixel intensities, without requiring feature extraction and simplifying the control pipeline. Applying DVS to VBTSs is a challenge because of the sensors' strong position-dependent lighting effects that violate the brightness-constancy assumption that DVS requires. In this work, we introduce a Direct Tactile Servoing (DTS) framework that adapts the principles of DVS to VBTSs. Our approach integrates a deep convolutional UNet that maps raw RGB tactile images to spatially normalized grayscale representations, restoring photometric consistency while preserving fine contact features. We further conduct targeted ablation studies to identify training strategies that balance generalization performance and data efficiency. This learned normalization enables the direct use of DVS control laws without explicit pose or force estimation. Experiments on a robotic manipulator equipped with a GelSight Mini sensor validate robust and reactive closed-loop tactile servoing across diverse contact conditions.",
+      "source_homepage": "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=7083369",
+      "keyword_hits": [
+        "tactile"
+      ],
+      "relevance_score": 2,
+      "cited_by_count": 0,
+      "primary_topic": "Advanced Sensor and Energy Harvesting Materials",
+      "concepts": [
+        "Artificial intelligence",
+        "Computer vision",
+        "Normalization (sociology)",
+        "Pixel",
+        "Computer science",
+        "Pattern recognition (psychology)"
+      ],
+      "oa_url": "https://hal.science/hal-05599932",
+      "pdf_url": "",
+      "oa_status": "green",
+      "direction": "机械臂操控",
+      "focus": "触觉感知闭环",
+      "method_tags": [
+        "触觉反馈"
+      ],
+      "overview_sentence": "Vision-Based Tactile Sensors (VBTSs) offer highresolution contact information essential for robust robotic contactrich manipulation under occlusions and variable lighting.",
+      "note": {
+        "summary_cn": "这篇论文关注触觉感知闭环，方法路线偏向触觉反馈。",
+        "overview": "主旨上，这篇论文主要落在“机械臂操控”方向，更具体地说是在处理触觉感知闭环。",
+        "method": "方法上，这篇工作更接近触觉反馈路线，但公开摘要没有把实现细节展开到可直接复现的程度。",
+        "theory": "公开摘要没有展开完整公式，但可以确认作者的理论抓手主要围绕动力学/几何结构、策略或控制律。",
+        "experiment": "做了消融或分析实验。",
+        "result": "结果层面，公开摘要没有给出足够细节，适合先把它当作值得复查的候选。",
+        "application": "更偏向抓取、装配、接触丰富操作和机械臂精细执行。",
+        "reading": "建议先看小文中的主旨、方法和实验，再决定是否进入原文或 PDF。",
+        "access": "已找到合法开放获取入口，手机可直接阅读。"
+      },
+      "slug": "paper-03-from-pixels-to-touch-direct-tactile-servoing-with-learned-photometric-no",
+      "detail_relpath": "daily/2026-04-30/papers/paper-03-from-pixels-to-touch-direct-tactile-servoing-with-learned-photometric-no.html"
+    }
+  ],
+  "repos": [],
+  "errors": [
+    {
+      "source": "GitHub Search",
+      "error": "403 Client Error: rate limit exceeded for url: https://api.github.com/search/repositories?q=robotics+simulation+sim2real+pushed%3A%3E%3D2025-04-30+archived%3Afalse+fork%3Afalse&sort=stars&order=desc&per_page=5"
+    }
+  ],
+  "daily_relpath": "daily/2026-04-30/index.html"
+}
