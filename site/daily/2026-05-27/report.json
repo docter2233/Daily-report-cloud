@@ -1,0 +1,154 @@
+{
+  "generated_at": "2026-05-27T12:53:55+08:00",
+  "reference_date": "2026-05-27",
+  "window_start": "2026-05-27",
+  "timezone": "Asia/Shanghai",
+  "papers": [
+    {
+      "type": "paper",
+      "title": "Riding the Shifting Potential: When Reactive Control Suffices for Multi-Goal Behavior",
+      "venue": "arXiv cs.RO",
+      "published": "2026-05-26",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2605.27314v1",
+      "abstract": "Reactive control is often considered insufficient for multi-objective tasks because conflicting objectives give rise to local minima. We argue this limitation is not inherent but arises from static encodings that fail to reflect how objectives currently interact. We exploit the interaction structure encoded in a graph-based world model by extending it with nullspace projections: conflicts are resolved where they arise by projecting lower-priority gradients into the nullspace of higher-priority ones, with priorities determined continuously from the current state. We demonstrate this in two domains where conflicts between objectives are central: navigation around non-convex obstacles, where static potential fields fundamentally fail, and planar pushing of non-convex objects, where our method achieves $100\\%$ success across one-hundred configurations versus $0\\%$ for the steepest-descent baseline and ${\\sim}55\\%$ for diffusion policy, without demonstrations or retraining. The same formulation transfers directly to a real robot with additional perceptual and kinematic constraints, accommodating them through the same mechanism.",
+      "pdf_url": "https://arxiv.org/pdf/2605.27314v1",
+      "oa_url": "https://arxiv.org/pdf/2605.27314v1",
+      "source_homepage": "https://arxiv.org/list/cs.RO/recent",
+      "keyword_hits": [
+        "diffusion",
+        "world model",
+        "navigation",
+        "control",
+        "policy",
+        "robot"
+      ],
+      "relevance_score": 9,
+      "cited_by_count": null,
+      "primary_topic": "",
+      "concepts": [],
+      "oa_status": "",
+      "direction": "导航与规划",
+      "focus": "导航规划与场景决策",
+      "method_tags": [
+        "扩散模型",
+        "约束建模",
+        "世界模型"
+      ],
+      "overview_sentence": "Reactive control is often considered insufficient for multi-objective tasks because conflicting objectives give rise to local minima.",
+      "note": {
+        "summary_cn": "这篇论文关注导航规划与场景决策，方法路线偏向扩散模型、约束建模、世界模型。",
+        "overview": "主旨上，这篇论文主要落在“导航与规划”方向，更具体地说是在处理导航规划与场景决策。",
+        "method": "方法上，这篇工作更接近扩散模型、约束建模、世界模型路线，但公开摘要没有把实现细节展开到可直接复现的程度。",
+        "theory": "公开摘要没有展开完整公式，但可以确认作者的理论抓手主要围绕目标函数或损失设计、约束建模、动力学/几何结构。",
+        "experiment": "包含真实机器人或真实环境验证。",
+        "result": "结果层面，摘要声称方法在指标或任务完成度上有明显提升。",
+        "application": "更适合长时序任务编排、复杂场景导航和系统级决策。",
+        "reading": "建议先看小文中的主旨、方法和实验，再决定是否进入原文或 PDF。",
+        "access": "已找到合法开放 PDF，可直接从详情页跳转。"
+      },
+      "slug": "paper-01-riding-the-shifting-potential-when-reactive-control-suffices-for-multi-g",
+      "detail_relpath": "daily/2026-05-27/papers/paper-01-riding-the-shifting-potential-when-reactive-control-suffices-for-multi-g.html"
+    },
+    {
+      "type": "paper",
+      "title": "Robust Manipulation of Deformable Linear Objects",
+      "venue": "IEEE Robotics and Automation Letters",
+      "published": "2026-07",
+      "doi": "10.1109/lra.2026.3692099",
+      "url": "https://doi.org/10.1109/lra.2026.3692099",
+      "abstract": "Robotic manipulation is a fundamental challenge in the pursuit of automating household tasks and advancing robotic manufacturing. Manipulation planning for deformable objects is particularly challenging due to the associated large action spaces and complex dynamics. For deformable objects, some actions are sensitive to noise in the model, which can significantly degrade the accuracy of predicted trajectories. In this letter, we present a motion planning algorithm for arranging deformable linear objects (DLOs) into user-provided goal configurations. Using a novel problem formulation as well as a combination of sampling and gradient based optimization, the algorithm finds sequences of grasps and control inputs that are robust. We demonstrate the effectiveness of the new algorithm using numerical experiments and manipulation examples both in simulation and in real world environments.",
+      "source_homepage": "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=7083369",
+      "keyword_hits": [
+        "manipulation"
+      ],
+      "relevance_score": 3,
+      "cited_by_count": 0,
+      "primary_topic": "Advanced Numerical Analysis Techniques",
+      "concepts": [
+        "Artificial intelligence",
+        "Computer vision",
+        "Computer science",
+        "Noise (video)",
+        "Action (physics)",
+        "Motion (physics)"
+      ],
+      "oa_url": "https://doi.org/10.1109/lra.2026.3692099",
+      "pdf_url": "",
+      "oa_status": "closed",
+      "direction": "机械臂操控",
+      "focus": "可变形物体操作",
+      "method_tags": [],
+      "overview_sentence": "Robotic manipulation is a fundamental challenge in the pursuit of automating household tasks and advancing robotic manufacturing.",
+      "note": {
+        "summary_cn": "这篇论文关注可变形物体操作，方法路线偏向机械臂操控。",
+        "overview": "主旨上，这篇论文主要落在“机械臂操控”方向，更具体地说是在处理可变形物体操作。",
+        "method": "方法上，这篇工作更接近问题建模 + 感知/控制联合设计路线，但公开摘要没有把实现细节展开到可直接复现的程度。",
+        "theory": "公开摘要没有展开完整公式，但可以确认作者的理论抓手主要围绕目标函数或损失设计、动力学/几何结构、策略或控制律。",
+        "experiment": "含仿真实验。",
+        "result": "结果层面，摘要声称方法在指标或任务完成度上有明显提升。",
+        "application": "更偏向抓取、装配、接触丰富操作和机械臂精细执行。",
+        "reading": "建议先看小文中的主旨、方法和实验，再决定是否进入原文或 PDF。",
+        "access": "已找到合法开放获取入口，手机可直接阅读。"
+      },
+      "slug": "paper-02-robust-manipulation-of-deformable-linear-objects",
+      "detail_relpath": "daily/2026-05-27/papers/paper-02-robust-manipulation-of-deformable-linear-objects.html"
+    },
+    {
+      "type": "paper",
+      "title": "Dynamic Policy Learning for Legged Robot With Simplified Model Pretraining and Model-Homotopy-Inspired Transfer",
+      "venue": "IEEE Robotics and Automation Letters",
+      "published": "2026-07",
+      "doi": "10.1109/lra.2026.3692082",
+      "url": "https://doi.org/10.1109/lra.2026.3692082",
+      "abstract": "Generating dynamic motions for legged robots remains a challenging problem. While reinforcement learning has achieved notable success in various legged locomotion tasks, producing highly dynamic behaviors often requires extensive reward tuning or high-quality demonstrations. Leveraging reduced-order models can help mitigate these challenges. However, the model discrepancy poses a significant challenge when transferring policies to full-body dynamics environments. In this work, we introduce a continuation-based learning framework that combines simplified model pretraining and model-homotopy-inspired transfer to efficiently generate and refine complex dynamic behaviors. First, we pretrain the policy using a single rigid body model to capture core motion patterns in a simplified environment. Next, we employ a continuation strategy to progressively transfer the policy to the full-body environment, minimizing performance loss. To define the continuation path, we introduce a parametric transition path from the single rigid body model to the full-body model by gradually redistributing mass and inertia between the trunk and legs. The proposed method achieves faster convergence and demonstrates superior stability during the transfer process compared to baseline methods. Our framework is validated on a range of dynamic tasks, including flips and wall-assisted maneuvers, and is successfully deployed on a real quadrupedal robot.",
+      "source_homepage": "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=7083369",
+      "keyword_hits": [
+        "policy",
+        "robot"
+      ],
+      "relevance_score": 2,
+      "cited_by_count": 0,
+      "primary_topic": "Reinforcement Learning in Robotics",
+      "concepts": [
+        "Legged robot",
+        "Computer science",
+        "Robot",
+        "Artificial intelligence",
+        "Control theory (sociology)",
+        "Simulation"
+      ],
+      "oa_url": "https://doi.org/10.1109/lra.2026.3692082",
+      "pdf_url": "",
+      "oa_status": "closed",
+      "direction": "足式与人形运动",
+      "focus": "人形/足式运动控制",
+      "method_tags": [
+        "强化学习",
+        "检索增强"
+      ],
+      "overview_sentence": "Generating dynamic motions for legged robots remains a challenging problem.",
+      "note": {
+        "summary_cn": "这篇论文关注人形/足式运动控制，方法路线偏向强化学习、检索增强。",
+        "overview": "主旨上，这篇论文主要落在“足式与人形运动”方向，更具体地说是在处理人形/足式运动控制。",
+        "method": "方法上，这篇工作更接近强化学习、检索增强路线，但公开摘要没有把实现细节展开到可直接复现的程度。",
+        "theory": "公开摘要没有展开完整公式，但可以确认作者的理论抓手主要围绕目标函数或损失设计、动力学/几何结构、策略或控制律。",
+        "experiment": "摘要没有展开完整实验表，但可以确认作者至少做了方法有效性验证。",
+        "result": "结果层面，摘要声称方法在指标或任务完成度上有明显提升。",
+        "application": "更适合步态生成、平衡恢复、动态控制和抗扰运动。",
+        "reading": "建议先看小文中的主旨、方法和实验，再决定是否进入原文或 PDF。",
+        "access": "已找到合法开放获取入口，手机可直接阅读。"
+      },
+      "slug": "paper-03-dynamic-policy-learning-for-legged-robot-with-simplified-model-pretraini",
+      "detail_relpath": "daily/2026-05-27/papers/paper-03-dynamic-policy-learning-for-legged-robot-with-simplified-model-pretraini.html"
+    }
+  ],
+  "repos": [],
+  "errors": [
+    {
+      "source": "GitHub Search",
+      "error": "403 Client Error: rate limit exceeded for url: https://api.github.com/search/repositories?q=topic%3Arobotics+ros2+pushed%3A%3E%3D2025-05-27+archived%3Afalse+fork%3Afalse&sort=stars&order=desc&per_page=5"
+    }
+  ],
+  "daily_relpath": "daily/2026-05-27/index.html"
+}
