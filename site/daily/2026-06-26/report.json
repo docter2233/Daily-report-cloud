@@ -1,0 +1,155 @@
+{
+  "generated_at": "2026-06-26T12:48:10+08:00",
+  "reference_date": "2026-06-26",
+  "window_start": "2026-06-26",
+  "timezone": "Asia/Shanghai",
+  "papers": [
+    {
+      "type": "paper",
+      "title": "VibeAct: Vibration to Actions for Contact-Rich Reactive Robot Dexterity",
+      "venue": "arXiv cs.RO",
+      "published": "2026-06-25",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2606.27344v1",
+      "abstract": "Dexterous manipulation depends on contact events that are fast, local, and often visually occluded. Piezoelectric microphones offer a compact and high-bandwidth way to sense these interactions, but the resulting vibro-acoustic signals are difficult to simulate faithfully enough for end-to-end sim-to-real policy learning on dexterous robot hands. We propose VibeAct, a framework that bridges real vibrotactile sensing and simulation-based reinforcement learning through a shared physical representation of contact and slip. In the real world, we embed piezoelectric microphones into a dexterous robot hand and collect vibro-acoustic data through teleoperation, then replay the recordings in a calibrated digital clone to automatically label per-finger contact and slip. A tactile estimator learns to predict contact and slip from real microphone waveforms, while manipulation policies are trained in simulation on the same representation computed directly from simulated contacts. This decoupling lets policies exploit rapid tactile feedback without simulating raw audio. Across five contact-rich tasks spanning regrasping, in-hand reorientation, and insertion, VibeAct consistently outperforms a proprioception-and-point-cloud baseline in simulation, with the largest gains on tasks requiring sustained reactive control, where the continuous slip-magnitude channel proves the most informative observation. The learned policies transfer to a physical dexterous hand-arm platform, improving success rates on deployed tasks. Project videos and additional details are at https://vibeact.github.io/.",
+      "pdf_url": "https://arxiv.org/pdf/2606.27344v1",
+      "oa_url": "https://arxiv.org/pdf/2606.27344v1",
+      "source_homepage": "https://arxiv.org/list/cs.RO/recent",
+      "keyword_hits": [
+        "manipulation",
+        "tactile",
+        "control",
+        "policy",
+        "robot"
+      ],
+      "relevance_score": 9,
+      "cited_by_count": null,
+      "primary_topic": "",
+      "concepts": [],
+      "oa_status": "",
+      "direction": "机械臂操控",
+      "focus": "触觉感知闭环",
+      "method_tags": [
+        "强化学习",
+        "Sim2Real",
+        "触觉反馈"
+      ],
+      "overview_sentence": "Dexterous manipulation depends on contact events that are fast, local, and often visually occluded.",
+      "note": {
+        "summary_cn": "这篇论文关注触觉感知闭环，方法路线偏向强化学习、Sim2Real、触觉反馈。",
+        "overview": "主旨上，这篇论文主要落在“机械臂操控”方向，更具体地说是在处理触觉感知闭环。",
+        "method": "方法上，这篇工作更接近强化学习、Sim2Real、触觉反馈路线，但公开摘要没有把实现细节展开到可直接复现的程度。",
+        "theory": "公开摘要没有展开完整公式，但可以确认作者的理论抓手主要围绕动力学/几何结构、策略或控制律。",
+        "experiment": "含仿真实验。",
+        "result": "结果层面，摘要声称方法在指标或任务完成度上有明显提升。",
+        "application": "更偏向抓取、装配、接触丰富操作和机械臂精细执行。",
+        "reading": "建议先看小文中的主旨、方法和实验，再决定是否进入原文或 PDF。",
+        "access": "已找到合法开放 PDF，可直接从详情页跳转。"
+      },
+      "slug": "paper-01-vibeact-vibration-to-actions-for-contact-rich-reactive-robot-dexterity",
+      "detail_relpath": "daily/2026-06-26/papers/paper-01-vibeact-vibration-to-actions-for-contact-rich-reactive-robot-dexterity.html"
+    },
+    {
+      "type": "paper",
+      "title": "DPL: Depth-Only Perceptive Humanoid Locomotion via Realistic Depth Synthesis and Cross-Attention Terrain Reconstruction",
+      "venue": "IEEE Robotics and Automation Letters",
+      "published": "2026-08",
+      "doi": "10.1109/lra.2026.3703584",
+      "url": "https://doi.org/10.1109/lra.2026.3703584",
+      "abstract": "Recent advancements in legged robot perceptive locomotion have shown promising progress. However, terrain-aware humanoid locomotion remains largely constrained to two paradigms: depth image-based end-to-end learning and elevation map-based methods. The former suffers from limited training efficiency and a significant sim-to-real gap in depth perception, while the latter depends heavily on multiple vision sensors and localization systems, resulting in latency and reduced robustness. To overcome these challenges, we propose a novel framework that tightly integrates three key components: (1) Terrain-Aware Locomotion Policy with a Blind Backbone, which leverages pre-trained elevation map-based perception to guide reinforcement learning with minimal visual input; (2) Multi-Modality Cross-Attention Transformer, which reconstructs structured terrain representations from noisy depth images; (3) Realistic Depth Images Synthetic Method, which employs self-occlusion-aware ray casting and noise-aware modeling to synthesize realistic depth observations, achieving over 30% reduction in terrain reconstruction error. This combination enables efficient policy training with limited data and hardware resources, while preserving critical terrain features essential for generalization. We validate our framework on a full-sized humanoid robot, demonstrating agile and adaptive locomotion across diverse and challenging terrains.",
+      "source_homepage": "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=7083369",
+      "keyword_hits": [
+        "locomotion",
+        "humanoid"
+      ],
+      "relevance_score": 4,
+      "cited_by_count": 0,
+      "primary_topic": "Human Pose and Action Recognition",
+      "concepts": [
+        "Terrain",
+        "Computer science",
+        "Artificial intelligence",
+        "Computer vision",
+        "Humanoid robot",
+        "Reinforcement learning"
+      ],
+      "oa_url": "https://arxiv.org/pdf/2510.07152",
+      "pdf_url": "https://arxiv.org/pdf/2510.07152",
+      "oa_status": "green",
+      "direction": "足式与人形运动",
+      "focus": "人形/足式运动控制",
+      "method_tags": [
+        "强化学习",
+        "Transformer",
+        "约束建模",
+        "Sim2Real"
+      ],
+      "overview_sentence": "Recent advancements in legged robot perceptive locomotion have shown promising progress.",
+      "note": {
+        "summary_cn": "这篇论文关注人形/足式运动控制，方法路线偏向强化学习、Transformer、约束建模、Sim2Real。",
+        "overview": "主旨上，这篇论文主要落在“足式与人形运动”方向，更具体地说是在处理人形/足式运动控制。",
+        "method": "方法上，这篇工作更接近强化学习、Transformer、约束建模、Sim2Real路线，但公开摘要没有把实现细节展开到可直接复现的程度。",
+        "theory": "公开摘要没有展开完整公式，但可以确认作者的理论抓手主要围绕约束建模、动力学/几何结构、策略或控制律。",
+        "experiment": "包含真实机器人或真实环境验证。",
+        "result": "结果层面，摘要声称方法在指标或任务完成度上有明显提升。",
+        "application": "更适合步态生成、平衡恢复、动态控制和抗扰运动。",
+        "reading": "建议先看小文中的主旨、方法和实验，再决定是否进入原文或 PDF。",
+        "access": "已找到合法开放 PDF，可直接从详情页跳转。"
+      },
+      "slug": "paper-02-dpl-depth-only-perceptive-humanoid-locomotion-via-realistic-depth-synthe",
+      "detail_relpath": "daily/2026-06-26/papers/paper-02-dpl-depth-only-perceptive-humanoid-locomotion-via-realistic-depth-synthe.html"
+    },
+    {
+      "type": "paper",
+      "title": "Physics-Constrained Real-Time Hand Grasping in VR/AR via Force Closure Stability Judgment",
+      "venue": "IEEE Robotics and Automation Letters",
+      "published": "2026-08",
+      "doi": "10.1109/lra.2026.3700690",
+      "url": "https://doi.org/10.1109/lra.2026.3700690",
+      "abstract": "Constructing hand-object interactions in digital environments holds significant value for robotic learning of object manipulation. We propose a physics-constrained real-time hand-object interaction method with two key innovations: (1) real-hand-driven articulation control under physical constraints, where the virtual hand follows real-hand motion through articulation joint drives while the physics engine handles collisions and surface sliding, enabling continuous gesture adjustment during contact; (2) force closure theory (FCT) for real-time stability judgment, enabling automatic grasp stability determination from contact points without prior object knowledge or training data. We implement and validate our approach on VR and AR headsets with visual-only hand tracking, demonstrating realistic hand-object interactions across various rigid object geometries in digital environments.",
+      "source_homepage": "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=7083369",
+      "keyword_hits": [],
+      "relevance_score": 0,
+      "cited_by_count": 0,
+      "primary_topic": "Robot Manipulation and Learning",
+      "concepts": [
+        "Stability (learning theory)",
+        "Control theory (sociology)",
+        "Closure (psychology)",
+        "Computer science",
+        "Mathematics",
+        "Kinematics"
+      ],
+      "oa_url": "https://doi.org/10.1109/lra.2026.3700690",
+      "pdf_url": "",
+      "oa_status": "closed",
+      "direction": "机械臂操控",
+      "focus": "机械臂操控",
+      "method_tags": [
+        "约束建模"
+      ],
+      "overview_sentence": "Constructing hand-object interactions in digital environments holds significant value for robotic learning of object manipulation.",
+      "note": {
+        "summary_cn": "这篇论文关注机械臂操控，方法路线偏向约束建模。",
+        "overview": "主旨上，这篇论文主要落在“机械臂操控”方向，更具体地说是在处理机械臂操控。",
+        "method": "方法上，这篇工作更接近约束建模路线，但公开摘要没有把实现细节展开到可直接复现的程度。",
+        "theory": "公开摘要没有展开完整公式，但可以确认作者的理论抓手主要围绕约束建模、动力学/几何结构、策略或控制律。",
+        "experiment": "摘要没有展开完整实验表，但可以确认作者至少做了方法有效性验证。",
+        "result": "结果层面，公开摘要没有给出足够细节，适合先把它当作值得复查的候选。",
+        "application": "更偏向抓取、装配、接触丰富操作和机械臂精细执行。",
+        "reading": "建议先看小文中的主旨、方法和实验，再决定是否进入原文或 PDF。",
+        "access": "已找到合法开放获取入口，手机可直接阅读。"
+      },
+      "slug": "paper-03-physics-constrained-real-time-hand-grasping-in-vr-ar-via-force-closure-s",
+      "detail_relpath": "daily/2026-06-26/papers/paper-03-physics-constrained-real-time-hand-grasping-in-vr-ar-via-force-closure-s.html"
+    }
+  ],
+  "repos": [],
+  "errors": [
+    {
+      "source": "GitHub Search",
+      "error": "403 Client Error: rate limit exceeded for url: https://api.github.com/search/repositories?q=topic%3Arobotics+ros2+pushed%3A%3E%3D2025-06-26+archived%3Afalse+fork%3Afalse&sort=stars&order=desc&per_page=5"
+    }
+  ],
+  "daily_relpath": "daily/2026-06-26/index.html"
+}
