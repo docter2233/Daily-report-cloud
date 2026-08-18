@@ -1,0 +1,226 @@
+{
+  "generated_at": "2026-08-18T09:55:57+08:00",
+  "reference_date": "2026-08-18",
+  "window_start": "2026-08-18",
+  "timezone": "Asia/Shanghai",
+  "papers": [
+    {
+      "type": "paper",
+      "title": "PRM-as-a-Judge 1.5: A Toolkit for Robot Process Assessment",
+      "venue": "arXiv cs.RO",
+      "published": "2026-08-14",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2608.14284v1",
+      "abstract": "Fine-grained robotic evaluation matters for understanding embodied models, going beyond binary success rates and rule-based process scores. We present PRM-as-a-Judge 1.5, a toolkit for robot process assessment that turns rollout videos into dense progress curves and derives multiple fine metrics. PRM-as-a-Judge 1.5 introduces three metrics, building on version 1.0, that characterize failure-side progress, post-drawdown recovery, and success-side execution quality, helping users understand embodied model capability. Based on the rollout videos from benchmarks, we perform a comprehensive assessment of the embodied models, providing some fine-grained metric results and key findings. We further introduce RoboPulse++ to evaluate the reliability of process reward models (PRM), providing evaluators with a more accurate testing platform. Moreover, we release a user-friendly assessment suite, including the benchmark, metric implementation, and visualization tools, to support reproducible manipulation process evaluation. We call on the community to rethink how robots are evaluated and establish transparent, procedural, and reproducible assessment as a foundation for the next generation of embodied intelligence.",
+      "pdf_url": "https://arxiv.org/pdf/2608.14284v1",
+      "oa_url": "https://arxiv.org/pdf/2608.14284v1",
+      "source_homepage": "https://arxiv.org/list/cs.RO/recent",
+      "keyword_hits": [
+        "embodied",
+        "manipulation",
+        "robot"
+      ],
+      "relevance_score": 8,
+      "cited_by_count": null,
+      "primary_topic": "",
+      "concepts": [],
+      "oa_status": "",
+      "direction": "机械臂操控",
+      "focus": "透明物体感知与抓取",
+      "method_tags": [],
+      "overview_sentence": "Fine-grained robotic evaluation matters for understanding embodied models, going beyond binary success rates and rule-based process scores.",
+      "note": {
+        "summary_cn": "这篇论文关注透明物体感知与抓取，方法路线偏向机械臂操控。",
+        "overview": "主旨上，这篇论文主要落在“机械臂操控”方向，更具体地说是在处理透明物体感知与抓取。",
+        "method": "方法上，这篇工作更接近问题建模 + 感知/控制联合设计路线，但公开摘要没有把实现细节展开到可直接复现的程度。",
+        "theory": "公开摘要没有展开完整公式，但可以确认作者的理论抓手主要围绕方法框架。",
+        "experiment": "在公开基准或数据集上评估。",
+        "result": "结果层面，公开摘要没有给出足够细节，适合先把它当作值得复查的候选。",
+        "application": "更偏向抓取、装配、接触丰富操作和机械臂精细执行。",
+        "reading": "建议先看小文中的主旨、方法和实验，再决定是否进入原文或 PDF。",
+        "access": "已找到合法开放 PDF，可直接从详情页跳转。"
+      },
+      "slug": "paper-01-prm-as-a-judge-1-5-a-toolkit-for-robot-process-assessment",
+      "detail_relpath": "daily/2026-08-18/papers/paper-01-prm-as-a-judge-1-5-a-toolkit-for-robot-process-assessment.html"
+    },
+    {
+      "type": "paper",
+      "title": "Kernel-SDF: An Open-Source Library for Real-Time Signed Distance Function Estimation Using Kernel Regression",
+      "venue": "IEEE Robotics and Automation Letters",
+      "published": "2026-10",
+      "doi": "10.1109/lra.2026.3719228",
+      "url": "https://doi.org/10.1109/lra.2026.3719228",
+      "abstract": "",
+      "source_homepage": "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=7083369",
+      "keyword_hits": [],
+      "relevance_score": 0,
+      "cited_by_count": 0,
+      "primary_topic": "Human Pose and Action Recognition",
+      "concepts": [
+        "Mathematics",
+        "Function (biology)",
+        "Kernel density estimation",
+        "Artificial intelligence",
+        "Estimation",
+        "Signed distance function"
+      ],
+      "oa_url": "https://doi.org/10.1109/lra.2026.3719228",
+      "pdf_url": "",
+      "oa_status": "closed",
+      "direction": "机器人通用方法",
+      "focus": "机器人通用方法",
+      "method_tags": [],
+      "overview_sentence": "",
+      "note": {
+        "summary_cn": "这篇论文关注机器人通用方法，方法路线偏向机器人通用方法。",
+        "overview": "主旨上，这篇论文主要落在“机器人通用方法”方向，更具体地说是在处理机器人通用方法。",
+        "method": "方法上，这篇工作更接近问题建模 + 感知/控制联合设计路线，但公开摘要没有把实现细节展开到可直接复现的程度。",
+        "theory": "目前只有标题和元数据，无法负责任地还原具体推导，只能保留研究方向判断。",
+        "experiment": "摘要没有展开完整实验表，但可以确认作者至少做了方法有效性验证。",
+        "result": "结果层面，公开摘要没有给出足够细节，适合先把它当作值得复查的候选。",
+        "application": "对机器人系统设计、实验选题和工程落地都有一定参考价值。",
+        "reading": "建议先看小文中的主旨、方法和实验，再决定是否进入原文或 PDF。",
+        "access": "已找到合法开放获取入口，手机可直接阅读。"
+      },
+      "slug": "paper-02-kernel-sdf-an-open-source-library-for-real-time-signed-distance-function",
+      "detail_relpath": "daily/2026-08-18/papers/paper-02-kernel-sdf-an-open-source-library-for-real-time-signed-distance-function.html"
+    },
+    {
+      "type": "paper",
+      "title": "Simultaneous Localization and 3D-Semi Dense Mapping for Micro Drones Using Monocular Camera and Inertial Sensors",
+      "venue": "IEEE Robotics and Automation Letters",
+      "published": "2026-10",
+      "doi": "10.1109/lra.2026.3713731",
+      "url": "https://doi.org/10.1109/lra.2026.3713731",
+      "abstract": "",
+      "source_homepage": "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=7083369",
+      "keyword_hits": [],
+      "relevance_score": 0,
+      "cited_by_count": 0,
+      "primary_topic": "Robotics and Sensor-Based Localization",
+      "concepts": [
+        "Computer vision",
+        "Artificial intelligence",
+        "Drone",
+        "Computer science",
+        "Inertial measurement unit",
+        "Monocular"
+      ],
+      "oa_url": "https://doi.org/10.1109/lra.2026.3713731",
+      "pdf_url": "",
+      "oa_status": "closed",
+      "direction": "机器人通用方法",
+      "focus": "机器人通用方法",
+      "method_tags": [],
+      "overview_sentence": "",
+      "note": {
+        "summary_cn": "这篇论文关注机器人通用方法，方法路线偏向机器人通用方法。",
+        "overview": "主旨上，这篇论文主要落在“机器人通用方法”方向，更具体地说是在处理机器人通用方法。",
+        "method": "方法上，这篇工作更接近问题建模 + 感知/控制联合设计路线，但公开摘要没有把实现细节展开到可直接复现的程度。",
+        "theory": "目前只有标题和元数据，无法负责任地还原具体推导，只能保留研究方向判断。",
+        "experiment": "摘要没有展开完整实验表，但可以确认作者至少做了方法有效性验证。",
+        "result": "结果层面，公开摘要没有给出足够细节，适合先把它当作值得复查的候选。",
+        "application": "对机器人系统设计、实验选题和工程落地都有一定参考价值。",
+        "reading": "建议先看小文中的主旨、方法和实验，再决定是否进入原文或 PDF。",
+        "access": "已找到合法开放获取入口，手机可直接阅读。"
+      },
+      "slug": "paper-03-simultaneous-localization-and-3d-semi-dense-mapping-for-micro-drones-usi",
+      "detail_relpath": "daily/2026-08-18/papers/paper-03-simultaneous-localization-and-3d-semi-dense-mapping-for-micro-drones-usi.html"
+    }
+  ],
+  "repos": [
+    {
+      "type": "repo",
+      "repo": "petercorke/robotics-toolbox-python",
+      "url": "https://github.com/petercorke/robotics-toolbox-python",
+      "description": "Robotics Toolbox for Python. Contribute to petercorke/robotics-toolbox-python development by creating an account on GitHub.",
+      "language": "C++",
+      "total_stars": "3371",
+      "forks": "609",
+      "stars_today": "65",
+      "source_kind": "trending",
+      "readme_excerpt": "Robotics Toolbox for Python Robotics without the cruft A high-productivity framework for robotics research and education. GitHub • Wiki • Changelog • Installation Status & Project Health Ecosystem & Dependencies Contents Synopsis Getting going Tutorials Code Examples Toolbox Research Applications References Using the Toolbox in your Open Source Code? Common Issues and Solutions Build a JupyterLite/Pyodide Wasm wheel Synopsis This toolbox brings robotics-specific functionality to Python, and leverages Python's advantages of portability, ubiquity and support, and the capability of the open-source ecosystem for linear algebra (numpy, scipy), graphics (matplotlib, three.js, WebGL), interactive development (Jupyter, JupyterLab, mybinder.org), and documentation (sphinx). The Toolbox provides tools for representing the kinematics and dynamics of serial-link manipulators - you can easily create your own in Denavit-Hartenberg form, import a URDF file, or use over 50 supplied models for well-known contemporary robots from Franka-Emika, Kinova, Universal Robotics, Rethink as well as classical robots such as the Puma 560 and the Stanford arm. The Toolbox contains fast implementations of kinem…",
+      "topics": [
+        "dynamics",
+        "hessian",
+        "jacobian",
+        "kinematics",
+        "motion-planning",
+        "python",
+        "robot-manipulator",
+        "robotics",
+        "robotics-control",
+        "robotics-simulation"
+      ],
+      "relevance_score": 15,
+      "keyword_hits": [
+        "robot",
+        "robotics",
+        "simulation",
+        "planning",
+        "control"
+      ],
+      "relevance_label": "直接相关",
+      "use_mode": "工具链/基础设施",
+      "domain": "仿真平台或训练环境",
+      "note": {
+        "summary_cn": "这是一个偏仿真平台或训练环境的开源仓库，更像工具链/基础设施。",
+        "overview": "这是一个偏“仿真平台或训练环境”的仓库，从公开描述看更像工具链/基础设施。核心关键词包括：dynamics, hessian, jacobian。",
+        "why_trending": "今天在 Trending 里新增 65 star。",
+        "robotics_value": "对机器人研究是可直接复用的主线资源。",
+        "integration": "使用姿势上，建议先把它当作“工具链/基础设施”来看，重点关注它能不能进入你的训练、仿真、规划或系统集成链路。",
+        "reading": "先看小文里的定位、可复用模块和接入位置，再决定要不要进 GitHub 深挖。"
+      },
+      "slug": "repo-01-petercorke-robotics-toolbox-python",
+      "detail_relpath": "daily/2026-08-18/repos/repo-01-petercorke-robotics-toolbox-python.html"
+    },
+    {
+      "type": "repo",
+      "repo": "Sollimann/bonsai",
+      "url": "https://github.com/Sollimann/bonsai",
+      "description": "Rust implementation of behavior trees for deterministic AI (now with Python bindings)",
+      "language": "Rust",
+      "total_stars": "960",
+      "forks": "39",
+      "stars_today": "61",
+      "source_kind": "trending",
+      "readme_excerpt": "Bonsai 盆栽 Rust implementation of Behavior Trees Contents Quick intro to Behavior Trees Concepts Examples Development Guide Kanban Board Honorable Mentions Using Bonsai Rust Bonsai is available on crates.io. The recommended way to use it is to add a line into your Cargo.toml such as: [ dependencies ] bonsai-bt = \" * \" Python Bonsai is available on PyPI as bonsai-bt : pip install bonsai-bt See bonsai-py/ for examples. Example of use See Examples folder. What is a Behavior Tree? A Behavior Tree (BT) is a data structure in which we can set the rules of how certain behavior's can occur, and the order in which they would execute. BTs are a very efficient way of creating complex systems that are both modular and reactive. These properties are crucial in many applications, which has led to the spread of BT from computer game programming to many branches of AI and Robotics. How to use a Behavior tree? A Behavior Tree forms a tree structure where each node represents a process. When the process terminates, it signals Success or Failure . This can then be used by the parent node to select the next process. A signal Running is used to tell the process is not done yet. For example, if you have…",
+      "topics": [
+        "ai",
+        "autonomous-robots",
+        "behavior-tree",
+        "bevy",
+        "concurrency",
+        "deterministic",
+        "finite-state-machine",
+        "fsm",
+        "game",
+        "game-development"
+      ],
+      "relevance_score": 4,
+      "keyword_hits": [
+        "robotics"
+      ],
+      "relevance_label": "直接相关",
+      "use_mode": "工程灵感源",
+      "domain": "研究工具链或工程参考",
+      "note": {
+        "summary_cn": "这是一个偏研究工具链或工程参考的开源仓库，更像工程灵感源。",
+        "overview": "这是一个偏“研究工具链或工程参考”的仓库，从公开描述看更像工程灵感源。核心关键词包括：ai, autonomous-robots, behavior-tree。",
+        "why_trending": "今天在 Trending 里新增 61 star。",
+        "robotics_value": "对机器人研究是可直接复用的主线资源。",
+        "integration": "使用姿势上，建议先把它当作“工程灵感源”来看，重点关注它能不能进入你的训练、仿真、规划或系统集成链路。",
+        "reading": "先看小文里的定位、可复用模块和接入位置，再决定要不要进 GitHub 深挖。"
+      },
+      "slug": "repo-02-sollimann-bonsai",
+      "detail_relpath": "daily/2026-08-18/repos/repo-02-sollimann-bonsai.html"
+    }
+  ],
+  "errors": [
+    {
+      "source": "GitHub Search",
+      "error": "403 Client Error: rate limit exceeded for url: https://api.github.com/search/repositories?q=topic%3Arobotics+ros2+pushed%3A%3E%3D2025-08-18+archived%3Afalse+fork%3Afalse&sort=stars&order=desc&per_page=5"
+    }
+  ],
+  "daily_relpath": "daily/2026-08-18/index.html"
+}
