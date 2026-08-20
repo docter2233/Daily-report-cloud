@@ -1,0 +1,106 @@
+{
+  "generated_at": "2026-08-20T09:58:05+08:00",
+  "reference_date": "2026-08-20",
+  "window_start": "2026-08-20",
+  "timezone": "Asia/Shanghai",
+  "papers": [
+    {
+      "type": "paper",
+      "title": "Human Demonstration-Intervention Fusion for Human-Machine Collaborative Decision-Making Path Planning",
+      "venue": "IEEE Robotics and Automation Letters",
+      "published": "2026-10",
+      "doi": "10.1109/lra.2026.3717195",
+      "url": "https://doi.org/10.1109/lra.2026.3717195",
+      "abstract": "",
+      "source_homepage": "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=7083369",
+      "keyword_hits": [
+        "planning"
+      ],
+      "relevance_score": 1,
+      "cited_by_count": 0,
+      "primary_topic": "Robotic Path Planning Algorithms",
+      "concepts": [
+        "Computer science",
+        "Path (computing)",
+        "Sensor fusion",
+        "Artificial intelligence",
+        "Motion planning",
+        "Set (abstract data type)"
+      ],
+      "oa_url": "https://doi.org/10.1109/lra.2026.3717195",
+      "pdf_url": "",
+      "oa_status": "closed",
+      "direction": "导航与规划",
+      "focus": "导航规划与场景决策",
+      "method_tags": [],
+      "overview_sentence": "",
+      "note": {
+        "summary_cn": "这篇论文关注导航规划与场景决策，方法路线偏向导航与规划。",
+        "overview": "主旨上，这篇论文主要落在“导航与规划”方向，更具体地说是在处理导航规划与场景决策。",
+        "method": "方法上，这篇工作更接近问题建模 + 感知/控制联合设计路线，但公开摘要没有把实现细节展开到可直接复现的程度。",
+        "theory": "目前只有标题和元数据，无法负责任地还原具体推导，只能保留研究方向判断。",
+        "experiment": "摘要没有展开完整实验表，但可以确认作者至少做了方法有效性验证。",
+        "result": "结果层面，公开摘要没有给出足够细节，适合先把它当作值得复查的候选。",
+        "application": "更适合长时序任务编排、复杂场景导航和系统级决策。",
+        "reading": "建议先看小文中的主旨、方法和实验，再决定是否进入原文或 PDF。",
+        "access": "已找到合法开放获取入口，手机可直接阅读。"
+      },
+      "slug": "paper-01-human-demonstration-intervention-fusion-for-human-machine-collaborative",
+      "detail_relpath": "daily/2026-08-20/papers/paper-01-human-demonstration-intervention-fusion-for-human-machine-collaborative.html"
+    },
+    {
+      "type": "paper",
+      "title": "Kernel-SDF: An Open-Source Library for Real-Time Signed Distance Function Estimation Using Kernel Regression",
+      "venue": "IEEE Robotics and Automation Letters",
+      "published": "2026-10",
+      "doi": "10.1109/lra.2026.3719228",
+      "url": "https://doi.org/10.1109/lra.2026.3719228",
+      "abstract": "",
+      "source_homepage": "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=7083369",
+      "keyword_hits": [],
+      "relevance_score": 0,
+      "cited_by_count": 0,
+      "primary_topic": "Human Pose and Action Recognition",
+      "concepts": [
+        "Mathematics",
+        "Function (biology)",
+        "Kernel density estimation",
+        "Artificial intelligence",
+        "Estimation",
+        "Signed distance function"
+      ],
+      "oa_url": "https://doi.org/10.1109/lra.2026.3719228",
+      "pdf_url": "",
+      "oa_status": "closed",
+      "direction": "机器人通用方法",
+      "focus": "机器人通用方法",
+      "method_tags": [],
+      "overview_sentence": "",
+      "note": {
+        "summary_cn": "这篇论文关注机器人通用方法，方法路线偏向机器人通用方法。",
+        "overview": "主旨上，这篇论文主要落在“机器人通用方法”方向，更具体地说是在处理机器人通用方法。",
+        "method": "方法上，这篇工作更接近问题建模 + 感知/控制联合设计路线，但公开摘要没有把实现细节展开到可直接复现的程度。",
+        "theory": "目前只有标题和元数据，无法负责任地还原具体推导，只能保留研究方向判断。",
+        "experiment": "摘要没有展开完整实验表，但可以确认作者至少做了方法有效性验证。",
+        "result": "结果层面，公开摘要没有给出足够细节，适合先把它当作值得复查的候选。",
+        "application": "对机器人系统设计、实验选题和工程落地都有一定参考价值。",
+        "reading": "建议先看小文中的主旨、方法和实验，再决定是否进入原文或 PDF。",
+        "access": "已找到合法开放获取入口，手机可直接阅读。"
+      },
+      "slug": "paper-02-kernel-sdf-an-open-source-library-for-real-time-signed-distance-function",
+      "detail_relpath": "daily/2026-08-20/papers/paper-02-kernel-sdf-an-open-source-library-for-real-time-signed-distance-function.html"
+    }
+  ],
+  "repos": [],
+  "errors": [
+    {
+      "source": "arXiv cs.RO",
+      "error": "HTTPSConnectionPool(host='export.arxiv.org', port=443): Read timed out. (read timeout=30)"
+    },
+    {
+      "source": "GitHub Search",
+      "error": "403 Client Error: rate limit exceeded for url: https://api.github.com/search/repositories?q=robotics+simulation+sim2real+pushed%3A%3E%3D2025-08-20+archived%3Afalse+fork%3Afalse&sort=stars&order=desc&per_page=5"
+    }
+  ],
+  "daily_relpath": "daily/2026-08-20/index.html"
+}
