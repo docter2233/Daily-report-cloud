@@ -1,0 +1,110 @@
+{
+  "generated_at": "2026-08-26T10:06:51+08:00",
+  "reference_date": "2026-08-26",
+  "window_start": "2026-08-26",
+  "timezone": "Asia/Shanghai",
+  "papers": [
+    {
+      "type": "paper",
+      "title": "RobotDancing: Residual-Action Reinforcement Learning Enables Robust Long-Horizon Humanoid Motion Tracking",
+      "venue": "IEEE Robotics and Automation Letters",
+      "published": "2026-10",
+      "doi": "10.1109/lra.2026.3723309",
+      "url": "https://doi.org/10.1109/lra.2026.3723309",
+      "abstract": "Long-horizon, high-dynamic motion tracking on humanoids remains brittle: retargeted reference motions are typically kinematically plausible but dynamically inconsistent with the robot, so small tracking errors accumulate and eventually destabilize control. We present RobotDancing, a practical single-stage reinforcement learning recipe that tracks retargeted motions by predicting reference-conditioned residual joint targets. By parameterizing actions as residual corrections on top of the reference, the policy can focus on compensating reference--robot dynamics mismatch (e.g., actuation limits, latency, friction, inertia) rather than re-synthesizing the motion. We train one policy per reference sequence while reusing a common training and deployment recipe across motions and platforms. We evaluate RobotDancing on eight LAFAN1 dance motions on Unitree G1 and conduct cross-platform experiments on H1 and H1-2. The resulting G1 policies execute long-horizon, high-energy behaviors on hardware without test-time modifications, and qualitative H1/H1-2 clips further illustrate cross-platform feasibility.",
+      "source_homepage": "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=7083369",
+      "keyword_hits": [
+        "humanoid"
+      ],
+      "relevance_score": 2,
+      "cited_by_count": 0,
+      "primary_topic": "Robotic Locomotion and Control",
+      "concepts": [
+        "Computer science",
+        "Artificial intelligence",
+        "Computer vision",
+        "Motion (physics)",
+        "Reinforcement learning",
+        "Humanoid robot"
+      ],
+      "oa_url": "https://doi.org/10.1109/lra.2026.3723309",
+      "pdf_url": "",
+      "oa_status": "hybrid",
+      "direction": "足式与人形运动",
+      "focus": "人形/足式运动控制",
+      "method_tags": [
+        "强化学习"
+      ],
+      "overview_sentence": "Long-horizon, high-dynamic motion tracking on humanoids remains brittle: retargeted reference motions are typically kinematically plausible but dynamically inconsistent with the robot, so small tracking errors accumulate and eventually destabilize control.",
+      "note": {
+        "summary_cn": "这篇论文关注人形/足式运动控制，方法路线偏向强化学习。",
+        "overview": "主旨上，这篇论文主要落在“足式与人形运动”方向，更具体地说是在处理人形/足式运动控制。",
+        "method": "方法上，这篇工作更接近强化学习路线，但公开摘要没有把实现细节展开到可直接复现的程度。",
+        "theory": "公开摘要没有展开完整公式，但可以确认作者的理论抓手主要围绕动力学/几何结构、策略或控制律。",
+        "experiment": "包含真实机器人或真实环境验证。",
+        "result": "结果层面，公开摘要没有给出足够细节，适合先把它当作值得复查的候选。",
+        "application": "更适合步态生成、平衡恢复、动态控制和抗扰运动。",
+        "reading": "建议先看小文中的主旨、方法和实验，再决定是否进入原文或 PDF。",
+        "access": "已找到合法开放获取入口，手机可直接阅读。"
+      },
+      "slug": "paper-01-robotdancing-residual-action-reinforcement-learning-enables-robust-long",
+      "detail_relpath": "daily/2026-08-26/papers/paper-01-robotdancing-residual-action-reinforcement-learning-enables-robust-long.html"
+    },
+    {
+      "type": "paper",
+      "title": "MUSE: Target-Guided Multimodal Scoring Ensemble for Safe Autonomous Planning",
+      "venue": "IEEE Robotics and Automation Letters",
+      "published": "2026-10",
+      "doi": "10.1109/lra.2026.3723335",
+      "url": "https://doi.org/10.1109/lra.2026.3723335",
+      "abstract": "",
+      "source_homepage": "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=7083369",
+      "keyword_hits": [
+        "planning"
+      ],
+      "relevance_score": 1,
+      "cited_by_count": 0,
+      "primary_topic": "AI-based Problem Solving and Planning",
+      "concepts": [
+        "Computer science",
+        "Artificial intelligence",
+        "Machine learning",
+        "Measure (data warehouse)",
+        "Key (lock)",
+        "Data mining"
+      ],
+      "oa_url": "https://doi.org/10.1109/lra.2026.3723335",
+      "pdf_url": "",
+      "oa_status": "closed",
+      "direction": "导航与规划",
+      "focus": "导航规划与场景决策",
+      "method_tags": [],
+      "overview_sentence": "",
+      "note": {
+        "summary_cn": "这篇论文关注导航规划与场景决策，方法路线偏向导航与规划。",
+        "overview": "主旨上，这篇论文主要落在“导航与规划”方向，更具体地说是在处理导航规划与场景决策。",
+        "method": "方法上，这篇工作更接近问题建模 + 感知/控制联合设计路线，但公开摘要没有把实现细节展开到可直接复现的程度。",
+        "theory": "目前只有标题和元数据，无法负责任地还原具体推导，只能保留研究方向判断。",
+        "experiment": "摘要没有展开完整实验表，但可以确认作者至少做了方法有效性验证。",
+        "result": "结果层面，公开摘要没有给出足够细节，适合先把它当作值得复查的候选。",
+        "application": "更适合长时序任务编排、复杂场景导航和系统级决策。",
+        "reading": "建议先看小文中的主旨、方法和实验，再决定是否进入原文或 PDF。",
+        "access": "已找到合法开放获取入口，手机可直接阅读。"
+      },
+      "slug": "paper-02-muse-target-guided-multimodal-scoring-ensemble-for-safe-autonomous-plann",
+      "detail_relpath": "daily/2026-08-26/papers/paper-02-muse-target-guided-multimodal-scoring-ensemble-for-safe-autonomous-plann.html"
+    }
+  ],
+  "repos": [],
+  "errors": [
+    {
+      "source": "arXiv cs.RO",
+      "error": "HTTPSConnectionPool(host='export.arxiv.org', port=443): Read timed out. (read timeout=30)"
+    },
+    {
+      "source": "GitHub Search",
+      "error": "403 Client Error: rate limit exceeded for url: https://api.github.com/search/repositories?q=topic%3Arobotics+ros2+pushed%3A%3E%3D2025-08-26+archived%3Afalse+fork%3Afalse&sort=stars&order=desc&per_page=5"
+    }
+  ],
+  "daily_relpath": "daily/2026-08-26/index.html"
+}
