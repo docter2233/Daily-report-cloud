@@ -1,0 +1,109 @@
+# 具身智能日报 - 2026-09-05
+
+- 统计窗口: 2026-09-05 至 2026-09-05
+- 生成时间: 2026-09-05T12:42:48+08:00
+- 论文数: 3
+- GitHub 项目数: 8
+
+- 每日详情页: https://docter2233.github.io/Daily-report-cloud/daily/2026-09-05/index.html
+
+## 论文速读
+
+### 1. MulDP: Multimodal Diffusion Policy for Autonomous Quadruped Parkour Navigation across Complex Terrains
+- 期刊: arXiv cs.RO
+- 研究主旨: 主旨上，这篇论文主要落在“足式与人形运动”方向，更具体地说是在处理导航规划与场景决策。
+- 方法抓手: 方法上，这篇工作更接近扩散模型路线，但公开摘要没有把实现细节展开到可直接复现的程度。
+- 理论线索: 公开摘要没有展开完整公式，但可以确认作者的理论抓手主要围绕策略或控制律、生成式序列建模。
+- 实验与结果: 包含真实机器人或真实环境验证；含仿真实验；在公开基准或数据集上评估。 结果层面，摘要声称方法在指标或任务完成度上有明显提升。
+- 为什么值得看: 更适合步态生成、平衡恢复、动态控制和抗扰运动。
+- 合法获取: 已找到合法开放 PDF，可直接从详情页跳转。
+- 小文: https://docter2233.github.io/Daily-report-cloud/daily/2026-09-05/papers/paper-01-muldp-multimodal-diffusion-policy-for-autonomous-quadruped-parkour-navig.html
+- 原始入口: https://arxiv.org/pdf/2609.03984v1
+
+### 2. The Role of Variability in Human Navigational Instructions in Visual Language Robot Navigation
+- 期刊: IEEE Robotics and Automation Letters
+- 研究主旨: 主旨上，这篇论文主要落在“导航与规划”方向，更具体地说是在处理导航规划与场景决策。
+- 方法抓手: 方法上，这篇工作更接近问题建模 + 感知/控制联合设计路线，但公开摘要没有把实现细节展开到可直接复现的程度。
+- 理论线索: 目前只有标题和元数据，无法负责任地还原具体推导，只能保留研究方向判断。
+- 实验与结果: 摘要没有展开完整实验表，但可以确认作者至少做了方法有效性验证。 结果层面，公开摘要没有给出足够细节，适合先把它当作值得复查的候选。
+- 为什么值得看: 更适合长时序任务编排、复杂场景导航和系统级决策。
+- 合法获取: 已找到合法开放获取入口，手机可直接阅读。
+- 小文: https://docter2233.github.io/Daily-report-cloud/daily/2026-09-05/papers/paper-02-the-role-of-variability-in-human-navigational-instructions-in-visual-lan.html
+- 原始入口: https://doi.org/10.1109/lra.2026.3723312
+
+### 3. MUSE: Target-Guided Multimodal Scoring Ensemble for Safe Autonomous Planning
+- 期刊: IEEE Robotics and Automation Letters
+- 研究主旨: 主旨上，这篇论文主要落在“导航与规划”方向，更具体地说是在处理导航规划与场景决策。
+- 方法抓手: 方法上，这篇工作更接近问题建模 + 感知/控制联合设计路线，但公开摘要没有把实现细节展开到可直接复现的程度。
+- 理论线索: 目前只有标题和元数据，无法负责任地还原具体推导，只能保留研究方向判断。
+- 实验与结果: 摘要没有展开完整实验表，但可以确认作者至少做了方法有效性验证。 结果层面，公开摘要没有给出足够细节，适合先把它当作值得复查的候选。
+- 为什么值得看: 更适合长时序任务编排、复杂场景导航和系统级决策。
+- 合法获取: 已找到合法开放获取入口，手机可直接阅读。
+- 小文: https://docter2233.github.io/Daily-report-cloud/daily/2026-09-05/papers/paper-03-muse-target-guided-multimodal-scoring-ensemble-for-safe-autonomous-plann.html
+- 原始入口: https://doi.org/10.1109/lra.2026.3723335
+
+## GitHub 项目速读
+
+### 1. earthtojake/text-to-cad
+- 方向定位: 这是一个偏“仿真平台或训练环境”的仓库，从公开描述看更像工具链/基础设施。核心关键词包括：agents, ai-agents, cad。
+- 为什么推它: 今天在 Trending 里新增 93 star。
+- 机器人价值: 对机器人研究是可直接复用的主线资源。
+- 接入姿势: 使用姿势上，建议先把它当作“工具链/基础设施”来看，重点关注它能不能进入你的训练、仿真、规划或系统集成链路。
+- 小文: https://docter2233.github.io/Daily-report-cloud/daily/2026-09-05/repos/repo-01-earthtojake-text-to-cad.html
+- 源地址: https://github.com/earthtojake/text-to-cad
+
+### 2. Z-Robotics-Lab/Z-Mobile-manip
+- 方向定位: 这是一个偏“机器人中间件/系统集成”的仓库，从公开描述看更像工程灵感源。核心关键词包括：mobile-manipulation, pinocchio, realsense。
+- 为什么推它: 这不是当天最热的全站 Trending，但它更贴近机器人研究主线，被作为研究向补位推荐。
+- 机器人价值: 对机器人研究是可直接复用的主线资源。
+- 接入姿势: 使用姿势上，建议先把它当作“工程灵感源”来看，重点关注它能不能进入你的训练、仿真、规划或系统集成链路。
+- 小文: https://docter2233.github.io/Daily-report-cloud/daily/2026-09-05/repos/repo-02-z-robotics-lab-z-mobile-manip.html
+- 源地址: https://github.com/Z-Robotics-Lab/Z-Mobile-manip
+
+### 3. BoosterRobotics/booster_gym
+- 方向定位: 这是一个偏“机器人中间件/系统集成”的仓库，从公开描述看更像工具链/基础设施。核心关键词包括：暂无明确 topic。
+- 为什么推它: 这不是当天最热的全站 Trending，但它更贴近机器人研究主线，被作为研究向补位推荐。
+- 机器人价值: 对机器人研究是可直接复用的主线资源。
+- 接入姿势: 使用姿势上，建议先把它当作“工具链/基础设施”来看，重点关注它能不能进入你的训练、仿真、规划或系统集成链路。
+- 小文: https://docter2233.github.io/Daily-report-cloud/daily/2026-09-05/repos/repo-03-boosterrobotics-booster-gym.html
+- 源地址: https://github.com/BoosterRobotics/booster_gym
+
+### 4. luckyrobots/luckyrobots
+- 方向定位: 这是一个偏“仿真平台或训练环境”的仓库，从公开描述看更像工具链/基础设施。核心关键词包括：mujoco, robotics-simulation, sim2real。
+- 为什么推它: 这不是当天最热的全站 Trending，但它更贴近机器人研究主线，被作为研究向补位推荐。
+- 机器人价值: 对机器人研究是可直接复用的主线资源。
+- 接入姿势: 使用姿势上，建议先把它当作“工具链/基础设施”来看，重点关注它能不能进入你的训练、仿真、规划或系统集成链路。
+- 小文: https://docter2233.github.io/Daily-report-cloud/daily/2026-09-05/repos/repo-04-luckyrobots-luckyrobots.html
+- 源地址: https://github.com/luckyrobots/luckyrobots
+
+### 5. ros-controls/mujoco_ros2_control
+- 方向定位: 这是一个偏“机器人中间件/系统集成”的仓库，从公开描述看更像工程灵感源。核心关键词包括：mujoco, robotics, ros-controls。
+- 为什么推它: 这不是当天最热的全站 Trending，但它更贴近机器人研究主线，被作为研究向补位推荐。
+- 机器人价值: 对机器人研究是可直接复用的主线资源。
+- 接入姿势: 使用姿势上，建议先把它当作“工程灵感源”来看，重点关注它能不能进入你的训练、仿真、规划或系统集成链路。
+- 小文: https://docter2233.github.io/Daily-report-cloud/daily/2026-09-05/repos/repo-05-ros-controls-mujoco-ros2-control.html
+- 源地址: https://github.com/ros-controls/mujoco_ros2_control
+
+### 6. xwx555/DynamicGraspLab
+- 方向定位: 这是一个偏“仿真平台或训练环境”的仓库，从公开描述看更像工具链/基础设施。核心关键词包括：isaaclab, isaacsim, manipulation。
+- 为什么推它: 这不是当天最热的全站 Trending，但它更贴近机器人研究主线，被作为研究向补位推荐。
+- 机器人价值: 对机器人研究是可直接复用的主线资源。
+- 接入姿势: 使用姿势上，建议先把它当作“工具链/基础设施”来看，重点关注它能不能进入你的训练、仿真、规划或系统集成链路。
+- 小文: https://docter2233.github.io/Daily-report-cloud/daily/2026-09-05/repos/repo-06-xwx555-dynamicgrasplab.html
+- 源地址: https://github.com/xwx555/DynamicGraspLab
+
+### 7. rohanpsingh/LearningHumanoidWalking
+- 方向定位: 这是一个偏“机器人中间件/系统集成”的仓库，从公开描述看更像工程灵感源。核心关键词包括：bipedal-robots, cassie, humanoids。
+- 为什么推它: 这不是当天最热的全站 Trending，但它更贴近机器人研究主线，被作为研究向补位推荐。
+- 机器人价值: 对机器人研究是可直接复用的主线资源。
+- 接入姿势: 使用姿势上，建议先把它当作“工程灵感源”来看，重点关注它能不能进入你的训练、仿真、规划或系统集成链路。
+- 小文: https://docter2233.github.io/Daily-report-cloud/daily/2026-09-05/repos/repo-07-rohanpsingh-learninghumanoidwalking.html
+- 源地址: https://github.com/rohanpsingh/LearningHumanoidWalking
+
+### 8. manumerous/wb_humanoid_mpc
+- 方向定位: 这是一个偏“运动规划与执行”的仓库，从公开描述看更像工具链/基础设施。核心关键词包括：ai, data-generation, humanoid。
+- 为什么推它: 这不是当天最热的全站 Trending，但它更贴近机器人研究主线，被作为研究向补位推荐。
+- 机器人价值: 对机器人研究是可直接复用的主线资源。
+- 接入姿势: 使用姿势上，建议先把它当作“工具链/基础设施”来看，重点关注它能不能进入你的训练、仿真、规划或系统集成链路。
+- 小文: https://docter2233.github.io/Daily-report-cloud/daily/2026-09-05/repos/repo-08-manumerous-wb-humanoid-mpc.html
+- 源地址: https://github.com/manumerous/wb_humanoid_mpc
