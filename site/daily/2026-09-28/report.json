@@ -1,0 +1,149 @@
+{
+  "generated_at": "2026-09-28T13:37:43+08:00",
+  "reference_date": "2026-09-28",
+  "window_start": "2026-09-28",
+  "timezone": "Asia/Shanghai",
+  "papers": [
+    {
+      "type": "paper",
+      "title": "Generate, Track, Improve: Perceptive Multi-Skill Humanoid Locomotion with RL-Fine-Tuned Motion Generators",
+      "venue": "arXiv cs.RO",
+      "published": "2026-09-25",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2609.31577v1",
+      "abstract": "General purpose humanoids require locomotion controllers that are multi-skill, perceptive, dynamic, and robust enough to go anywhere humans can. In this work, we present a two layer locomotion architecture: (1) a perceptive flow matching motion generator plans whole body trajectories from raw depth images while a (2) perceptive tracking policy trained with control-guided RL follows these motions. Both policies are trained on a library of terrain consistent motion clips created with dynamically optimized human data which yields both accurate velocity tracking and terrain consistent references. Our central contribution is a simple yet effective off-policy RL fine tuning loop that improves the motion generator. A structured search method is used with the generator to gather data for advantage weighted regression. This off-policy loop is much more sample efficient than on-policy residual fine tuning and improves terrain consistency on unseen geometries and skill compositions. We find that successful terrain traversals increased by up to 25 percentage points and skill selection improved by up to 80 percentage points. By using raw depth images to perceive the environment no odometry or height maps are needed, and outdoor deployment is easy. With two cameras, the policy can see terrain coming from further away and adjust its velocity regardless of the commanded speed so it can traverse the terrain. A single policy pair enables a Unitree G1 humanoid to walk, run, stand, jump on and off of boxes, and traverse stairs in outdoor environments. Project page: https://zolkin1.github.io/generate-track-improve/",
+      "pdf_url": "https://arxiv.org/pdf/2609.31577v1",
+      "oa_url": "https://arxiv.org/pdf/2609.31577v1",
+      "source_homepage": "https://arxiv.org/list/cs.RO/recent",
+      "keyword_hits": [
+        "locomotion",
+        "humanoid",
+        "control",
+        "policy"
+      ],
+      "relevance_score": 7,
+      "cited_by_count": null,
+      "primary_topic": "",
+      "concepts": [],
+      "oa_status": "",
+      "direction": "足式与人形运动",
+      "focus": "人形/足式运动控制",
+      "method_tags": [
+        "几何/深度估计"
+      ],
+      "overview_sentence": "General purpose humanoids require locomotion controllers that are multi-skill, perceptive, dynamic, and robust enough to go anywhere humans can.",
+      "note": {
+        "summary_cn": "这篇论文关注人形/足式运动控制，方法路线偏向几何/深度估计。",
+        "overview": "主旨上，这篇论文主要落在“足式与人形运动”方向，更具体地说是在处理人形/足式运动控制。",
+        "method": "方法上，这篇工作更接近几何/深度估计路线，但公开摘要没有把实现细节展开到可直接复现的程度。",
+        "theory": "公开摘要没有展开完整公式，但可以确认作者的理论抓手主要围绕目标函数或损失设计、动力学/几何结构、策略或控制律。",
+        "experiment": "摘要没有展开完整实验表，但可以确认作者至少做了方法有效性验证。",
+        "result": "结果层面，摘要声称方法在指标或任务完成度上有明显提升。",
+        "application": "更适合步态生成、平衡恢复、动态控制和抗扰运动。",
+        "reading": "建议先看小文中的主旨、方法和实验，再决定是否进入原文或 PDF。",
+        "access": "已找到合法开放 PDF，可直接从详情页跳转。"
+      },
+      "slug": "paper-01-generate-track-improve-perceptive-multi-skill-humanoid-locomotion-with-r",
+      "detail_relpath": "daily/2026-09-28/papers/paper-01-generate-track-improve-perceptive-multi-skill-humanoid-locomotion-with-r.html"
+    },
+    {
+      "type": "paper",
+      "title": "InstructGrasp: A Real-Time Language-Guided Grasp Pose Detection for Robotic Manipulation",
+      "venue": "IEEE Robotics and Automation Letters",
+      "published": "2026-11",
+      "doi": "10.1109/lra.2026.3731854",
+      "url": "https://doi.org/10.1109/lra.2026.3731854",
+      "abstract": "",
+      "source_homepage": "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=7083369",
+      "keyword_hits": [
+        "manipulation",
+        "grasp"
+      ],
+      "relevance_score": 5,
+      "cited_by_count": 0,
+      "primary_topic": "Robot Manipulation and Learning",
+      "concepts": [
+        "Artificial intelligence",
+        "Computer vision",
+        "Computer science",
+        "GRASP",
+        "Robot",
+        "Grippers"
+      ],
+      "oa_url": "https://doi.org/10.1109/lra.2026.3731854",
+      "pdf_url": "",
+      "oa_status": "closed",
+      "direction": "机械臂操控",
+      "focus": "机械臂操控",
+      "method_tags": [],
+      "overview_sentence": "",
+      "note": {
+        "summary_cn": "这篇论文关注机械臂操控，方法路线偏向机械臂操控。",
+        "overview": "主旨上，这篇论文主要落在“机械臂操控”方向，更具体地说是在处理机械臂操控。",
+        "method": "方法上，这篇工作更接近问题建模 + 感知/控制联合设计路线，但公开摘要没有把实现细节展开到可直接复现的程度。",
+        "theory": "目前只有标题和元数据，无法负责任地还原具体推导，只能保留研究方向判断。",
+        "experiment": "摘要没有展开完整实验表，但可以确认作者至少做了方法有效性验证。",
+        "result": "结果层面，公开摘要没有给出足够细节，适合先把它当作值得复查的候选。",
+        "application": "更偏向抓取、装配、接触丰富操作和机械臂精细执行。",
+        "reading": "建议先看小文中的主旨、方法和实验，再决定是否进入原文或 PDF。",
+        "access": "已找到合法开放获取入口，手机可直接阅读。"
+      },
+      "slug": "paper-02-instructgrasp-a-real-time-language-guided-grasp-pose-detection-for-robot",
+      "detail_relpath": "daily/2026-09-28/papers/paper-02-instructgrasp-a-real-time-language-guided-grasp-pose-detection-for-robot.html"
+    },
+    {
+      "type": "paper",
+      "title": "3D LiDAR Driven Reinforcement Learning With Safety Intervention for Mapless Navigation",
+      "venue": "IEEE Robotics and Automation Letters",
+      "published": "2026-11",
+      "doi": "10.1109/lra.2026.3728311",
+      "url": "https://doi.org/10.1109/lra.2026.3728311",
+      "abstract": "",
+      "source_homepage": "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=7083369",
+      "keyword_hits": [
+        "navigation"
+      ],
+      "relevance_score": 1,
+      "cited_by_count": 0,
+      "primary_topic": "Robotics and Sensor-Based Localization",
+      "concepts": [
+        "Computer science",
+        "Lidar",
+        "Reinforcement learning",
+        "Intervention (counseling)",
+        "Artificial intelligence",
+        "Control (management)"
+      ],
+      "oa_url": "https://doi.org/10.1109/lra.2026.3728311",
+      "pdf_url": "",
+      "oa_status": "closed",
+      "direction": "导航与规划",
+      "focus": "导航规划与场景决策",
+      "method_tags": [
+        "强化学习"
+      ],
+      "overview_sentence": "",
+      "note": {
+        "summary_cn": "这篇论文关注导航规划与场景决策，方法路线偏向强化学习。",
+        "overview": "主旨上，这篇论文主要落在“导航与规划”方向，更具体地说是在处理导航规划与场景决策。",
+        "method": "方法上，这篇工作更接近强化学习路线，但公开摘要没有把实现细节展开到可直接复现的程度。",
+        "theory": "目前只有标题和元数据，无法负责任地还原具体推导，只能保留研究方向判断。",
+        "experiment": "摘要没有展开完整实验表，但可以确认作者至少做了方法有效性验证。",
+        "result": "结果层面，公开摘要没有给出足够细节，适合先把它当作值得复查的候选。",
+        "application": "更适合长时序任务编排、复杂场景导航和系统级决策。",
+        "reading": "建议先看小文中的主旨、方法和实验，再决定是否进入原文或 PDF。",
+        "access": "已找到合法开放获取入口，手机可直接阅读。"
+      },
+      "slug": "paper-03-3d-lidar-driven-reinforcement-learning-with-safety-intervention-for-mapl",
+      "detail_relpath": "daily/2026-09-28/papers/paper-03-3d-lidar-driven-reinforcement-learning-with-safety-intervention-for-mapl.html"
+    }
+  ],
+  "repos": [],
+  "errors": [
+    {
+      "source": "GitHub Search",
+      "error": "403 Client Error: rate limit exceeded for url: https://api.github.com/search/repositories?q=topic%3Arobotics+ros2+pushed%3A%3E%3D2025-09-28+archived%3Afalse+fork%3Afalse&sort=stars&order=desc&per_page=5"
+    }
+  ],
+  "daily_relpath": "daily/2026-09-28/index.html"
+}
