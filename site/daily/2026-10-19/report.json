@@ -1,0 +1,218 @@
+{
+  "generated_at": "2026-10-19T12:57:54+08:00",
+  "reference_date": "2026-10-19",
+  "window_start": "2026-10-19",
+  "timezone": "Asia/Shanghai",
+  "papers": [
+    {
+      "type": "paper",
+      "title": "Learning Robot Metareasoning: Adaptive Computation Budgets for Real-Time Control",
+      "venue": "arXiv cs.RO",
+      "published": "2026-10-16",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2610.23662v1",
+      "abstract": "Planning while moving faces an historical trade-off between deliberation and reactivity. A planner running concurrently with execution needs time to compute, so the robot must commit to an open-loop action chunk for that duration: a longer commitment buys a better plan at the cost of feedback frequency. Existing controllers fix this action commitment, and consequently the computation budget, before deployment. However, the optimal computation time is highly state-dependent (due to factors such as unmodeled dynamics, safety constraints, and marginal optimisation gains), i.e. dynamic, therefore offline static tuning risks leaving systems blind during critical maneuvers or unable to find global effective solutions. We cast the identification of the optimal computation budget as a semi-Markov decision process (SMDP) in which a single decision defines both the robot action commitments and the time allocated to the solver. To solve this, we train a reinforcement-learning policy conditioned on the current state, the executing plan, and inexpensive planner statistics. Across ground-robot navigation, agile quadrotor flight, and contact-rich manipulation, the learned policy changes its budget with the demands of the scenario, discovering efficient reasoning patterns that outperform fixed-budget baselines. https://lorenzomagnino.github.io/learning-robot-metareasoning-review/",
+      "pdf_url": "https://arxiv.org/pdf/2610.23662v1",
+      "oa_url": "https://arxiv.org/pdf/2610.23662v1",
+      "source_homepage": "https://arxiv.org/list/cs.RO/recent",
+      "keyword_hits": [
+        "manipulation",
+        "navigation",
+        "planning",
+        "control",
+        "policy",
+        "robot"
+      ],
+      "relevance_score": 9,
+      "cited_by_count": null,
+      "primary_topic": "",
+      "concepts": [],
+      "oa_status": "",
+      "direction": "机械臂操控",
+      "focus": "导航规划与场景决策",
+      "method_tags": [
+        "约束建模"
+      ],
+      "overview_sentence": "Planning while moving faces an historical trade-off between deliberation and reactivity.",
+      "note": {
+        "summary_cn": "这篇论文关注导航规划与场景决策，方法路线偏向约束建模。",
+        "overview": "主旨上，这篇论文主要落在“机械臂操控”方向，更具体地说是在处理导航规划与场景决策。",
+        "method": "方法上，这篇工作更接近约束建模路线，但公开摘要没有把实现细节展开到可直接复现的程度。",
+        "theory": "公开摘要没有展开完整公式，但可以确认作者的理论抓手主要围绕约束建模、动力学/几何结构、策略或控制律。",
+        "experiment": "摘要没有展开完整实验表，但可以确认作者至少做了方法有效性验证。",
+        "result": "结果层面，摘要声称方法在指标或任务完成度上有明显提升。",
+        "application": "更偏向抓取、装配、接触丰富操作和机械臂精细执行。",
+        "reading": "建议先看小文中的主旨、方法和实验，再决定是否进入原文或 PDF。",
+        "access": "已找到合法开放 PDF，可直接从详情页跳转。"
+      },
+      "slug": "paper-01-learning-robot-metareasoning-adaptive-computation-budgets-for-real-time",
+      "detail_relpath": "daily/2026-10-19/papers/paper-01-learning-robot-metareasoning-adaptive-computation-budgets-for-real-time.html"
+    },
+    {
+      "type": "paper",
+      "title": "Belief-Driven Tactile Exploration for Vision-Free Plug–Socket Insertion",
+      "venue": "IEEE Robotics and Automation Letters",
+      "published": "2026-11",
+      "doi": "10.1109/lra.2026.3739596",
+      "url": "https://doi.org/10.1109/lra.2026.3739596",
+      "abstract": "",
+      "source_homepage": "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=7083369",
+      "keyword_hits": [
+        "tactile"
+      ],
+      "relevance_score": 2,
+      "cited_by_count": 0,
+      "primary_topic": "Robot Manipulation and Learning",
+      "concepts": [
+        "Computer vision",
+        "Computer science",
+        "Artificial intelligence",
+        "Feature (linguistics)",
+        "Engineering",
+        "Noise (video)"
+      ],
+      "oa_url": "https://doi.org/10.1109/lra.2026.3739596",
+      "pdf_url": "",
+      "oa_status": "hybrid",
+      "direction": "机械臂操控",
+      "focus": "触觉感知闭环",
+      "method_tags": [
+        "触觉反馈"
+      ],
+      "overview_sentence": "",
+      "note": {
+        "summary_cn": "这篇论文关注触觉感知闭环，方法路线偏向触觉反馈。",
+        "overview": "主旨上，这篇论文主要落在“机械臂操控”方向，更具体地说是在处理触觉感知闭环。",
+        "method": "方法上，这篇工作更接近触觉反馈路线，但公开摘要没有把实现细节展开到可直接复现的程度。",
+        "theory": "目前只有标题和元数据，无法负责任地还原具体推导，只能保留研究方向判断。",
+        "experiment": "摘要没有展开完整实验表，但可以确认作者至少做了方法有效性验证。",
+        "result": "结果层面，公开摘要没有给出足够细节，适合先把它当作值得复查的候选。",
+        "application": "更偏向抓取、装配、接触丰富操作和机械臂精细执行。",
+        "reading": "建议先看小文中的主旨、方法和实验，再决定是否进入原文或 PDF。",
+        "access": "已找到合法开放获取入口，手机可直接阅读。"
+      },
+      "slug": "paper-02-belief-driven-tactile-exploration-for-vision-free-plug-socket-insertion",
+      "detail_relpath": "daily/2026-10-19/papers/paper-02-belief-driven-tactile-exploration-for-vision-free-plug-socket-insertion.html"
+    },
+    {
+      "type": "paper",
+      "title": "Regime-Aware Hybrid BLE Fingerprinting for Mobile Robot Localization",
+      "venue": "IEEE Robotics and Automation Letters",
+      "published": "2026-11",
+      "doi": "10.1109/lra.2026.3734894",
+      "url": "https://doi.org/10.1109/lra.2026.3734894",
+      "abstract": "",
+      "source_homepage": "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=7083369",
+      "keyword_hits": [
+        "robot"
+      ],
+      "relevance_score": 1,
+      "cited_by_count": 0,
+      "primary_topic": "Indoor and Outdoor Localization Technologies",
+      "concepts": [
+        "Computer science",
+        "Mobile robot",
+        "Artificial intelligence",
+        "Computer vision",
+        "Robot",
+        "Identification (biology)"
+      ],
+      "oa_url": "https://doi.org/10.1109/lra.2026.3734894",
+      "pdf_url": "",
+      "oa_status": "closed",
+      "direction": "机器人通用方法",
+      "focus": "机器人通用方法",
+      "method_tags": [],
+      "overview_sentence": "",
+      "note": {
+        "summary_cn": "这篇论文关注机器人通用方法，方法路线偏向机器人通用方法。",
+        "overview": "主旨上，这篇论文主要落在“机器人通用方法”方向，更具体地说是在处理机器人通用方法。",
+        "method": "方法上，这篇工作更接近问题建模 + 感知/控制联合设计路线，但公开摘要没有把实现细节展开到可直接复现的程度。",
+        "theory": "目前只有标题和元数据，无法负责任地还原具体推导，只能保留研究方向判断。",
+        "experiment": "摘要没有展开完整实验表，但可以确认作者至少做了方法有效性验证。",
+        "result": "结果层面，公开摘要没有给出足够细节，适合先把它当作值得复查的候选。",
+        "application": "对机器人系统设计、实验选题和工程落地都有一定参考价值。",
+        "reading": "建议先看小文中的主旨、方法和实验，再决定是否进入原文或 PDF。",
+        "access": "已找到合法开放获取入口，手机可直接阅读。"
+      },
+      "slug": "paper-03-regime-aware-hybrid-ble-fingerprinting-for-mobile-robot-localization",
+      "detail_relpath": "daily/2026-10-19/papers/paper-03-regime-aware-hybrid-ble-fingerprinting-for-mobile-robot-localization.html"
+    }
+  ],
+  "repos": [
+    {
+      "type": "repo",
+      "repo": "pollen-robotics/microduck",
+      "url": "https://github.com/pollen-robotics/microduck",
+      "description": "A Tiny biped duck robot 🦆. Contribute to pollen-robotics/microduck development by creating an account on GitHub.",
+      "language": "Rust",
+      "total_stars": "9582",
+      "forks": "1246",
+      "stars_today": "29",
+      "source_kind": "trending",
+      "readme_excerpt": "Microduck A tiny biped robot that moves using reinforcement learning policies. Get yours here · Cheat sheet · Training the policies · How it works · Contributing This repo is the duck's brain. About 25 cm and 800 g of robot, run by a handful of daemons on a Rockchip RK3566: a 50 Hz control loop driving fifteen servos from neural policies, the radios and the camera, and the update machinery that gets new software onto a robot without bricking it. Everything you need to run a Microduck is here. If you want one, get yours here . The policies it runs are trained next door, in microduck_rl — MuJoCo and PPO, the sim2real recipe, and the export to ONNX that this repo loads. It does things walk.MP4 roller_cut.mp4 It walks. Pick up a gamepad and drive. It rolls. Put wheels on, ask for roller mode, and it loads the other brain. grasp.MP4 standup.MP4 It picks things up. Beak to the floor, one button. It gets back up. Knock it over and it stands itself up. It also sits, kicks a ball, rolls forward on command, and quacks in a voice that is its own. Where to find things You have a duck Cheat sheet Every robotctl command: drive, configure, voice, chorale, theremin, wifi, updates, logs. Start her…",
+      "topics": [],
+      "relevance_score": 23,
+      "keyword_hits": [
+        "robot",
+        "robotics",
+        "grasp",
+        "sim2real",
+        "mujoco",
+        "control",
+        "reinforcement",
+        "rl"
+      ],
+      "relevance_label": "直接相关",
+      "use_mode": "工程灵感源",
+      "domain": "仿真平台或训练环境",
+      "note": {
+        "summary_cn": "这是一个偏仿真平台或训练环境的开源仓库，更像工程灵感源。",
+        "overview": "这是一个偏“仿真平台或训练环境”的仓库，从公开描述看更像工程灵感源。核心关键词包括：暂无明确 topic。",
+        "why_trending": "今天在 Trending 里新增 29 star。",
+        "robotics_value": "对机器人研究是可直接复用的主线资源。",
+        "integration": "使用姿势上，建议先把它当作“工程灵感源”来看，重点关注它能不能进入你的训练、仿真、规划或系统集成链路。",
+        "reading": "先看小文里的定位、可复用模块和接入位置，再决定要不要进 GitHub 深挖。"
+      },
+      "slug": "repo-01-pollen-robotics-microduck",
+      "detail_relpath": "daily/2026-10-19/repos/repo-01-pollen-robotics-microduck.html"
+    },
+    {
+      "type": "repo",
+      "repo": "NVlabs/ASPIRE",
+      "url": "https://github.com/NVlabs/ASPIRE",
+      "description": "ASPIRE: Agentic /Skills Discovery for Robotics. Contribute to NVlabs/ASPIRE development by creating an account on GitHub.",
+      "language": "Python",
+      "total_stars": "600",
+      "forks": "48",
+      "stars_today": "94",
+      "source_kind": "trending",
+      "readme_excerpt": "ASPIRE: Agentic /Skills Discovery for Robotics Project Page | Paper ASPIRE is a new type of continual learning: \"training\" is skill refinement instead of gradient descent. \"Trained model\" is a repo of sensorimotor skills instead of floating weights. “Distributed training” is a panel of agents each practicing a different skill instead of sharded minibatches. News [2026-10] ASPIRE v1.0 is out! ASPIRE can now solve a Rubik's Cube, and it achieves 99% success on 80 LIBERO-Pro Goal / Object / Spatial / Long tasks and selected Robosuite, BEHAVIOR-1K tasks. [2026-06] ASPIRE is out! We achieve SOTA results on LIBERO-Pro, Robosuite, and BEHAVIOR-1K with Claude Opus 4.6! Also check out our table bussing sim-to-real demos! Real-World Results Cross-embodiment sim-to-real Online real-world learning table-bussing-sim-to-real-hq.mp4 rubiks-cube-astra-hq.mp4 Long Horizon Table Bussing Claude Opus 4.6 (sim), GPT-5.5 (real) Rubik's Cube GPT-6 Astra stack-cups.mp4 pill-in-tube.mp4 unscrew-cap.mp4 Stack Cups GPT-6 Astra Unscrew Bottle Cap GPT-6 Astra Pill in Bottle GPT-6 Astra Model Scaling Success vs. API cost LIBERO-Pro, Robosuite, BEHAVIOR-1K Stronger models discover better strategies case-study-b…",
+      "topics": [],
+      "relevance_score": 4,
+      "keyword_hits": [
+        "robotics"
+      ],
+      "relevance_label": "直接相关",
+      "use_mode": "工程灵感源",
+      "domain": "机器人中间件/系统集成",
+      "note": {
+        "summary_cn": "这是一个偏机器人中间件/系统集成的开源仓库，更像工程灵感源。",
+        "overview": "这是一个偏“机器人中间件/系统集成”的仓库，从公开描述看更像工程灵感源。核心关键词包括：暂无明确 topic。",
+        "why_trending": "今天在 Trending 里新增 94 star。",
+        "robotics_value": "对机器人研究是可直接复用的主线资源。",
+        "integration": "使用姿势上，建议先把它当作“工程灵感源”来看，重点关注它能不能进入你的训练、仿真、规划或系统集成链路。",
+        "reading": "先看小文里的定位、可复用模块和接入位置，再决定要不要进 GitHub 深挖。"
+      },
+      "slug": "repo-02-nvlabs-aspire",
+      "detail_relpath": "daily/2026-10-19/repos/repo-02-nvlabs-aspire.html"
+    }
+  ],
+  "errors": [
+    {
+      "source": "GitHub Search",
+      "error": "403 Client Error: rate limit exceeded for url: https://api.github.com/search/repositories?q=robotics+manipulation+grasp+pushed%3A%3E%3D2025-10-19+archived%3Afalse+fork%3Afalse&sort=stars&order=desc&per_page=5"
+    }
+  ],
+  "daily_relpath": "daily/2026-10-19/index.html"
+}
