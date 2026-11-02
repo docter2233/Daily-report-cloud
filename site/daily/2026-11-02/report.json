@@ -1,0 +1,198 @@
+{
+  "generated_at": "2026-11-02T14:30:37+08:00",
+  "reference_date": "2026-11-02",
+  "window_start": "2026-11-02",
+  "timezone": "Asia/Shanghai",
+  "papers": [
+    {
+      "type": "paper",
+      "title": "Hierarchical World Models with Implicit Dynamics",
+      "venue": "arXiv cs.RO",
+      "published": "2026-10-30",
+      "doi": "",
+      "url": "https://arxiv.org/abs/2610.42146v1",
+      "abstract": "Planning with world models enables test-time adaptation for embodied agents, offering superior generalization over direct policy learning. However, long-horizon tasks remain hindered by cumulative errors and search complexity. Existing hierarchical methods often use rigid macro-actions or latent skills, leading to brittle representations and limited fine-grained control. We introduce ID-WM (Implicit Dynamics World Models), a hierarchical world model that decouples state-space reachability from local control. Our framework utilizes a high-level model to sample feasible transitions across the state manifold and a low-level world model as an inverse dynamics solver to ground these transitions into precise actions. This allows the planner to identify reachable subgoals without being constrained by low-level execution details. By prioritizing local physical feasibility over global behavioral patterns, ID-WM synthesizes novel long-horizon plans from short segments, transcending the specific behavioral modes seen during training. We demonstrate its effectiveness across three navigation and manipulation suites, achieving a 38.5% improvement over state-of-the-art policy and diffusion-based planners. Crucially, by leveraging this hierarchical structure to mitigate compounding errors, our approach yields a 135% performance gain over single-level world model MPC, particularly in complex, unseen configurations for long-horizon tasks. Videos can be viewed at https://id-wm.github.io",
+      "pdf_url": "https://arxiv.org/pdf/2610.42146v1",
+      "oa_url": "https://arxiv.org/pdf/2610.42146v1",
+      "source_homepage": "https://arxiv.org/list/cs.RO/recent",
+      "keyword_hits": [
+        "embodied",
+        "manipulation",
+        "diffusion",
+        "world model",
+        "navigation",
+        "planning",
+        "control",
+        "policy"
+      ],
+      "relevance_score": 15,
+      "cited_by_count": null,
+      "primary_topic": "",
+      "concepts": [],
+      "oa_status": "",
+      "direction": "机械臂操控",
+      "focus": "导航规划与场景决策",
+      "method_tags": [
+        "扩散模型",
+        "约束建模",
+        "世界模型",
+        "检索增强"
+      ],
+      "overview_sentence": "Planning with world models enables test-time adaptation for embodied agents, offering superior generalization over direct policy learning.",
+      "note": {
+        "summary_cn": "这篇论文关注导航规划与场景决策，方法路线偏向扩散模型、约束建模、世界模型、检索增强。",
+        "overview": "主旨上，这篇论文主要落在“机械臂操控”方向，更具体地说是在处理导航规划与场景决策。",
+        "method": "方法上，这篇工作更接近扩散模型、约束建模、世界模型、检索增强路线，但公开摘要没有把实现细节展开到可直接复现的程度。",
+        "theory": "公开摘要没有展开完整公式，但可以确认作者的理论抓手主要围绕约束建模、动力学/几何结构、策略或控制律。",
+        "experiment": "摘要没有展开完整实验表，但可以确认作者至少做了方法有效性验证。",
+        "result": "结果层面，摘要声称方法在指标或任务完成度上有明显提升。",
+        "application": "更偏向抓取、装配、接触丰富操作和机械臂精细执行。",
+        "reading": "建议先看小文中的主旨、方法和实验，再决定是否进入原文或 PDF。",
+        "access": "已找到合法开放 PDF，可直接从详情页跳转。"
+      },
+      "slug": "paper-01-hierarchical-world-models-with-implicit-dynamics",
+      "detail_relpath": "daily/2026-11-02/papers/paper-01-hierarchical-world-models-with-implicit-dynamics.html"
+    },
+    {
+      "type": "paper",
+      "title": "FlippingAGR: A Flipping Aerial-Ground Robot With Dual-Mode Terrestrial Locomotion",
+      "venue": "IEEE Robotics and Automation Letters",
+      "published": "2026-12",
+      "doi": "10.1109/lra.2026.3742271",
+      "url": "https://doi.org/10.1109/lra.2026.3742271",
+      "abstract": "",
+      "source_homepage": "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=7083369",
+      "keyword_hits": [
+        "locomotion",
+        "robot"
+      ],
+      "relevance_score": 3,
+      "cited_by_count": 0,
+      "primary_topic": "Robotic Locomotion and Control",
+      "concepts": [
+        "Robot",
+        "Computer science",
+        "Artificial intelligence",
+        "Computer vision",
+        "Mobile robot",
+        "Robotics"
+      ],
+      "oa_url": "https://doi.org/10.1109/lra.2026.3742271",
+      "pdf_url": "",
+      "oa_status": "closed",
+      "direction": "足式与人形运动",
+      "focus": "足式与人形运动",
+      "method_tags": [],
+      "overview_sentence": "",
+      "note": {
+        "summary_cn": "这篇论文关注足式与人形运动，方法路线偏向足式与人形运动。",
+        "overview": "主旨上，这篇论文主要落在“足式与人形运动”方向，更具体地说是在处理足式与人形运动。",
+        "method": "方法上，这篇工作更接近问题建模 + 感知/控制联合设计路线，但公开摘要没有把实现细节展开到可直接复现的程度。",
+        "theory": "目前只有标题和元数据，无法负责任地还原具体推导，只能保留研究方向判断。",
+        "experiment": "摘要没有展开完整实验表，但可以确认作者至少做了方法有效性验证。",
+        "result": "结果层面，公开摘要没有给出足够细节，适合先把它当作值得复查的候选。",
+        "application": "更适合步态生成、平衡恢复、动态控制和抗扰运动。",
+        "reading": "建议先看小文中的主旨、方法和实验，再决定是否进入原文或 PDF。",
+        "access": "已找到合法开放获取入口，手机可直接阅读。"
+      },
+      "slug": "paper-02-flippingagr-a-flipping-aerial-ground-robot-with-dual-mode-terrestrial-lo",
+      "detail_relpath": "daily/2026-11-02/papers/paper-02-flippingagr-a-flipping-aerial-ground-robot-with-dual-mode-terrestrial-lo.html"
+    },
+    {
+      "type": "paper",
+      "title": "LA-WBC: Learning-Driven Adaptation of Whole-Body Control for Safe Locomotion on Uncertain Terrain",
+      "venue": "IEEE Robotics and Automation Letters",
+      "published": "2026-12",
+      "doi": "10.1109/lra.2026.3745006",
+      "url": "https://doi.org/10.1109/lra.2026.3745006",
+      "abstract": "",
+      "source_homepage": "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=7083369",
+      "keyword_hits": [
+        "locomotion",
+        "control"
+      ],
+      "relevance_score": 3,
+      "cited_by_count": 0,
+      "primary_topic": "Robotic Locomotion and Control",
+      "concepts": [
+        "Terrain",
+        "Computer science",
+        "Control (management)",
+        "Adaptation (eye)",
+        "Control theory (sociology)",
+        "Control system"
+      ],
+      "oa_url": "https://doi.org/10.1109/lra.2026.3745006",
+      "pdf_url": "",
+      "oa_status": "closed",
+      "direction": "足式与人形运动",
+      "focus": "足式与人形运动",
+      "method_tags": [],
+      "overview_sentence": "",
+      "note": {
+        "summary_cn": "这篇论文关注足式与人形运动，方法路线偏向足式与人形运动。",
+        "overview": "主旨上，这篇论文主要落在“足式与人形运动”方向，更具体地说是在处理足式与人形运动。",
+        "method": "方法上，这篇工作更接近问题建模 + 感知/控制联合设计路线，但公开摘要没有把实现细节展开到可直接复现的程度。",
+        "theory": "目前只有标题和元数据，无法负责任地还原具体推导，只能保留研究方向判断。",
+        "experiment": "摘要没有展开完整实验表，但可以确认作者至少做了方法有效性验证。",
+        "result": "结果层面，公开摘要没有给出足够细节，适合先把它当作值得复查的候选。",
+        "application": "更适合步态生成、平衡恢复、动态控制和抗扰运动。",
+        "reading": "建议先看小文中的主旨、方法和实验，再决定是否进入原文或 PDF。",
+        "access": "已找到合法开放获取入口，手机可直接阅读。"
+      },
+      "slug": "paper-03-la-wbc-learning-driven-adaptation-of-whole-body-control-for-safe-locomot",
+      "detail_relpath": "daily/2026-11-02/papers/paper-03-la-wbc-learning-driven-adaptation-of-whole-body-control-for-safe-locomot.html"
+    }
+  ],
+  "repos": [
+    {
+      "type": "repo",
+      "repo": "kornia/kornia",
+      "url": "https://github.com/kornia/kornia",
+      "description": "🐍 Geometric Computer Vision Library for Spatial AI",
+      "language": "Python",
+      "total_stars": "11903",
+      "forks": "1474",
+      "stars_today": "101",
+      "source_kind": "trending",
+      "readme_excerpt": "English | 简体中文 Docs • Try it Now • Tutorials • Examples • Blog • Community Kornia is a differentiable computer vision library that provides a rich set of differentiable image processing and geometric vision algorithms. Built on top of PyTorch , Kornia integrates seamlessly into existing AI workflows, allowing you to leverage powerful batch transformations , auto-differentiation and GPU acceleration . Whether you're working on image transformations, augmentations, or AI-driven image processing, Kornia equips you with the tools you need to bring your ideas to life. 📢 Direction : Kornia is becoming the reference implementation and executable specification for differentiable computer vision and geometry in the PyTorch ecosystem — explicit conventions, conformance tests, and honest benchmarks over API growth. Read the Roadmap . When to use Kornia Kornia pays off where a hand-written version gets long or fragile, or where the alternatives leave the GPU: Breadth. 1,200+ public operators, most with no torchvision equivalent: camera models and epipolar geometry, minimal solvers and RANSAC, feature detection, description and matching, edge detection, morphology, Lab and Bayer color, image l…",
+      "topics": [
+        "artificial-intelligence",
+        "computer-vision",
+        "deep-learning",
+        "hacktoberfest",
+        "image-processing",
+        "machine-learning",
+        "neural-network",
+        "python",
+        "pytorch",
+        "robotics"
+      ],
+      "relevance_score": 5,
+      "keyword_hits": [
+        "robotics",
+        "vision"
+      ],
+      "relevance_label": "直接相关",
+      "use_mode": "工具链/基础设施",
+      "domain": "数据集或基准",
+      "note": {
+        "summary_cn": "这是一个偏数据集或基准的开源仓库，更像工具链/基础设施。",
+        "overview": "这是一个偏“数据集或基准”的仓库，从公开描述看更像工具链/基础设施。核心关键词包括：artificial-intelligence, computer-vision, deep-learning。",
+        "why_trending": "今天在 Trending 里新增 101 star。",
+        "robotics_value": "对机器人研究是可直接复用的主线资源。",
+        "integration": "使用姿势上，建议先把它当作“工具链/基础设施”来看，重点关注它能不能进入你的训练、仿真、规划或系统集成链路。",
+        "reading": "先看小文里的定位、可复用模块和接入位置，再决定要不要进 GitHub 深挖。"
+      },
+      "slug": "repo-01-kornia-kornia",
+      "detail_relpath": "daily/2026-11-02/repos/repo-01-kornia-kornia.html"
+    }
+  ],
+  "errors": [
+    {
+      "source": "GitHub Search",
+      "error": "403 Client Error: rate limit exceeded for url: https://api.github.com/search/repositories?q=robotics+humanoid+locomotion+pushed%3A%3E%3D2025-11-02+archived%3Afalse+fork%3Afalse&sort=stars&order=desc&per_page=5"
+    }
+  ],
+  "daily_relpath": "daily/2026-11-02/index.html"
+}
